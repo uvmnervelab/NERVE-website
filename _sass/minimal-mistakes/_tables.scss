@@ -8,8 +8,10 @@ table {
   width: 100%;
   font-family: $global-font-family;
   font-size: $type-size-6;
+  border: none;
   border-collapse: collapse;
   overflow-x: auto;
+
 
   & + table {
     margin-top: 1em;
@@ -29,7 +31,7 @@ th {
 
 td {
   padding: 0.5em;
-  border-bottom: 1px solid mix(#000, $border-color, 25%);
+  // border-bottom: 1px solid mix(#000, $border-color, 25%);
 }
 
 tr,

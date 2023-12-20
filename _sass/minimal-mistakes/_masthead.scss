@@ -44,12 +44,13 @@
 }
 
 .site-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-weight: bold;
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  // display: flex;
+  // -ms-flex-item-align: center;
+  // align-self: center;
+  // font-weight: bold;
+  visibility: hidden;
   // z-index: 20;
 }
 

@@ -1,0 +1,80 @@
+categories:
+  - heading: "Published"
+    pubs:
+    - title: "Conduct problems are associated with accelerated thinning of 
+              emotion-related cortical regions in a community-based sample of adolescents"
+      authors:
+      - Matthew Albaugh
+      - James J. Hudziak
+      - Phillip A. Spechler
+      - ...
+      - Hugh Garavan
+      year: 2023
+      venue: Psychiatry Research Neuroimaging
+      volumeissue: 330(7):111614
+      image_path: "/assets/images/figures/AlHu23.jpg"
+      links:
+        - text: ScienceDirect
+          url: https://doi.org/10.1016/j.pscychresns.2023.111614e
+    - title: "Machine learning approaches linking brain function to behavior in the ABCD STOP task"
+      authors:
+      - Dekang Yuan
+      - Sage Hahn
+      - Nicholas Allgaier
+      - Max Michael Owens
+      - Bader Chaarani
+      - Alexandra Potter
+      - Hugh Garavan
+      year: 2022
+      venue: Human Brain Mapping
+      volumeissue: 44(14)
+      image_path: "/assets/images/figures/YuHa22.jpg"
+      links:
+        - text: Wiley Online Library
+          url: 10.1002/hbm.26172
+
+    - title: "Association of Video Gaming With Cognitive Performance Among Children"
+      authors:
+      - Bader Chaarani
+      - Joseph Ortigara
+      - DeKang Yaun
+      - Hannah Loso
+      - Alexandra Potter
+      - Hugh Garavan
+      year: 2022
+      venue: JAMA Network Open
+      volumeissue: 2022;5(10):e2235721
+      image_path: "/assets/images/figures/ChOr22.png"
+      links:
+        - text: JAMA Network
+          url: doi:10.1001/jamanetworkopen.2022.35721
+    - title: "Brain structural covariance network differences in adults with alcohol 
+              dependence and heavy drinking adolescents"
+      authors:
+      - Jonatan Ottino González
+      - Matthew Albaugh
+      - Zhipeng Cao
+      - ...
+      - The ENIGMA-Addiction and IMAGEN Consortiums
+      - Hugh Garavan
+      year: 2021
+      venue: Addiction
+      volumeissue: 117(5)
+      image_path: "/assets/images/figures/GoAl21.jpg"
+      links:
+        - text: Wiley Online Library
+          url: https://onlinelibrary.wiley.com/doi/10.1111/add.15772
+    # - title: ""
+    #   authors:
+    #   - 
+
+    #   year:
+    #   venue: 
+    #   volumeissue: 
+    #   image_path: ""
+    #   links:
+    #     - text:
+    #       url:
+    
+    
+    

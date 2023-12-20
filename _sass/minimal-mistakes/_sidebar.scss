@@ -135,11 +135,16 @@
 
   img {
     max-width: 110px;
-    border-radius: 50%;
+    border-radius: 0%;
+    // margin: auto;
+    // display: block;
+    // float: left;
+    // margin: auto;
+    // display: block;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
+      // padding: 5px;
+      // border: 1px solid $border-color;
     }
   }
 }
@@ -150,6 +155,8 @@
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
+  margin: auto;
+
 
   @include breakpoint($large) {
     display: block;

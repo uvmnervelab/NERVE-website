@@ -2,3 +2,22 @@
 layout: home
 author_profile: true
 ---
+
+
+<div>
+    <h2>About the lab</h2>
+</div>
+
+<div>
+    <h2>Lab News</h2>
+    <ul>
+      {% for event in site.data.events %}
+      <li>
+        {% if event.date%}
+          <b>{{event.date}} - </b>
+        {% endif %}
+        {{event.description}}
+      </li>
+      {% endfor %}
+    </ul>
+    </div>

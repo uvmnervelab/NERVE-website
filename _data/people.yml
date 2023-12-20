@@ -1,0 +1,39 @@
+people:
+  - name: Hugh Garavan
+    url: https://www.uvm.edu/cas/psychology/profiles/hugh-garavan
+    image_path: "/assets/images/people/hugh.jpg"
+    title: Principal Investigator
+    subject: Professor
+    # aliases:
+    #   - 
+  - name: Alexi Potter
+    url: https://www.uvm.edu/cas/psychology/profiles/alexandra-potter-behavior-therapy-and-psychotherapy
+    image_path: "/assets/images/people/alexi.png"
+    title: Principal Investigator
+    subject: Associate Professor
+    aliases:
+      -
+  - name: Nick Allgaier
+    url: https://www.uvm.edu/~nallgaie/
+    image_path: https://placehold.co/200
+    title: Assistant Professor
+    subject: #
+    aliases:
+      - 
+  - name: Bader Chaarani
+    url: https://www.linkedin.com/in/baderchaarani/
+    image_path: https://placehold.co/200
+    title: Assistant Professor
+    subject: #
+    aliases:
+      - 
+  - name: Matt Albaugh
+    url: https://www.linkedin.com/in/matthew-albaugh-ph-d-32a1611b5/
+    image_path: https://placehold.co/200
+    title: Assistant Professor
+
+  
+
+  
+  
+  
