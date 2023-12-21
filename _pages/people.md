@@ -30,7 +30,7 @@ class: wide
             {% endif %}
             title="{{ person.name }}"
         >
-        <img class="thumb" src=
+        <img class="thumb" height="200" width="200" src=
           {% if person.image_path contains "://" %}
             "{{ person.image_path }}"
           {% else %}
@@ -39,7 +39,7 @@ class: wide
           >
         </a>
     {% else %}
-        <img class="thumb" src=
+        <img class="thumb" height="200" width="200" src=
           {% if person.image_path contains "://" %}
             "{{ person.image_path }}"
           {% else %}
@@ -56,3 +56,19 @@ class: wide
 {% endfor %}
 </div>
 
+<div>
+    <h3>Alumni</h3>
+    <ul>
+{% for person in site.data.people.alumni %}
+    {% if person.url %}
+	<li><a href="{{ person.url}}" target="_blank">{{person.name}}</a>        
+    {% else %}
+    <li>{{person.name}}
+    }
+    {% endif %}
+    {% if person.now %}
+        ({{person.now}})
+    {% endif %}
+    </li>
+{% endfor %}
+</ul>

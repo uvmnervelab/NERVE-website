@@ -1,9 +1,13 @@
 # main links
 main:
+  - title: "Home"
+    url: /
   - title: "People"
     url: /people/
   - title: "Papers"
     url: /papers/
+  - title: "Opportunities"
+    url: /opportunities/
   - title: "Press"
     url: /press/
   # - title: "Quick-Start Guide"

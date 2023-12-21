@@ -1,6 +1,22 @@
 categories:
   - heading: "Published"
     pubs:
+    - title: "Differential associations of adolescent versus young adult cannabis initiation with longitudinal brain change and behavior"
+      authors:
+      - Matthew Albaugh
+      - Max Owens
+      - Anthony Juliano
+      - ...
+      - IMAGEN Consortium
+      - Alexandra Potter
+      - Hugh Garavan
+      year: 2023
+      venue: Molecular Psychiatry
+      volumeissue: 
+      image_path: "/assets/images/figures/AlOw23.webp"
+      links:
+        - text: Nature
+          url: "https://www.nature.com/articles/s41380-023-02148-2"
     - title: "Conduct problems are associated with accelerated thinning of 
               emotion-related cortical regions in a community-based sample of adolescents"
       authors:
@@ -15,7 +31,7 @@ categories:
       image_path: "/assets/images/figures/AlHu23.jpg"
       links:
         - text: ScienceDirect
-          url: https://doi.org/10.1016/j.pscychresns.2023.111614e
+          url: "https://www.sciencedirect.com/science/article/abs/pii/S0925492723000240?via%3Dihub"
     - title: "Machine learning approaches linking brain function to behavior in the ABCD STOP task"
       authors:
       - Dekang Yuan
@@ -31,7 +47,7 @@ categories:
       image_path: "/assets/images/figures/YuHa22.jpg"
       links:
         - text: Wiley Online Library
-          url: 10.1002/hbm.26172
+          url: "https://onlinelibrary.wiley.com/doi/10.1002/hbm.26172"
 
     - title: "Association of Video Gaming With Cognitive Performance Among Children"
       authors:
@@ -47,7 +63,24 @@ categories:
       image_path: "/assets/images/figures/ChOr22.png"
       links:
         - text: JAMA Network
-          url: doi:10.1001/jamanetworkopen.2022.35721
+          url: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2797596"
+    - title: "Bayesian causal network modeling suggests adolescent cannabis use accelerates prefrontal cortical thinning"
+      authors:
+      - Max Owens
+      - Matthew Albaugh
+      - Nicholas Allgaier
+      - ...
+      - The IMAGEN Consortium
+      - Hugh Garavan
+      year: 2022
+      venue: Translational Psychiatry
+      volumeissue: 12, 188
+      image_path: "/assets/images/figures/OwAl22.webp"
+      links:
+        - text: Nature
+          url: https://www.nature.com/articles/s41398-022-01956-4
+    
+      
     - title: "Brain structural covariance network differences in adults with alcohol 
               dependence and heavy drinking adolescents"
       authors:
@@ -63,7 +96,23 @@ categories:
       image_path: "/assets/images/figures/GoAl21.jpg"
       links:
         - text: Wiley Online Library
-          url: https://onlinelibrary.wiley.com/doi/10.1111/add.15772
+          url: "https://onlinelibrary.wiley.com/doi/10.1111/add.15772"
+    - title: "Association of Cannabis Use During Adolescence With Neurodevelopment"
+      authors:
+      - Matthew Albaugh
+      - Jonatan Ottino González
+      - Amanda Sidwell
+      - ...
+      - The IMAGEN Consortium
+      - Alexandra Potter
+      - Hugh Garavan
+      year: 2021
+      venue: JAMA Psychiatry
+      volumeissue: 2021;78(9):1031-1040
+      image_path: "/assets/images/figures/AlGo21.png"
+      links:
+        - text: JAMA Network
+          url: "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2781289"
     # - title: ""
     #   authors:
     #   - 

@@ -4,36 +4,76 @@ people:
     image_path: "/assets/images/people/hugh.jpg"
     title: Principal Investigator
     subject: Professor
-    # aliases:
-    #   - 
   - name: Alexi Potter
     url: https://www.uvm.edu/cas/psychology/profiles/alexandra-potter-behavior-therapy-and-psychotherapy
     image_path: "/assets/images/people/alexi.png"
     title: Principal Investigator
     subject: Associate Professor
-    aliases:
-      -
+  - name: Matt Albaugh
+    url: https://www.linkedin.com/in/matthew-albaugh-ph-d-32a1611b5/
+    image_path: https://placehold.co/200
+    title: Assistant Professor 
   - name: Nick Allgaier
     url: https://www.uvm.edu/~nallgaie/
     image_path: https://placehold.co/200
     title: Assistant Professor
-    subject: #
-    aliases:
-      - 
   - name: Bader Chaarani
     url: https://www.linkedin.com/in/baderchaarani/
     image_path: https://placehold.co/200
     title: Assistant Professor
-    subject: #
+  - name: Tony Barrows
+    url: https://www.linkedin.com/in/ajbarrows/
+    image_path: "/assets/images/people/tony.jpeg"
+    title: Graduate Student
+    subject: Complex Systems & Data Science
     aliases:
-      - 
-  - name: Matt Albaugh
-    url: https://www.linkedin.com/in/matthew-albaugh-ph-d-32a1611b5/
+      - Anthony Barrows
+      - Anthony J. Barrows
+  - name: Annabel Diestel
+    url: https://www.linkedin.com/in/annabel-diestel/
     image_path: https://placehold.co/200
-    title: Assistant Professor
+    title: Graduate Student
+    subject: Clinical Psychology
+  - name: Anthony Juliano
+    url: #
+    image_path: https://placehold.co/200
+    title: Postdoctoral Researcher
+  - name: Devarshi Pancholi
+    url: https://www.linkedin.com/in/devarshipancholi/
+    image_path: https://placehold.co/200
+    title: Data Specialist
+  - name: Emma Pearson
+    url: https://www.linkedin.com/in/eepearson/
+    image_path: https://placehold.co/200
+    title: Research Assistant
+  - name: DK Yuan
+    url: https://www.linkedin.com/in/dekang-yuan-b09076b0/
+    image_path: https://placehold.co/200
+    title: Graduate Student
+    subject: Complex Systems & Data Science
+    aliases:
+      - Dekang Yuan
 
   
 
-  
+alumni:
+  - name: Matt McCabe
+    now: DeepHealth
+    url: https://www.linkedin.com/in/matthewpmccabe/
+  - name: Renata Cupertino
+    now: UC San Diego
+    url: https://www.linkedin.com/in/renata-cupertino-phd/
+  # - name: Zhipeng Cao
+  #   now: #
+  #   url: #
+  - name: Sage Hahn
+    now: DeepHealth
+    url: https://sagehahn.com/
+  - name: Phil Spechler
+    now: Wave Neuroscience
+    url: https://www.linkedin.com/in/philip-spechler-037005225/
+  - name: Shana Adise
+    now: Children's Hospital Los Angeles
+    url: https://www.linkedin.com/in/shana-a-1a693214/
   
   

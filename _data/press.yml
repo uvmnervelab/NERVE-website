@@ -13,3 +13,22 @@ categories:
       date: 10/2022
       author: National Institute on Drug Abuse (NIDA)
       venue: NIDA Press Office
+  - heading: Cannabis use and brain development
+    press:
+    - url: https://www.newscientist.com/article/2402391-cannabis-can-harm-young-brains-but-may-improve-learning-in-older-age/
+      date: 11/2023
+      author: Joanna Thompson
+      venue: New Scientist
+    - url: https://ourtimepress.com/cannabis-may-alter-a-teens-developing-brain/
+      date: 7/2021
+      author: Silke Schmidt
+      venue: Our Time Press
+    - url: https://www.psychologytoday.com/us/blog/heal-the-mind-heal-the-body/202107/how-cannabis-can-alter-brain-development-in-adolescents
+      date: 7/2021
+      author: Chris Gilbert
+      venue: Psychology Today
+    - url: https://www.healthday.com/health-news/child-health/6-17-pot-use-may-change-the-teenaged-brain-mris-show-2653383567.html
+      date: 6/2021
+      author: Dennis Thompson
+      venue: Health Day
+    
