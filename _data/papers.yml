@@ -17,6 +17,39 @@ categories:
       links:
         - text: Nature
           url: "https://www.nature.com/articles/s41380-023-02148-2"
+    - title: "Associations Between Gender Nonconformity, School Environments, Family Conflict, and Emotional and Behavioral Health Among Children Ages 10–11"
+      authors:
+      - Hannah Loso
+      - Sarahjane Locke Dube
+      - Bader Chaarani
+      - Masha Ivanova
+      - Hugh Garavan
+      - Michelle Johns
+      - Alexandra Potter
+      year: 2023
+      venue: Journal of Adolescent Health
+      volumeissue: 72(6)
+      image_path: ""
+      links:
+        - text: ScienceDirect
+          url: "https://www.sciencedirect.com/science/article/abs/pii/S1054139X23001039"
+    - title: "Task fMRI paradigms may capture more behaviorally relevant information than resting-state functional connectivity"
+      authors:
+      - Weiqi Zhao
+      - Carolina Makowski
+      - Donald Hagler
+      - Hugh Garavan
+      - Wesley Thompson
+      - Deanna Greene
+      - Terry Jernigan
+      - Anders Dale
+      year: 2023
+      venue: NeuroImage
+      volumeissue: 270
+      image_path: "/assets/images/figures/ZhMa23.jpg"
+      links:
+        - text: ScienceDirect
+          url: "https://www.sciencedirect.com/science/article/pii/S1053811923000939"
     - title: "Conduct problems are associated with accelerated thinning of 
               emotion-related cortical regions in a community-based sample of adolescents"
       authors:
@@ -32,6 +65,23 @@ categories:
       links:
         - text: ScienceDirect
           url: "https://www.sciencedirect.com/science/article/abs/pii/S0925492723000240?via%3Dihub"
+    - title: "Gender diversity associated with patterns of brain activation seen in populations that experience childhood stress"
+      authors:
+      - Hannah Loso
+      - Bader Chaarani
+      - Sarajane Locke Dube
+      - Matthew Albaugh
+      - Aya Cheaito
+      - Hugh Garavan
+      - Alexandra Potter
+      year: 2023
+      venue: Frontiers in Integrative Neuroscience
+      volumeissue: 17
+      image_path: "/assets/images/figures/LoCh23.jpg"
+      links:
+        - text: Frontiers
+          url: https://www.frontiersin.org/articles/10.3389/fnint.2023.1084748/full
+    
     - title: "Machine learning approaches linking brain function to behavior in the ABCD STOP task"
       authors:
       - Dekang Yuan
@@ -42,13 +92,46 @@ categories:
       - Alexandra Potter
       - Hugh Garavan
       year: 2022
+      month: 12
       venue: Human Brain Mapping
       volumeissue: 44(14)
       image_path: "/assets/images/figures/YuHa22.jpg"
       links:
         - text: Wiley Online Library
           url: "https://onlinelibrary.wiley.com/doi/10.1002/hbm.26172"
-
+    - title: "Cortical profiles of numerous psychiatric disorders and normal development share a common pattern"
+      authors:
+      - Zhipeng Cao
+      - Renata Cupertino
+      - Jonatan Ottino González
+      - ...
+      - Hugh Garavan
+      - IMAGEN Consortium and ENIGMA Addiction Working Group
+      year: 2022
+      month: 11
+      venue: Molecular Psychiatry
+      volumeissue: 28
+      image_path: "/assets/images/figures/CaCu22.webp"
+      links:
+        - text: Nature
+          url: "https://www.nature.com/articles/s41380-022-01855-6"
+    - title: "Performance scaling for structural MRI surface parcellations: a machine learning analysis in the ABCD Study "
+      authors:
+      - Sage Hahn
+      - Max Owens
+      - DeKang Yuan
+      - Anthony Juliano
+      - Alexandra Potter
+      - Hugh Garavan
+      - Nicholas Allgaier
+      year: 2023
+      month: 1
+      venue: Cerebral Cortex
+      volumeissue: 33(1)
+      image_path: #"assets/images/figures/"
+      links:
+        - text: Oxford Academic
+          url: "https://academic.oup.com/cercor/article-abstract/33/1/176/6541539#no-access-message"
     - title: "Association of Video Gaming With Cognitive Performance Among Children"
       authors:
       - Bader Chaarani
@@ -79,8 +162,25 @@ categories:
       links:
         - text: Nature
           url: https://www.nature.com/articles/s41398-022-01956-4
-    
-      
+    - title: One-Year Predictions of Delayed Reward Discounting in the Adolescent Brain Cognitive Development Study"
+      authors:
+      - Max Owens
+      - Sage Hahn
+      - Nicholas Allgaier
+      - James MacKillop
+      - Matthew Albaugh
+      - Dekang Yuan
+      - Anthony Juliano
+      - Alexandra Potter
+      - Hugh Garavan
+      year: 2022
+      venue: Experimental and Clinical Psychopharmacology
+      volumeissue: 30(6)
+      image_path: "/assets/images/figures/OwHa22.png"
+      links:
+        - text: APA PsycNet
+          url: "https://psycnet.apa.org/record/2022-13146-001"
+     
     - title: "Brain structural covariance network differences in adults with alcohol 
               dependence and heavy drinking adolescents"
       authors:
@@ -114,16 +214,16 @@ categories:
         - text: JAMA Network
           url: "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2781289"
     # - title: ""
-    #   authors:
-    #   - 
+      #   authors:
+      #   - 
 
-    #   year:
-    #   venue: 
-    #   volumeissue: 
-    #   image_path: ""
-    #   links:
-    #     - text:
-    #       url:
+      #   year:
+      #   venue: 
+      #   volumeissue: 
+      #   image_path: "assets/images/figures/"
+      #   links:
+      #     - text:
+      #       url:
     
     
     
