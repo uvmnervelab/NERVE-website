@@ -11,16 +11,20 @@ people:
     subject: Associate Professor
   - name: Matt Albaugh
     url: https://www.linkedin.com/in/matthew-albaugh-ph-d-32a1611b5/
-    image_path: https://placehold.co/200
+    image_path: "/assets/images/people/matt.jpg"
     title: Assistant Professor 
   - name: Nick Allgaier
     url: https://www.uvm.edu/~nallgaie/
-    image_path: https://placehold.co/200
+    image_path: "/assets/images/people/nick.png"
     title: Assistant Professor
   - name: Bader Chaarani
     url: https://www.linkedin.com/in/baderchaarani/
-    image_path: https://placehold.co/200
+    image_path: "/assets/images/people/bader.jpg"
     title: Assistant Professor
+  - name: Anthony Juliano
+    url: #
+    image_path: https://placehold.co/200
+    title: Postdoctoral Researcher
   - name: Tony Barrows
     url: https://www.linkedin.com/in/ajbarrows/
     image_path: "/assets/images/people/tony.jpeg"
@@ -31,28 +35,24 @@ people:
       - Anthony J. Barrows
   - name: Annabel Diestel
     url: https://www.linkedin.com/in/annabel-diestel/
-    image_path: https://placehold.co/200
+    image_path: "/assets/images/people/annabel.jpg"
     title: Graduate Student
     subject: Clinical Psychology
-  - name: Anthony Juliano
-    url: #
-    image_path: https://placehold.co/200
-    title: Postdoctoral Researcher
-  - name: Devarshi Pancholi
-    url: https://www.linkedin.com/in/devarshipancholi/
-    image_path: https://placehold.co/200
-    title: Data Specialist
-  - name: Emma Pearson
-    url: https://www.linkedin.com/in/eepearson/
-    image_path: https://placehold.co/200
-    title: Research Assistant
   - name: DK Yuan
     url: https://www.linkedin.com/in/dekang-yuan-b09076b0/
-    image_path: https://placehold.co/200
+    image_path: "/assets/images/people/dk.jpg"
     title: Graduate Student
     subject: Complex Systems & Data Science
     aliases:
       - Dekang Yuan
+  - name: Devarshi Pancholi
+    url: https://www.linkedin.com/in/devarshipancholi/
+    image_path: "/assets/images/people/devarshi.jpg"
+    title: Data Specialist
+  - name: Emma Pearson
+    url: https://www.linkedin.com/in/eepearson/
+    image_path: "/assets/images/people/emma.jpg"
+    title: Research Assistant
 
   
 
