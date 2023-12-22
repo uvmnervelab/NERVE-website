@@ -1,6 +1,21 @@
 categories:
   - heading: "Published"
     pubs:
+    - title: "Brain structural covariance network features are robust markers of early heavy alcohol use "
+      authors:
+      - Jonatan Ottino González
+      - Renata Cupertino
+      - Zhipeng Cao
+      - ...
+      - Hugh Garavan
+      year: 2024
+      moonth: 01
+      venue: Addiction
+      volumeissue: 119(1)
+      image_path: "/assets/images/figures/GoCu24.jpg"
+      links:
+        - text: Wiley Online Library
+          url: "https://onlinelibrary.wiley.com/doi/10.1111/add.16330"
     - title: "Differential associations of adolescent versus young adult cannabis initiation with longitudinal brain change and behavior"
       authors:
       - Matthew Albaugh
@@ -17,6 +32,27 @@ categories:
       links:
         - text: Nature
           url: "https://www.nature.com/articles/s41380-023-02148-2"
+    - title: "Effects of parental mental health and family environment on impulsivity in preadolescents: a longitudinal ABCD study"
+      authors:
+      - Nioud Mulugeta Gebru
+      - Priscila Dib Goncalves
+      - Rick Cruz
+      - Wesley Thompson
+      - Nicholas Allgaier
+      - Alexandra Potter
+      - Hugh Garavan
+      - Julie Dumas
+      - Robert Leeman
+      - Micah Johnson
+      year: 2023
+      month: 10
+      venue: Frontiers of Behavioral Neuroscience
+      volumeissue: 17:1213894
+      image_path: "/assets/images/figures/GeGo23.jpg"
+      links:
+        - text: PubMed
+          url: "https://pubmed.ncbi.nlm.nih.gov/37942273/"
+    
     - title: "Associations Between Gender Nonconformity, School Environments, Family Conflict, and Emotional and Behavioral Health Among Children Ages 10–11"
       authors:
       - Hannah Loso
@@ -29,7 +65,7 @@ categories:
       year: 2023
       venue: Journal of Adolescent Health
       volumeissue: 72(6)
-      image_path: ""
+      image_path: "/assets/images/figures/LoDu23.png"
       links:
         - text: ScienceDirect
           url: "https://www.sciencedirect.com/science/article/abs/pii/S1054139X23001039"
@@ -115,6 +151,23 @@ categories:
       links:
         - text: Nature
           url: "https://www.nature.com/articles/s41380-022-01855-6"
+
+    - title: "Association Between Brain Structure and Alcohol Use Behaviors in Adults: A Mendelian Randomization and Multiomics Study "
+      authors:
+      - Lucas Mavromatis
+      - Daniel Rosoff
+      - Renata Cupertino
+      - Hugh Garavan
+      - Scott Mackey
+      - Falk Lohoff
+      year: 2022
+      month: 11
+      venue: JAMA Psychiatry
+      volumeissue: 79(9):869-878
+      image_path: "/assets/images/figures/MaRo22.jpg"
+      links:
+        - text: PubMed
+          url: "https://pubmed.ncbi.nlm.nih.gov/35947372/"
     - title: "Performance scaling for structural MRI surface parcellations: a machine learning analysis in the ABCD Study "
       authors:
       - Sage Hahn
@@ -128,7 +181,7 @@ categories:
       month: 1
       venue: Cerebral Cortex
       volumeissue: 33(1)
-      image_path: #"assets/images/figures/"
+      image_path: "/assets/images/figures/HaOw23.jpg"
       links:
         - text: Oxford Academic
           url: "https://academic.oup.com/cercor/article-abstract/33/1/176/6541539#no-access-message"
@@ -147,6 +200,29 @@ categories:
       links:
         - text: JAMA Network
           url: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2797596"
+
+    - title: "The ABCD stop signal data: Response to Bissett et al"
+      authors:
+      - Hugh Garavan
+      - Bader Chaarani
+      - Sage Hahn
+      - Nicholas Allgaier
+      - Anthony Juliano
+      - DeKang Yuan
+      - Catherine Orr
+      - Richard Watts
+      - Tor Wager
+      - Octavio Ruiz de Leon
+      - Don Hagler
+      - Alexandra Potter
+      year: 2022
+      month: 10
+      venue: Developmental Cognitive Neuroscience
+      volumeissue: 57:101144
+      image_path: "/assets/images/figures/GaCh22.jpg"
+      links:
+        - text: PubMed
+          url: "https://pubmed.ncbi.nlm.nih.gov/35987133/"
     - title: "Bayesian causal network modeling suggests adolescent cannabis use accelerates prefrontal cortical thinning"
       authors:
       - Max Owens
@@ -180,7 +256,38 @@ categories:
       links:
         - text: APA PsycNet
           url: "https://psycnet.apa.org/record/2022-13146-001"
-     
+    - title: "Prenatal cannabis exposure predicts attention problems, without changes on fMRI in adolescents "
+      authors:
+      - Leigh-Anne Cioffredi
+      - Hillary Anderson
+      - Hannah Loso
+      - James East
+      - Philip Nguyen
+      - Hugh Garavan
+      - Alexandra Potter
+      year: 2022
+      month: 05
+      venue: Neuotoxicology and Teratology
+      volumeissue: 91:107089
+      image_path: "/assets/images/figures/CiAn22.jpg"
+      links:
+        - text: ScienceDirect
+          url: "https://www.sciencedirect.com/science/article/abs/pii/S0892036222000277?via%3Dihub"
+    - title: "White matter microstructure differences in individuals with dependence on cocaine, methamphetamine, and nicotine: Findings from the ENIGMA-Addiction working group "
+      authors:
+      - Jonatan Ottino González
+      - Anne Uhlmann
+      - Sage Hahn
+      - ...
+      - Hugh Garavan
+      year: 2022
+      month: 01
+      venue: Drug and Alcohol Dependence
+      volumeissue: 230:109185
+      image_path: "/assets/images/figures/GoUh22.jpg"
+      links:
+        - text: ScienceDirect
+          url: "https://www.sciencedirect.com/science/article/abs/pii/S0376871621006803?via%3Dihub"
     - title: "Brain structural covariance network differences in adults with alcohol 
               dependence and heavy drinking adolescents"
       authors:
@@ -213,14 +320,32 @@ categories:
       links:
         - text: JAMA Network
           url: "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2781289"
+    - title: "Characterizing reward system neural trajectories from adolescence to young adulthood "
+      authors:
+      - Zhipeng Cao
+      - Jonatan Ottino González
+      - Renata Cupertino
+      - ...
+      - Hugh Garavan
+      - IMAGEN Consortium
+      year: 2021
+      month: 12
+      venue: Developmental Cognitive Neuroscience
+      volumeissue: 52:101042
+      image_path: "/assets/images/figures/CaGo21.jpg"
+      links:
+        - text: ScienceDirect
+          url: "https://www.sciencedirect.com/science/article/pii/S1878929321001316?via%3Dihub#fig0025"
+
     # - title: ""
       #   authors:
       #   - 
 
       #   year:
+      #   month:
       #   venue: 
       #   volumeissue: 
-      #   image_path: "assets/images/figures/"
+      #   image_path: "/assets/images/figures/"
       #   links:
       #     - text:
       #       url:

@@ -108,7 +108,7 @@ author:
   avatar           : "assets/images/tower.jpg"
   bio              :  <a href="https://www.uvm.edu/"><strong>University of Vermont</strong></a>
   location         : "Burlington, VT"
-  email            :
+  email            : nervelab@uvm.edu
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
