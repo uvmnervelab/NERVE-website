@@ -32,10 +32,10 @@ th {
 
 td {
   padding: 1em;
+  min-width: 150px;
   // border-bottom: 1px solid mix(#000, $border-color, 25%);
 }
 
-tr,
 td,
 th {
   vertical-align: middle;

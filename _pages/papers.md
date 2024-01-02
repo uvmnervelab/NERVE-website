@@ -12,10 +12,21 @@ permalink: /papers/
   {% for paper in category.pubs %}
     <table>
       <td style="width:20%">
-        <img src=
-            "{{ paper.image_path }}"
-            width="200" height="200"
-        > 
+      {% if paper.links %}
+        {% for link in paper.links limit:1 %}
+        <a href="{{link.url}}">
+          <img src=
+              "{{ paper.image_path }}"
+              width="200" height="200"
+          >
+        </a>
+        {% endfor %} 
+      {% else %}
+          <img src=
+              "{{ paper.image_path }}"
+              width="200" height="200"
+          >
+      {% endif %}
       </td>
       <td>
         <li><strong>{{paper.title}}</strong>.
