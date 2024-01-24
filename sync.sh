@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
-jekyll build
+bundle exec jekyll build
 rsync -avz ./_site/ w3:www-root
