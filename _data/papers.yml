@@ -1,6 +1,27 @@
 categories:
   - heading: "Published"
     pubs:
+    - title: "Associations Between Family History of Alcohol and/or Substance Use Problems and Frontal Cortical Development From 9 to 13 Years of Age: A Longitudinal Analysis of the ABCD Study"
+      authors:
+      - Priscila Dib Gonçalves
+      - Silvia S. Martins
+      - Nioud Mulugeta Gebru
+      - Stacy R. Ryan-Pettes
+      - Nicholas Allgaier
+      - Alexandra Potter
+      - Wesley K. Thompson
+      - Micah E. Johnson
+      - Hugh Garavan
+      - Ardesheer Talati
+      - Matthew D. Albaugh
+      year: 2024
+      month: 01
+      venue: Biological Psychiatry Global Open Science
+      volumeissue: 4(2)
+      image_path: "/assets/images/figures/GoMa24.jpg"
+      links:
+        - text: ScienceDirect
+          url: "https://www.sciencedirect.com/science/article/pii/S2667174323001623"
     - title: "Brain structural covariance network features are robust markers of early heavy alcohol use "
       authors:
       - Jonatan Ottino González
