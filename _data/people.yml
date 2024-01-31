@@ -1,7 +1,7 @@
 people:
   - name: Hugh Garavan
     url: https://www.uvm.edu/cas/psychology/profiles/hugh-garavan
-    image_path: "/assets/images/people/hugh.jpg"
+    image_path: "/assets/images/people/hugh.webp"
     title: Principal Investigator
     subject: Professor
   - name: Alexi Potter
@@ -23,7 +23,7 @@ people:
     title: Assistant Professor
   - name: Anthony Juliano
     url: #
-    image_path: https://placehold.co/200
+    image_path: "/assets/images/people/anthony.webp"
     title: Postdoctoral Researcher
   - name: Tony Barrows
     url: https://www.linkedin.com/in/ajbarrows/
@@ -75,5 +75,11 @@ alumni:
   - name: Shana Adise
     now: Children's Hospital Los Angeles
     url: https://www.linkedin.com/in/shana-a-1a693214/
-  
+  - name: Jonatan Ottino González
+    now: Children's Hospital Los Angeles
+    url: https://www.linkedin.com/in/jonatanottino/
+  - name: Max Owens
+    now: Endotronix
+    url: https://www.linkedin.com/in/max-owens-265b9b82/
+
   
