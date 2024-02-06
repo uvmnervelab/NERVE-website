@@ -31,15 +31,15 @@ permalink: /papers/
       <td>
         <li><strong>{{paper.title}}</strong>.
         <br>
-        {% for author in paper.authors %}
+        {% for auth in paper.author %}
           {% if forloop.last %}
-            {{author}}.
+            {{auth}}.
         {% else %}
-            {{author}},
+            {{auth}},
         {% endif %}
         {% endfor %}
         <br>
-        <em>{{paper.venue}}</em>, 
+        <em>{{paper.journal}}</em>, 
         {% if paper.volumeissue %}
           {{paper.volumeissue}},
         {% endif %}
