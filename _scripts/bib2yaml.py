@@ -1,0 +1,100 @@
+#!/usr/bin/env python3
+
+import argparse
+import os
+import yaml
+import bibtexparser
+from pylatexenc.latex2text import LatexNodes2Text
+
+def load_bibtex(file:str) -> dict:
+    '''Parse .bib file to a Python dictionary. Currently
+    only supports one BibTeX entry.'''
+
+    # abbreviates a method to convert LaTeX to unicode text
+    lt = LatexNodes2Text()
+
+    # returns a bibtexparser.bibdatabase.BibDatabase item
+    db = bibtexparser.loads(file)
+
+    # returns a list of dictionaries (could support multiple bib entries)
+    for entry in db.entries:
+        for k, v in entry.items():
+            entry[k] = lt.latex_to_text(v)
+    
+    return entry
+
+def filter_keys(entry: dict):
+
+    # move to YAML eventually
+    keys_to_keep = [
+        'title',
+        'author',
+        'year',
+        'month',
+        'journal',
+        'url',
+        'volume',
+        'number'
+    ]
+
+    sub = {}
+    for k in keys_to_keep:
+        try:
+            sub[k] = entry[k]
+        except KeyError:
+            print(f'No entry for {k}.')
+
+    return sub
+
+def convert_values(entry: dict) -> list:
+
+    if 'author' in entry.keys():
+        entry['author'] = entry['author'].split(' and ')
+    
+    for k in entry:
+        try:
+            entry[k] = int(entry[k])
+        except (TypeError, ValueError):
+            continue
+    
+    return entry
+
+def merge_with_papers(entry, file):
+
+    # load papers.yml
+    with open(file, "r") as stream:
+        try:
+            papers = yaml.safe_load(stream)
+        except yaml.YAMLError as exc:
+            print(exc)
+            return
+    
+    # add new entry to the top of the papers list
+    papers['categories'][0]['pubs'].insert(0, entry)
+
+    # write back to papers.yml
+    with open(file, 'w') as f:
+        yaml.dump(papers, f, allow_unicode=True, sort_keys=False)
+
+
+def main():
+
+    parser = argparse.ArgumentParser(description="Convert a BibTeX citation a YAML entry, and insert that entry.")
+    parser.add_argument("url", type=str, help="The URL to fetch DOIs from.")
+    parser.add_argument("--papers", required=False, type=str, help="papers.yml file", default='../_data/papers.yml')
+    args = parser.parse_args()
+
+    # url2bib is invoked at the terminal, it seems
+    call_str = 'url2bib ' + args.url
+    bib = os.popen(call_str).read()
+    
+    entry = load_bibtex(bib)
+    sub = filter_keys(entry)
+    sub = convert_values(sub)
+
+    merge_with_papers(sub, args.papers)
+
+
+
+if __name__ == "__main__":
+    main()
