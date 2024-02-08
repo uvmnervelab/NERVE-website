@@ -59,6 +59,31 @@ def convert_values(entry: dict) -> list:
     
     return entry
 
+def get_key_abbrev(entry: dict):
+    
+    try:
+        auth1 = entry['author'][0][0:2]
+        auth2 = entry['author'][1][0:2]
+        year_str = str(entry['year'])[-2:]
+
+        return auth1 + auth2 + year_str
+    
+    except:
+        print("Something went wrong with key abbreviation.")
+
+    
+def add_image(entry: dict) -> dict:
+
+    # placeholder, for now
+    try:
+        key = get_key_abbrev(entry)
+        fname = '/assets/images/figures/' + key + '.jpg'
+        entry['image_path'] = fname
+
+        return entry
+    except:
+        print("Something went wrong adding the image.")
+
 def merge_with_papers(entry, file):
 
     # load papers.yml
@@ -85,12 +110,13 @@ def main():
     args = parser.parse_args()
 
     # url2bib is invoked at the terminal, it seems
-    call_str = 'url2bib ' + args.url
+    call_str = 'url2bib ' + str(args.url)
     bib = os.popen(call_str).read()
     
     entry = load_bibtex(bib)
     sub = filter_keys(entry)
     sub = convert_values(sub)
+    sub = add_image(sub)
 
     merge_with_papers(sub, args.papers)
 

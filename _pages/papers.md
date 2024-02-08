@@ -40,15 +40,13 @@ permalink: /papers/
         {% endfor %}
         <br>
         <em>{{paper.journal}}</em>, 
-        {% if paper.volumeissue %}
-          {{paper.volumeissue}},
+        {% if paper.volume and paper.number%}
+          {{paper.volume}}({{paper.number}}),
         {% endif %}
         ({{paper.year}}).
-        {% if paper.links %}
+        {% if paper.url %}
         <br>
-          {% for link in paper.links %}
-            [<a href="{{link.url}}">{{link.text}}</a>] 
-          {% endfor %}
+          [<a href="{{paper.url}}">{{paper.url}}</a>] 
         {% endif %}
         </li>
       </td>
