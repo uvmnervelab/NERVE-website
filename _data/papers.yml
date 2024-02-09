@@ -1,11 +1,578 @@
 categories:
 - heading: Published
   pubs:
+  - title: Characterizing reward system neural trajectories from adolescence to young
+      adulthood
+    author:
+    - Zhipeng Cao
+    - Jonatan Ottino-Gonzalez
+    - Renata B. Cupertino
+    - Anthony Juliano
+    - Bader Chaarani
+    - Tobias Banaschewski
+    - Arun L.W. Bokde
+    - Erin Burke Quinlan
+    - Sylvane Desrivières
+    - Herta Flor
+    - Antoine Grigis
+    - Penny Gowland
+    - Andreas Heinz
+    - Rüdiger Brühl
+    - Jean-Luc Martinot
+    - Marie-Laure Paillère Martinot
+    - Eric Artiges
+    - Frauke Nees
+    - Dimitri Papadopoulos Orfanos
+    - Tomáš Paus
+    - Luise Poustka
+    - Sarah Hohmann
+    - Sabina Millenet
+    - Juliane H. Fröhner
+    - Lauren Robinson
+    - Michael N. Smolka
+    - Henrik Walter
+    - Jeanne Winterer
+    - Gunter Schumann
+    - Robert Whelan
+    - Scott Mackey
+    - Hugh Garavan
+    year: 2021
+    journal: Developmental Cognitive Neuroscience
+    url: https://www.sciencedirect.com/science/article/pii/S1878929321001316
+    volume: 52
+    image_path: /assets/images/figures/ZhJo21.jpg
+  - title: Association of Cannabis Use During Adolescence With Neurodevelopment
+    author:
+    - Albaugh, Matthew D.
+    - Ottino-Gonzalez, Jonatan
+    - Sidwell, Amanda
+    - Lepage, Claude
+    - Juliano, Anthony
+    - Owens, Max M.
+    - Chaarani, Bader
+    - Spechler, Philip
+    - Fontaine, Nicholas
+    - Rioux, Pierre
+    - Lewis, Lindsay
+    - Jeon, Seun
+    - Evans, Alan
+    - D’Souza, Deepak
+    - Radhakrishnan, Rajiv
+    - Banaschewski, Tobias
+    - Bokde, Arun L. W.
+    - Quinlan, Erin Burke
+    - Conrod, Patricia
+    - Desrivières, Sylvane
+    - Flor, Herta
+    - Grigis, Antoine
+    - Gowland, Penny
+    - Heinz, Andreas
+    - Ittermann, Bernd
+    - Martinot, Jean-Luc
+    - Paillère Martinot, Marie-Laure
+    - Nees, Frauke
+    - Papadopoulos Orfanos, Dimitri
+    - Paus, Tomáš
+    - Poustka, Luise
+    - Millenet, Sabina
+    - Fröhner, Juliane H.
+    - Smolka, Michael N.
+    - Walter, Henrik
+    - Whelan, Robert
+    - Schumann, Gunter
+    - Potter, Alexandra
+    - Garavan, Hugh
+    year: 2021
+    month: September
+    journal: JAMA Psychiatry
+    url: http://dx.doi.org/10.1001/jamapsychiatry.2021.1258
+    volume: 78
+    number: 9
+    image_path: /assets/images/figures/AlOt21.jpg
+  - title: Brain structural covariance network differences in adults with alcohol
+      dependence and heavy-drinking adolescents
+    author:
+    - Ottino-González, Jonatan
+    - Garavan, Hugh
+    - ' The ENIGMA-Addiction'
+    - 'IMAGEN consortiums '
+    year: 2022
+    journal: Addiction
+    url: https://onlinelibrary.wiley.com/doi/abs/10.1111/add.15772
+    volume: 117
+    number: 5
+    image_path: /assets/images/figures/OtGa22.jpg
+  - title: 'White matter microstructure differences in individuals with dependence
+      on cocaine, methamphetamine, and nicotine: Findings from the ENIGMA-Addiction
+      working group'
+    author:
+    - Jonatan Ottino-González
+    - Anne Uhlmann
+    - Sage Hahn
+    - Zhipeng Cao
+    - Renata B. Cupertino
+    - Nathan Schwab
+    - Nicholas Allgaier
+    - Nelly Alia-Klein
+    - Hamed Ekhtiari
+    - Jean-Paul Fouche
+    - Rita Z. Goldstein
+    - Chiang-Shan R. Li
+    - Christine Lochner
+    - Edythe D. London
+    - Maartje Luijten
+    - Sadegh Masjoodi
+    - Reza Momenan
+    - Mohammad Ali Oghabian
+    - Annerine Roos
+    - Dan J. Stein
+    - Elliot A. Stein
+    - Dick J. Veltman
+    - Antonio Verdejo-García
+    - Sheng Zhang
+    - Min Zhao
+    - Na Zhong
+    - Neda Jahanshad
+    - Paul M. Thompson
+    - Patricia Conrod
+    - Scott Mackey
+    - Hugh Garavan
+    year: 2022
+    journal: Drug and Alcohol Dependence
+    url: https://www.sciencedirect.com/science/article/pii/S0376871621006803
+    volume: 230
+    image_path: /assets/images/figures/JoAn22.jpg
+  - title: Prenatal cannabis exposure predicts attention problems, without changes
+      on fMRI in adolescents
+    author:
+    - Leigh-Anne Cioffredi
+    - Hillary Anderson
+    - Hannah Loso
+    - James East
+    - Philip Nguyen
+    - Hugh Garavan
+    - Alexandra Potter
+    year: 2022
+    journal: Neurotoxicology and Teratology
+    url: https://www.sciencedirect.com/science/article/pii/S0892036222000277
+    volume: 91
+    image_path: /assets/images/figures/LeHi22.jpg
+  - title: One-Year Predictions of Delayed Reward Discounting in the Adolescent Brain
+      Cognitive Development Study.
+    author:
+    - Owens, Max M.
+    - Hahn, Sage
+    - Allgaier, Nicholas
+    - MacKillop, James
+    - Albaugh, Matthew
+    - Yuan, Dekang
+    - Juliano, Anthony
+    - Potter, Alexandra
+    - Garavan, Hugh
+    year: 2022
+    month: December
+    journal: Experimental and Clinical Psychopharmacology
+    volume: 30
+    number: 6
+    image_path: /assets/images/figures/OwHa22.jpg
+  - title: Bayesian causal network modeling suggests adolescent cannabis use accelerates
+      prefrontal cortical thinning
+    author:
+    - Owens, Max M.
+    - Albaugh, Matthew D.
+    - Allgaier, Nicholas
+    - Yuan, Dekang
+    - Robert, Gabriel
+    - Cupertino, Renata B.
+    - Spechler, Philip A.
+    - Juliano, Anthony
+    - Hahn, Sage
+    - Banaschewski, Tobias
+    - Bokde, Arun L. W.
+    - Desrivières, Sylvane
+    - Flor, Herta
+    - Grigis, Antoine
+    - Gowland, Penny
+    - Heinz, Andreas
+    - Brühl, Rüdiger
+    - Martinot, Jean-Luc
+    - Martinot, Marie-Laure Paillère
+    - Artiges, Eric
+    - Nees, Frauke
+    - Orfanos, Dimitri Papadopoulos
+    - Lemaitre, Herve
+    - Paus, Tomáš
+    - Poustka, Luise
+    - Millenet, Sabina
+    - Fröhner, Juliane H.
+    - Smolka, Michael N.
+    - Walter, Henrik
+    - Whelan, Robert
+    - Mackey, Scott
+    - Schumann, Gunter
+    - Garavan, Hugh
+    - Banaschewski, Tobias
+    - Barker, Gareth J.
+    - Bokde, Arun L. W.
+    - Desrivières, Sylvane
+    - Flor, Herta
+    - Grigis, Antoine
+    - Garavan, Hugh
+    - Gowland, Penny
+    - Heinz, Andreas
+    - Brühl, Rüdiger
+    - Martinot, Jean-Luc
+    - Martinot, Marie-Laure Paillère
+    - Artiges, Eric
+    - Nees, Frauke
+    - Orfanos, Dimitri Papadopoulos
+    - Lemaitre, Herve
+    - Paus, Tomáš
+    - Poustka, Luise
+    - Hohmann, Sarah
+    - Millenet, Sabina
+    - Fröhner, Juliane H.
+    - Smolka, Michael N.
+    - Walter, Henrik
+    - Whelan, Robert
+    - Schumann, Gunter
+    year: 2022
+    month: May
+    journal: Translational Psychiatry
+    url: http://dx.doi.org/10.1038/s41398-022-01956-4
+    volume: 12
+    number: 1
+    image_path: /assets/images/figures/OwAl22.jpg
+  - title: 'The ABCD stop signal data: Response to Bissett et al.'
+    author:
+    - Garavan, H.
+    - Chaarani, B.
+    - Hahn, S.
+    - Allgaier, N.
+    - Juliano, A.
+    - Yuan, D.K.
+    - Orr, C.
+    - Watts, R.
+    - Wager, T.D.
+    - Ruiz de Leon, O.
+    - Hagler, D.J.
+    - Potter, A.
+    year: 2022
+    month: October
+    journal: Developmental Cognitive Neuroscience
+    url: http://dx.doi.org/10.1016/j.dcn.2022.101144
+    volume: 57
+    image_path: /assets/images/figures/GaCh22.jpg
+  - title: Association of Video Gaming With Cognitive Performance Among Children
+    author:
+    - Chaarani, Bader
+    - Ortigara, Joseph
+    - Yuan, DeKang
+    - Loso, Hannah
+    - Potter, Alexandra
+    - Garavan, Hugh P.
+    year: 2022
+    month: October
+    journal: JAMA Network Open
+    url: http://dx.doi.org/10.1001/jamanetworkopen.2022.35721
+    volume: 5
+    number: 10
+    image_path: /assets/images/figures/ChOr22.jpg
+  - title: 'Performance scaling for structural MRI surface parcellations: a machine
+      learning analysis in the ABCD Study'
+    author:
+    - Hahn, Sage
+    - Owens, Max M
+    - Yuan, DeKang
+    - Juliano, Anthony C
+    - Potter, Alexandra
+    - Garavan, Hugh
+    - Allgaier, Nicholas
+    year: 2022
+    month: 3
+    journal: Cerebral Cortex
+    url: https://doi.org/10.1093/cercor/bhac060
+    volume: 33
+    number: 1
+    image_path: /assets/images/figures/HaOw22.jpg
+  - title: 'Association Between Brain Structure and Alcohol Use Behaviors in Adults:
+      A Mendelian Randomization and Multiomics Study'
+    author:
+    - Mavromatis, Lucas A.
+    - Rosoff, Daniel B.
+    - Cupertino, Renata B.
+    - Garavan, Hugh
+    - Mackey, Scott
+    - Lohoff, Falk W.
+    year: 2022
+    month: September
+    journal: JAMA Psychiatry
+    url: http://dx.doi.org/10.1001/jamapsychiatry.2022.2196
+    volume: 79
+    number: 9
+    image_path: /assets/images/figures/MaRo22.jpg
+  - title: Cortical profiles of numerous psychiatric disorders and normal development
+      share a common pattern
+    author:
+    - Cao, Zhipeng
+    - Cupertino, Renata B.
+    - Ottino-Gonzalez, Jonatan
+    - Murphy, Alistair
+    - Pancholi, Devarshi
+    - Juliano, Anthony
+    - Chaarani, Bader
+    - Albaugh, Matthew
+    - Yuan, Dekang
+    - Schwab, Nathan
+    - Stafford, James
+    - Goudriaan, Anna E.
+    - Hutchison, Kent
+    - Li, Chiang-Shan R.
+    - Luijten, Maartje
+    - Groefsema, Martine
+    - Momenan, Reza
+    - Schmaal, Lianne
+    - Sinha, Rajita
+    - van Holst, Ruth J.
+    - Veltman, Dick J.
+    - Wiers, Reinout W.
+    - Porjesz, Bernice
+    - Lett, Tristram
+    - Banaschewski, Tobias
+    - Bokde, Arun L. W.
+    - Desrivières, Sylvane
+    - Flor, Herta
+    - Grigis, Antoine
+    - Gowland, Penny
+    - Heinz, Andreas
+    - Brühl, Rüdiger
+    - Martinot, Jean-Luc
+    - Martinot, Marie-Laure Paillère
+    - Artiges, Eric
+    - Nees, Frauke
+    - Orfanos, Dimitri Papadopoulos
+    - Paus, Tomáš
+    - Poustka, Luise
+    - Hohmann, Sarah
+    - Millenet, Sabina
+    - Fröhner, Juliane H.
+    - Robinson, Lauren
+    - Smolka, Michael N.
+    - Walter, Henrik
+    - Winterer, Jeanne
+    - Schumann, Gunter
+    - Whelan, Robert
+    - Bhatt, Ravi R.
+    - Zhu, Alyssa
+    - Conrod, Patricia
+    - Jahanshad, Neda
+    - Thompson, Paul M.
+    - Mackey, Scott
+    - Garavan, Hugh
+    year: 2022
+    month: November
+    journal: Molecular Psychiatry
+    url: http://dx.doi.org/10.1038/s41380-022-01855-6
+    volume: 28
+    number: 2
+    image_path: /assets/images/figures/CaCu22.jpg
+  - title: Machine learning approaches linking brain function to behavior in the ABCD
+      STOP task
+    author:
+    - Yuan, Dekang
+    - Hahn, Sage
+    - Allgaier, Nicholas
+    - Owens, Max M.
+    - Chaarani, Bader
+    - Potter, Alexandra
+    - Garavan, Hugh
+    year: 2023
+    journal: Human Brain Mapping
+    url: https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.26172
+    volume: 44
+    number: 4
+    image_path: /assets/images/figures/YuHa23.jpg
+  - title: Gender diversity associated with patterns of brain activation seen in populations
+      that experience childhood stress
+    author:
+    - Loso, Hannah
+    - Chaarani, Bader
+    - Dube, Sarahjane Locke
+    - Albaugh, Matthew D.
+    - Cheaito, Aya
+    - Garavan, Hugh
+    - Potter, Alexandra
+    year: 2023
+    month: March
+    journal: Frontiers in Integrative Neuroscience
+    url: http://dx.doi.org/10.3389/fnint.2023.1084748
+    volume: 17
+    image_path: /assets/images/figures/LoCh23.jpg
+  - title: Conduct problems are associated with accelerated thinning of emotion-related
+      cortical regions in a community-based sample of adolescents
+    author:
+    - Matthew D. Albaugh
+    - James. J. Hudziak
+    - Philip A. Spechler
+    - Bader Chaarani
+    - Claude Lepage
+    - Seun Jeon
+    - Pierre Rioux
+    - Alan C. Evans
+    - Tobias Banaschewski
+    - Arun L.W. Bokde
+    - Sylvane Desrivières
+    - Herta Flor
+    - Penny Gowland
+    - Andreas Heinz
+    - Bernd Ittermann
+    - Jean-Luc Martinot
+    - Marie-Laure Paillère Martinot
+    - Frauke Nees
+    - Dimitri Papadopoulos Orfanos
+    - Luise Poustka
+    - Sabina Millenet
+    - Juliane H. Fröhner
+    - Michael N. Smolka
+    - Henrik Walter
+    - Robert Whelan
+    - Gunter Schumann
+    - Alexandra S. Potter
+    - Hugh Garavan
+    year: 2023
+    journal: 'Psychiatry Research: Neuroimaging'
+    url: https://www.sciencedirect.com/science/article/pii/S0925492723000240
+    volume: 330
+    image_path: /assets/images/figures/MaJa23.jpg
+  - title: Task fMRI paradigms may capture more behaviorally relevant information
+      than resting-state functional connectivity
+    author:
+    - Weiqi Zhao
+    - Carolina Makowski
+    - Donald J. Hagler
+    - Hugh P. Garavan
+    - Wesley K. Thompson
+    - Deanna J. Greene
+    - Terry L. Jernigan
+    - Anders M. Dale
+    year: 2023
+    journal: NeuroImage
+    url: https://www.sciencedirect.com/science/article/pii/S1053811923000939
+    volume: 270
+    image_path: /assets/images/figures/WeCa23.jpg
+  - title: Associations Between Gender Nonconformity, School Environments, Family
+      Conflict, and Emotional and Behavioral Health Among Children Ages 10–11
+    author:
+    - Hannah M. Loso
+    - Sarahjane Locke Dube
+    - Bader Chaarani
+    - Masha Ivanova
+    - Hugh Garavan
+    - Michelle M. Johns
+    - Alexandra S. Potter
+    year: 2023
+    journal: Journal of Adolescent Health
+    url: https://www.sciencedirect.com/science/article/pii/S1054139X23001039
+    volume: 72
+    number: 6
+    image_path: /assets/images/figures/HaSa23.jpg
+  - title: 'Effects of parental mental health and family environment on impulsivity
+      in preadolescents: a longitudinal ABCD studyÂ®'
+    author:
+    - Gebru, Nioud Mulugeta
+    - Goncalves, Priscila Dib
+    - Cruz, Rick A.
+    - Thompson, Wesley K.
+    - Allegair, Nicholas
+    - Potter, Alexandra
+    - Garavan, Hugh
+    - Dumas, Julie
+    - Leeman, Robert F.
+    - Johnson, Micah
+    year: 2023
+    month: October
+    journal: Frontiers in Behavioral Neuroscience
+    url: http://dx.doi.org/10.3389/fnbeh.2023.1213894
+    volume: 17
+    image_path: /assets/images/figures/GeGo23.jpg
+  - title: Differential associations of adolescent versus young adult cannabis initiation
+      with longitudinal brain change and behavior
+    author:
+    - Albaugh, Matthew D.
+    - Owens, Max M.
+    - Juliano, Anthony
+    - Ottino-Gonzalez, Jonatan
+    - Cupertino, Renata
+    - Cao, Zhipeng
+    - Mackey, Scott
+    - Lepage, Claude
+    - Rioux, Pierre
+    - Evans, Alan
+    - Banaschewski, Tobias
+    - Bokde, Arun L. W.
+    - Conrod, Patricia
+    - Desrivières, Sylvane
+    - Flor, Herta
+    - Grigis, Antoine
+    - Gowland, Penny
+    - Heinz, Andreas
+    - Ittermann, Bernd
+    - Martinot, Jean-Luc
+    - Martinot, Marie-Laure Paillère
+    - Artiges, Eric
+    - Nees, Frauke
+    - Orfanos, Dimitri Papadopoulos
+    - Paus, Tomáš
+    - Poustka, Luise
+    - Millenet, Sabina
+    - Fröhner, Juliane H.
+    - Smolka, Michael N.
+    - Walter, Henrik
+    - Whelan, Robert
+    - Schumann, Gunter
+    - Potter, Alexandra
+    - Garavan, Hugh
+    year: 2023
+    month: June
+    journal: Molecular Psychiatry
+    url: http://dx.doi.org/10.1038/s41380-023-02148-2
+    image_path: /assets/images/figures/AlOw23.jpg
+  - title: Brain structural covariance network features are robust markers of early
+      heavy alcohol use
+    author:
+    - Ottino-González, Jonatan
+    - Cupertino, Renata B.
+    - Cao, Zhipeng
+    - Hahn, Sage
+    - Pancholi, Devarshi
+    - Albaugh, Matthew D.
+    - Brumback, Ty
+    - Baker, Fiona C.
+    - Brown, Sandra A.
+    - Clark, Duncan B.
+    - de Zambotti, Massimiliano
+    - Goldston, David B.
+    - Luna, Beatriz
+    - Nagel, Bonnie J.
+    - Nooner, Kate B.
+    - Pohl, Kilian M.
+    - Tapert, Susan F.
+    - Thompson, Wesley K.
+    - Jernigan, Terry L.
+    - Conrod, Patricia
+    - Mackey, Scott
+    - Garavan, Hugh
+    year: 2024
+    journal: Addiction
+    url: https://onlinelibrary.wiley.com/doi/abs/10.1111/add.16330
+    volume: 119
+    number: 1
+    image_path: /assets/images/figures/OtCu24.jpg
   - title: 'Associations Between Family History of Alcohol and/or Substance Use Problems
       and Frontal Cortical Development From 9 to 13 Years of Age: A Longitudinal Analysis
       of the ABCD Study'
     author:
-    - Gon√ßalves, Priscila Dib
+    - Gonçalves, Priscila Dib
     - Martins, Silvia S.
     - Gebru, Nioud Mulugeta
     - Ryan-Pettes, Stacy R.

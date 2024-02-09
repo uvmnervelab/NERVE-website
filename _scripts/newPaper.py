@@ -6,7 +6,7 @@ import yaml
 import bibtexparser
 from pylatexenc.latex2text import LatexNodes2Text
 
-def load_bibtex(file:str) -> dict:
+def load_bibtex(file:str, bibfile=False) -> dict:
     '''Parse .bib file to a Python dictionary. Currently
     only supports one BibTeX entry.'''
 
@@ -14,7 +14,11 @@ def load_bibtex(file:str) -> dict:
     lt = LatexNodes2Text()
 
     # returns a bibtexparser.bibdatabase.BibDatabase item
-    db = bibtexparser.loads(file)
+    if bibfile:
+        with open(file, 'r') as f:
+            db = bibtexparser.load(f)
+    else:
+        db = bibtexparser.loads(file)
 
     # returns a list of dictionaries (could support multiple bib entries)
     for entry in db.entries:
@@ -93,7 +97,6 @@ def merge_with_papers(entry, file):
         except yaml.YAMLError as exc:
             print(exc)
             return
-    
     # add new entry to the top of the papers list
     papers['categories'][0]['pubs'].insert(0, entry)
 
@@ -101,24 +104,45 @@ def merge_with_papers(entry, file):
     with open(file, 'w') as f:
         yaml.dump(papers, f, allow_unicode=True, sort_keys=False)
 
+def invoke_url2bib(url: str):
+    # url2bib is invoked at the terminal, it seems
+
+    call_str = 'url2bib ' + str(url)
+    bib = os.popen(call_str).read()
+
+    return bib
+
+
 
 def main():
 
     parser = argparse.ArgumentParser(description="Convert a BibTeX citation a YAML entry, and insert that entry.")
-    parser.add_argument("url", type=str, help="The URL to fetch DOIs from.")
+    parser.add_argument("url", type=str, help="The URL to fetch DOIs from, or filepath to BibTeX entry.")
     parser.add_argument("--papers", required=False, type=str, help="papers.yml file", default='../_data/papers.yml')
     args = parser.parse_args()
 
-    # url2bib is invoked at the terminal, it seems
-    call_str = 'url2bib ' + str(args.url)
-    bib = os.popen(call_str).read()
+    url = args.url
     
-    entry = load_bibtex(bib)
+    if '.bib' in url:
+        print('Loading from .bib')
+        entry = load_bibtex(url, bibfile=True)
+    else:
+        print('Loading from URL')
+        bib = invoke_url2bib(url)
+        try:
+            entry = load_bibtex(bib)
+        except UnboundLocalError:
+            print("No BibTeX citation found.")
+            return 
+
     sub = filter_keys(entry)
     sub = convert_values(sub)
     sub = add_image(sub)
 
+    print(sub)
+
     merge_with_papers(sub, args.papers)
+    print('Entry added.')
 
 
 
