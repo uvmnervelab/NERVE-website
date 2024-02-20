@@ -1,6 +1,74 @@
 categories:
 - heading: Published
   pubs:
+  - title: 'Associations Between Family History of Alcohol and/or Substance Use Problems
+      and Frontal Cortical Development From 9 to 13 Years of Age: A Longitudinal Analysis
+      of the ABCD Study'
+    author:
+    - Gonçalves, Priscila Dib
+    - Martins, Silvia S.
+    - Gebru, Nioud Mulugeta
+    - Ryan-Pettes, Stacy R.
+    - Allgaier, Nicholas
+    - Potter, Alexandra
+    - Thompson, Wesley K.
+    - Johnson, Micah E.
+    - Garavan, Hugh
+    - Talati, Ardesheer
+    - Albaugh, Matthew D.
+    year: 2024
+    month: March
+    journal: Biological Psychiatry Global Open Science
+    url: http://dx.doi.org/10.1016/j.bpsgos.2023.100284
+    volume: 4
+    number: 2
+    image_path: /assets/images/figures/GoMa24.jpg
+  - title: Recalibrating single-study effect sizes using hierarchical Bayesian models
+    author:
+    - Cao, Zhipeng
+    - McCabe, Matthew
+    - Callas, Peter
+    - Cupertino, Renata B.
+    - Ottino-González, Jonatan
+    - Murphy, Alistair
+    - Pancholi, Devarshi
+    - Schwab, Nathan
+    - Catherine, Orr
+    - Hutchison, Kent
+    - Cousijn, Janna
+    - Dagher, Alain
+    - Foxe, John J.
+    - Goudriaan, Anna E.
+    - Hester, Robert
+    - Li, Chiang-Shan R.
+    - Thompson, Wesley K.
+    - Morales, Angelica M.
+    - London, Edythe D.
+    - Lorenzetti, Valentina
+    - Luijten, Maartje
+    - Martin-Santos, Rocio
+    - Momenan, Reza
+    - Paulus, Martin P.
+    - Schmaal, Lianne
+    - Sinha, Rajita
+    - Solowij, Nadia
+    - Stein, Dan J.
+    - Stein, Elliot A.
+    - Uhlmann, Anne
+    - van Holst, Ruth J.
+    - Veltman, Dick J.
+    - Wiers, Reinout W.
+    - Yücel, Murat
+    - Zhang, Sheng
+    - Conrod, Patricia
+    - Mackey, Scott
+    - Garavan, Hugh
+    year: 2023
+    month: December
+    journal: Frontiers in Neuroimaging
+    url: http://dx.doi.org/10.3389/fnimg.2023.1138193
+    volume: 2
+    image_path: /assets/images/figures/CaMc23.jpg
   - title: Characterizing reward system neural trajectories from adolescence to young
       adulthood
     author:
@@ -568,25 +636,3 @@ categories:
     volume: 119
     number: 1
     image_path: /assets/images/figures/OtCu24.jpg
-  - title: 'Associations Between Family History of Alcohol and/or Substance Use Problems
-      and Frontal Cortical Development From 9 to 13 Years of Age: A Longitudinal Analysis
-      of the ABCD Study'
-    author:
-    - Gonçalves, Priscila Dib
-    - Martins, Silvia S.
-    - Gebru, Nioud Mulugeta
-    - Ryan-Pettes, Stacy R.
-    - Allgaier, Nicholas
-    - Potter, Alexandra
-    - Thompson, Wesley K.
-    - Johnson, Micah E.
-    - Garavan, Hugh
-    - Talati, Ardesheer
-    - Albaugh, Matthew D.
-    year: 2024
-    month: March
-    journal: Biological Psychiatry Global Open Science
-    url: http://dx.doi.org/10.1016/j.bpsgos.2023.100284
-    volume: 4
-    number: 2
-    image_path: /assets/images/figures/GoMa24.jpg
