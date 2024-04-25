@@ -1,6 +1,25 @@
 categories:
 - heading: Published
   pubs:
+  - title: 'Unraveling the molecular relevance of brain phenotypes: A comparative
+      analysis of null models and test statistics'
+    author:
+    - Zhipeng Cao
+    - Guilai Zhan
+    - Jinmei Qin
+    - Renata B. Cupertino
+    - Jonatan Ottino-Gonzalez
+    - Alistair Murphy
+    - Devarshi Pancholi
+    - Sage Hahn
+    - Dekang Yuan
+    - Peter Callas
+    - Scott Mackey
+    - Hugh Garavan
+    year: 2024
+    journal: NeuroImage
+    url: https://www.sciencedirect.com/science/article/pii/S1053811924001174
+    image_path: /assets/images/figures/ZhGu24.jpg
   - title: 'Parameter Space and Potential for Biomarker Development in 25 Years of
       fMRI Drug Cue Reactivity: A Systematic Review'
     author:

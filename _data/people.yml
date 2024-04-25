@@ -49,14 +49,17 @@ people:
     url: https://www.linkedin.com/in/devarshipancholi/
     image_path: "/assets/images/people/devarshi.jpg"
     title: Data Specialist
-  - name: Emma Pearson
-    url: https://www.linkedin.com/in/eepearson/
-    image_path: "/assets/images/people/emma.jpeg"
+  - name: Shannon O'Connor
+    url: https://www.linkedin.com/in/shannon-delia-o-connor-/
+    image_path: "/assets/images/people/shannon.jpg"
     title: Research Assistant
 
-  
+
 
 alumni:
+  - name: Emma Pearson
+    now: 
+    url: https://www.linkedin.com/in/eepearson/
   - name: Matt McCabe
     now: DeepHealth
     url: https://www.linkedin.com/in/matthewpmccabe/
@@ -81,5 +84,6 @@ alumni:
   - name: Max Owens
     now: Endotronix
     url: https://www.linkedin.com/in/max-owens-265b9b82/
+
 
   
