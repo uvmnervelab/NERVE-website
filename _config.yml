@@ -20,7 +20,7 @@ title                    : #"NERVE Lab"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "NERVE Lab"
-description              : "An amazing website."
+description              : "Website for the Neuroimaging Research Vermont (NERVE) Lab at the University of Vermont."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
