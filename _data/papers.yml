@@ -1,6 +1,81 @@
 categories:
 - heading: Published
   pubs:
+  - title: Neuroanatomical Variability and Substance Use Initiation in Late Childhood
+      and Early Adolescence
+    author:
+    - Miller, Alex P.
+    - Baranger, David A. A.
+    - Paul, Sarah E.
+    - Garavan, Hugh
+    - Mackey, Scott
+    - Tapert, Susan F.
+    - LeBlanc, Kimberly H.
+    - Agrawal, Arpana
+    - Bogdan, Ryan
+    year: 2024
+    month: 12
+    journal: JAMA Network Open
+    url: https://doi.org/10.1001/jamanetworkopen.2024.52027
+    volume: 7
+    number: 12
+    image_path: /assets/images/figures/MiBa24.jpg
+  - title: Brain structural covariance network features are robust markers of early
+      heavy alcohol use
+    author:
+    - Ottino-González, Jonatan
+    - Cupertino, Renata B.
+    - Cao, Zhipeng
+    - Hahn, Sage
+    - Pancholi, Devarshi
+    - Albaugh, Matthew D.
+    - Brumback, Ty
+    - Baker, Fiona C.
+    - Brown, Sandra A.
+    - Clark, Duncan B.
+    - de Zambotti, Massimiliano
+    - Goldston, David B.
+    - Luna, Beatriz
+    - Nagel, Bonnie J.
+    - Nooner, Kate B.
+    - Pohl, Kilian M.
+    - Tapert, Susan F.
+    - Thompson, Wesley K.
+    - Jernigan, Terry L.
+    - Conrod, Patricia
+    - Mackey, Scott
+    - Garavan, Hugh
+    year: 2024
+    journal: Addiction
+    url: https://onlinelibrary.wiley.com/doi/abs/10.1111/add.16330
+    volume: 119
+    number: 1
+    image_path: /assets/images/figures/OtCu24.jpg
+  - title: Amygdala connectivity is associated with withdrawn/depressed behavior in
+      a large sample of children from the Adolescent Brain Cognitive Development (ABCD)
+      Study®
+    author:
+    - Elina Thomas
+    - Anthony Juliano
+    - Max Owens
+    - Renata B. Cupertino
+    - Scott Mackey
+    - Robert Hermosillo
+    - Oscar Miranda-Dominguez
+    - Greg Conan
+    - Moosa Ahmed
+    - Damien A. Fair
+    - Alice M. Graham
+    - Nicholas J. Goode
+    - Uapingena P. Kandjoze
+    - Alexi Potter
+    - Hugh Garavan
+    - Matthew D. Albaugh
+    year: 2024
+    journal: 'Psychiatry Research: Neuroimaging'
+    url: https://www.sciencedirect.com/science/article/pii/S0925492724001008
+    volume: 344
+    image_path: /assets/images/figures/ElAn24.jpg
   - title: 'Unraveling the molecular relevance of brain phenotypes: A comparative
       analysis of null models and test statistics'
     author:
@@ -700,34 +775,3 @@ categories:
     journal: Molecular Psychiatry
     url: http://dx.doi.org/10.1038/s41380-023-02148-2
     image_path: /assets/images/figures/AlOw23.jpg
-  - title: Brain structural covariance network features are robust markers of early
-      heavy alcohol use
-    author:
-    - Ottino-González, Jonatan
-    - Cupertino, Renata B.
-    - Cao, Zhipeng
-    - Hahn, Sage
-    - Pancholi, Devarshi
-    - Albaugh, Matthew D.
-    - Brumback, Ty
-    - Baker, Fiona C.
-    - Brown, Sandra A.
-    - Clark, Duncan B.
-    - de Zambotti, Massimiliano
-    - Goldston, David B.
-    - Luna, Beatriz
-    - Nagel, Bonnie J.
-    - Nooner, Kate B.
-    - Pohl, Kilian M.
-    - Tapert, Susan F.
-    - Thompson, Wesley K.
-    - Jernigan, Terry L.
-    - Conrod, Patricia
-    - Mackey, Scott
-    - Garavan, Hugh
-    year: 2024
-    journal: Addiction
-    url: https://onlinelibrary.wiley.com/doi/abs/10.1111/add.16330
-    volume: 119
-    number: 1
-    image_path: /assets/images/figures/OtCu24.jpg
