@@ -25,6 +25,10 @@ people:
     url: #
     image_path: "/assets/images/people/anthony.webp"
     title: Postdoctoral Researcher
+  - name: McKinney Pitts
+    url:  https://www.linkedin.com/in/mckinney-pitts-341156250/
+    image_path: "/assets/images/people/mckinney.png"
+    title: Postdoctoral Researcher
   - name: Tony Barrows
     url: https://www.linkedin.com/in/ajbarrows/
     image_path: "/assets/images/people/tony.jpeg"
@@ -53,6 +57,19 @@ people:
     url: https://www.linkedin.com/in/shannon-delia-o-connor-/
     image_path: "/assets/images/people/shannon.jpg"
     title: Research Assistant
+  - name: Sahithi Arekatla
+    url: https://www.linkedin.com/in/sahithi-arekatla/
+    image_path: "/assets/images/people/sahithi.jpg"
+    title: Research Assistant
+  - name: Griffin Curtin
+    url: #
+    image_path: "/assets/images/people/griffin.jpg"
+    title: Research Assistant
+  - name: Sarah Niknaum
+    url: #
+    image_path: "/assets/images/people/sarah.jpeg"
+    title: Research Assistant
+  
 
 
 
