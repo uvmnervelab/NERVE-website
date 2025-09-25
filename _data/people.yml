@@ -45,6 +45,11 @@ people:
     aliases:
       - Anthony Barrows
       - Anthony J. Barrows
+  - name: Michèle Day
+    url: https://www.linkedin.com/in/mich%C3%A8le-day-b735591bb/
+    title: Graduate Student
+    subject: Experimental Psychology
+    image_path: "assets/images/people/michele.jpg"
   - name: Annabel Diestel
     url: https://www.linkedin.com/in/annabel-diestel/
     image_path: "/assets/images/people/annabel.jpg"
