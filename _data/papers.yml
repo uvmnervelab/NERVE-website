@@ -1,4 +1,23 @@
 categories:
+- heading: Accepted
+  pubs:
+  - title: 'Investigating links between prenatal cannabis exposure and brain development
+    using MRI techniques: a narrative review'
+    author:
+    - Gonçalves, P. D.
+    - Woodruff, J. O.
+    - Pozzolo Pedro, M. O.
+    - Van Dijk, M.
+    - Bruzelius, E.
+    - Martins, S. S.
+    - Bandoli, G.
+    - Potter, A.
+    - Cioffredi, L. A.
+    - Talati, A.
+    - Albaugh, M. D.
+    year: 2025
+    journal: 'Biological Psychiatry: Global Open Science'
+    image_path: /assets/images/figures/GoWo25.jpg
 - heading: Published
   pubs:
   - title: Impulsivity behaviors and white matter mediate the relationship between
@@ -24,7 +43,7 @@ categories:
     - Nees, Frauke
     - Orfanos, Dimitri Papadopoulos
     - Lemaitre, Herve
-    - Paus, Tomáš
+    - Paus, Tomášsta
     - Poustka, Luise
     - Hohmann, Sarah
     - Fröhner, Juliane H.
