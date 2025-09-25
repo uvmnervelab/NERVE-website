@@ -65,15 +65,14 @@ people:
     url: #
     image_path: "/assets/images/people/griffin.jpg"
     title: Research Assistant
-  - name: Sarah Niknaum
-    url: #
-    image_path: "/assets/images/people/sarah.jpeg"
-    title: Research Assistant
+
   
 
 
 
 alumni:
+  - name: Sarah Niknaum
+    url: #
   - name: Emma Pearson
     now: 
     url: https://www.linkedin.com/in/eepearson/
