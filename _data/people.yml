@@ -25,6 +25,10 @@ people:
     url: #
     image_path: "/assets/images/people/anthony.webp"
     title: Postdoctoral Researcher
+  - name: Hannah Morgan
+    url: https://www.linkedin.com/in/hannah-morgan-ph-d-262683358/
+    image_path: "/assets/images/people/hannah.jpg"
+    title: Postdoctoral Associate
   - name: McKinney Pitts
     url:  https://www.linkedin.com/in/mckinney-pitts-341156250/
     image_path: "/assets/images/people/mckinney.png"
