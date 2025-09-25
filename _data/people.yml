@@ -21,6 +21,10 @@ people:
     url: https://www.linkedin.com/in/baderchaarani/
     image_path: "/assets/images/people/bader.jpg"
     title: Assistant Professor
+  - name: Leigh-Anne Cioffredi
+    url: https://www.uvmhealth.org/providers/leigh-anne-cioffredi-md
+    image_path: "/assets/images/people/leigh-anne.jpg"
+    title: Associate Professor
   - name: Anthony Juliano
     url: #
     image_path: "/assets/images/people/anthony.webp"
