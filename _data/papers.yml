@@ -1,15 +1,6 @@
 categories:
 - heading: Accepted
   pubs:
-  - title: Task and resting state fMRI modelling of brain-behavior relationships in
-      developmental cohorts
-    author:
-    - Lucina Q. Uddin
-    - Hugh Garavan
-    year: 2025
-    journal: Biological Psychiatry
-    url: https://www.sciencedirect.com/science/article/pii/S0006322325014878
-    image_path: /assets/images/figures/LuHu25.jpg
   - title: 'Investigating links between prenatal cannabis exposure and brain development
       using MRI techniques: a narrative review'
     author:
@@ -29,6 +20,14 @@ categories:
     image_path: /assets/images/figures/GoWo25.jpg
 - heading: Published
   pubs:
+  - title: Task and resting state fMRI modelling of brain-behavior relationships in developmental cohorts
+    author:
+      - Lucina Q. Uddin
+      - Hugh Garavan
+    year: 2025
+    journal: Biological Psychiatry
+    url: https://www.sciencedirect.com/science/article/pii/S0006322325014878
+    image_path: /assets/images/figures/LuHu25.jpg
   - title: Impulsivity behaviors and white matter mediate the relationship between
       genetic risk for cannabis use disorder and early cannabis use in adolescents
     author:
