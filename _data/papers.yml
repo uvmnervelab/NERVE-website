@@ -1,6 +1,34 @@
 categories:
-- heading: Accepted
+- heading: Published
   pubs:
+  - title: Connectome-based predictive modeling of concurrent and longitudinal substance
+      use vulnerability in adolescence
+    author:
+    - Guassi Moreira, J. F.
+    - Allgaier, N.
+    - Johnson, M. E.
+    - Potter, A.
+    - Garavan, H.
+    - Fair, D. A.
+    year: 2026
+    journal: Developmental Cognitive Neuroscience
+    volume: 79
+    image_path: /assets/images/figures/GuAl26.jpg
+    url: https://pubmed.ncbi.nlm.nih.gov/41763017/
+  - title: Cognitive Process Models Reveal Meaningful Brain–Behavior Associations
+      in the Adolescent Brain Cognitive Development Study Stop-signal Task
+    author:
+    - Barrows, Anthony
+    - Weigard, Alexander
+    - McCabe, Matthew
+    - Potter, Alexandra
+    - Garavan, Hugh
+    - Allgaier, Nicholas
+    year: 2026
+    month: 2
+    journal: Journal of Cognitive Neuroscience
+    url: https://doi.org/10.1162/JOCN.a.2487
+    image_path: /assets/images/figures/BaWe26.png
   - title: 'Investigating links between prenatal cannabis exposure and brain development
       using MRI techniques: a narrative review'
     author:
@@ -15,15 +43,29 @@ categories:
     - Cioffredi, L. A.
     - Talati, A.
     - Albaugh, M. D.
-    year: 2025
+    year: 2026
     journal: 'Biological Psychiatry: Global Open Science'
+    url: https://www.sciencedirect.com/science/article/pii/S2667174325001788
     image_path: /assets/images/figures/GoWo25.jpg
-- heading: Published
-  pubs:
-  - title: Task and resting state fMRI modelling of brain-behavior relationships in developmental cohorts
+  - title: 'Smoking reduction trajectories and their association with smoking cessation:
+      a secondary analysis of longitudinal clinical trial data'
     author:
-      - Lucina Q. Uddin
-      - Hugh Garavan
+    - Barrows, A.
+    - Klemperer, E.
+    - Garavan, H.
+    - Allgaier, N.
+    - Lindson, N.
+    - Taylor, G.
+    year: 2025
+    journal: BMJ Public Health
+    volume: 3
+    image_path: /assets/images/figures/BaKl25.png
+    url: https://bmjpublichealth.bmj.com/content/3/2/e001605
+  - title: Task and resting state fMRI modelling of brain-behavior relationships in
+      developmental cohorts
+    author:
+    - Lucina Q. Uddin
+    - Hugh Garavan
     year: 2025
     journal: Biological Psychiatry
     url: https://www.sciencedirect.com/science/article/pii/S0006322325014878
