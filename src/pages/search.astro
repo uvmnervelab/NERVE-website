@@ -1,0 +1,167 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+export const prerender = true;
+---
+
+<Layout title={t('nav.search')}>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-[60vh]">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold text-gray-900 mb-4" data-i18n-key="nav.search">{t('nav.search')}</h1>
+      <p class="text-gray-600" data-i18n-key="search.subtitle">{t('search.subtitle') || 'Search through our publications, news, and team members.'}</p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+      <div id="search" class="w-full"></div>
+    </div>
+  </div>
+  
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/pagefind/pagefind-ui.js" is:inline></script>
+  <script is:inline define:vars={{ lang }}>
+    // Pagefind translations map
+    const translations = {
+      'zh': {
+        placeholder: '搜索...',
+        clear_search: '清除',
+        load_more: '加载更多结果',
+        search_label: '站内搜索',
+        filters_label: '筛选',
+        zero_results: '未找到结果: [SEARCH_TERM]',
+        many_results: '找到 [COUNT] 个结果: [SEARCH_TERM]',
+        one_result: '找到 [COUNT] 个结果: [SEARCH_TERM]',
+        alt_search: '未找到结果: [SEARCH_TERM]. 显示 [DIFFERENT_TERM] 的结果',
+        search_suggestion: '未找到结果: [SEARCH_TERM]. 尝试以下搜索:',
+        searching: '搜索中 [SEARCH_TERM]...'
+      },
+      'ja': {
+        placeholder: '検索...',
+        clear_search: 'クリア',
+        load_more: 'もっと読み込む',
+        search_label: 'サイト内検索',
+        filters_label: 'フィルタ',
+        zero_results: '見つかりませんでした: [SEARCH_TERM]',
+        many_results: '[COUNT] 件見つかりました: [SEARCH_TERM]',
+        one_result: '[COUNT] 件見つかりました: [SEARCH_TERM]',
+        alt_search: '見つかりませんでした: [SEARCH_TERM]. [DIFFERENT_TERM] の結果を表示します',
+        search_suggestion: '見つかりませんでした: [SEARCH_TERM]. 次を試してみてください:',
+        searching: '[SEARCH_TERM] を検索中...'
+      },
+      'ko': {
+        placeholder: '검색...',
+        clear_search: '지우기',
+        load_more: '더 보기',
+        search_label: '사이트 검색',
+        filters_label: '필터',
+        zero_results: '검색 결과가 없습니다: [SEARCH_TERM]',
+        many_results: '[COUNT] 개의 결과를 찾았습니다: [SEARCH_TERM]',
+        one_result: '[COUNT] 개의 결과를 찾았습니다: [SEARCH_TERM]',
+        alt_search: '검색 결과가 없습니다: [SEARCH_TERM]. [DIFFERENT_TERM] 에 대한 결과 표시',
+        search_suggestion: '검색 결과가 없습니다: [SEARCH_TERM]. 다음을 시도해보세요:',
+        searching: '[SEARCH_TERM] 검색 중...'
+      },
+      'fr': {
+        placeholder: 'Rechercher...',
+        clear_search: 'Effacer',
+        load_more: 'Charger plus',
+        search_label: 'Rechercher sur le site',
+        filters_label: 'Filtres',
+        zero_results: 'Aucun résultat pour : [SEARCH_TERM]',
+        many_results: '[COUNT] résultats trouvés pour : [SEARCH_TERM]',
+        one_result: '[COUNT] résultat trouvé pour : [SEARCH_TERM]',
+        alt_search: 'Aucun résultat pour : [SEARCH_TERM]. Affichage des résultats pour [DIFFERENT_TERM]',
+        search_suggestion: 'Aucun résultat pour : [SEARCH_TERM]. Essayez ceci :',
+        searching: 'Recherche de [SEARCH_TERM]...'
+      },
+      'de': {
+        placeholder: 'Suchen...',
+        clear_search: 'Löschen',
+        load_more: 'Mehr laden',
+        search_label: 'Suche',
+        filters_label: 'Filter',
+        zero_results: 'Keine Ergebnisse für: [SEARCH_TERM]',
+        many_results: '[COUNT] Ergebnisse gefunden für: [SEARCH_TERM]',
+        one_result: '[COUNT] Ergebnis gefunden für: [SEARCH_TERM]',
+        alt_search: 'Keine Ergebnisse für: [SEARCH_TERM]. Zeige Ergebnisse für [DIFFERENT_TERM]',
+        search_suggestion: 'Keine Ergebnisse für: [SEARCH_TERM]. Versuchen Sie:',
+        searching: 'Suche nach [SEARCH_TERM]...'
+      },
+      'es': {
+        placeholder: 'Buscar...',
+        clear_search: 'Borrar',
+        load_more: 'Cargar más',
+        search_label: 'Buscar en el sitio',
+        filters_label: 'Filtros',
+        zero_results: 'Sin resultados para: [SEARCH_TERM]',
+        many_results: '[COUNT] resultados encontrados para: [SEARCH_TERM]',
+        one_result: '[COUNT] resultado encontrado para: [SEARCH_TERM]',
+        alt_search: 'Sin resultados para: [SEARCH_TERM]. Mostrando resultados para [DIFFERENT_TERM]',
+        search_suggestion: 'Sin resultados para: [SEARCH_TERM]. Intente:',
+        searching: 'Buscando [SEARCH_TERM]...'
+      },
+      'ru': {
+        placeholder: 'Поиск...',
+        clear_search: 'Очистить',
+        load_more: 'Загрузить еще',
+        search_label: 'Поиск по сайту',
+        filters_label: 'Фильтры',
+        zero_results: 'Нет результатов для: [SEARCH_TERM]',
+        many_results: 'Найдено [COUNT] результатов для: [SEARCH_TERM]',
+        one_result: 'Найден [COUNT] результат для: [SEARCH_TERM]',
+        alt_search: 'Нет результатов для: [SEARCH_TERM]. Показаны результаты для [DIFFERENT_TERM]',
+        search_suggestion: 'Нет результатов для: [SEARCH_TERM]. Попробуйте:',
+        searching: 'Поиск [SEARCH_TERM]...'
+      }
+    };
+
+    function initPagefind(language) {
+      const el = document.querySelector("#search");
+      if (!el) return;
+      el.innerHTML = ''; // Clear existing
+      new PagefindUI({ 
+        element: "#search", 
+        showSubResults: true,
+        pageSize: 10,
+        showImages: false,
+        translations: translations[language] || undefined
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const currentLang = localStorage.getItem('preferred-lang') || document.documentElement.lang || lang || 'en';
+      initPagefind(currentLang);
+    });
+
+    window.addEventListener('language-change', (e) => {
+      initPagefind(e.detail.lang);
+    });
+  </script>
+  
+  <style is:global>
+    @reference "tailwindcss";
+    
+    /* Custom styling for Pagefind */
+    .pagefind-ui__search-input {
+      @apply rounded-lg border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+    }
+    .pagefind-ui__drawer {
+      @apply gap-4;
+    }
+    .pagefind-ui__result {
+      @apply border-b border-gray-100 py-4 last:border-0;
+    }
+    .pagefind-ui__result-title {
+      @apply font-semibold text-blue-600 hover:underline;
+    }
+    .pagefind-ui__result-excerpt {
+      @apply text-gray-600 text-sm mt-1;
+    }
+    .pagefind-ui__message {
+      @apply text-gray-500 text-center py-4;
+    }
+  </style>
+</Layout>
