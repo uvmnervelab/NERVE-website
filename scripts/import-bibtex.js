@@ -90,21 +90,14 @@ function importBibtex() {
     // Extract additional fields
     // Cover image: check 'cover', 'image', 'figure'
     let cover = cleanString(tags.cover || tags.image || tags.figure || '');
-    const DEFAULT_COVER = '../../assets/paper-vision.jpg';
-
-    // Validate cover image existence
+    // Validate cover image existence; leave blank if not found (field is optional)
     if (cover) {
-      // Resolve path relative to src/content/publications or src/content/books
-      // ../../assets/xxx.jpg -> src/assets/xxx.jpg
       const relativeToRoot = cover.replace('../../', 'src/');
       const absolutePath = path.join(process.cwd(), relativeToRoot);
-      
       if (!fs.existsSync(absolutePath)) {
-        console.warn(`Warning: Cover image not found at ${absolutePath}. Using default.`);
-        cover = DEFAULT_COVER;
+        console.warn(`Warning: Cover image not found at ${absolutePath}. Omitting cover.`);
+        cover = '';
       }
-    } else {
-      cover = DEFAULT_COVER;
     }
     
     // PDF link
@@ -177,7 +170,7 @@ function importBibtex() {
       `venue: "${venue.replace(/"/g, '\\"')}"`,
       // Only add type for publications, not books
       isBook ? '' : `type: "${type}"`,
-      `cover: "${cover}"`,
+      cover ? `cover: "${cover}"` : '',
       'links:',
       `  pdf: "${pdf}"`,
       `  code: "${code}"`,
