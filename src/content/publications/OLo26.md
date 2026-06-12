@@ -2,7 +2,7 @@
 title: 'Attention problems and cortical maturation in a large longitudinal sample of youths: The importance of accounting
   for sex differences'
 authors:
-- O’Connor, Shannon D.
+- O'Connor, Shannon D.
 - Loughnan, Robert
 - Ahern, Jonathan
 - Fan, Chun Chieh

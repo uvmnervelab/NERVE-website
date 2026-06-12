@@ -14,7 +14,7 @@ authors:
 - Lewis, Lindsay
 - Jeon, Seun
 - Evans, Alan
-- D’Souza, Deepak
+- D'Souza, Deepak
 - Radhakrishnan, Rajiv
 - Banaschewski, Tobias
 - Bokde, Arun L. W.
