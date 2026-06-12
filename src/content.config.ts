@@ -20,7 +20,10 @@ const publications = defineCollection({
       slides: z.string().optional(),
       video: z.string().optional(),
     }).optional(),
+    figure: z.string().optional(), // public URL path to a figure image, e.g. /assets/images/figures/BaWe26.png
     featured: z.boolean().default(false),
+    pubman_managed: z.boolean().optional(),
+    groups: z.array(z.string()).optional(),
     badges: z.array(z.object({
       text: z.string(),
       type: z.enum(['gold', 'blue', 'red', 'green', 'default']).default('default')
@@ -80,6 +83,7 @@ const team = defineCollection({
     twitter: z.string().optional(),
     googleScholar: z.string().optional(),
     weight: z.number().default(100),
+    author_keys: z.array(z.string()).optional(),
   }),
 });
 
@@ -99,6 +103,7 @@ const research = defineCollection({
     description: z.string(),
     cover: image().optional(),
     order: z.number().default(100),
+    external_url: z.string().url().optional(),
   }),
 });
 
