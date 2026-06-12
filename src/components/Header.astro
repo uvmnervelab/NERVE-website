@@ -1,20 +1,24 @@
 ---
 import { SITE, LOGO_IMAGE } from '../config';
-import { 
+import {
   Menu, X, Globe, ChevronDown, Check, Moon, Sun,
-  Home, BookOpen, Trophy, Users, Calendar, UserPlus, Sparkles, Search
+  Home, BookOpen, Trophy, Users, Calendar, UserPlus, Sparkles, Search, FileText, Newspaper
 } from 'lucide-react';
 
 import { ui, defaultLang, languages } from '../i18n/ui';
 
 const { nav, i18n, customPages } = SITE;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const baseLink = (path: string) => `${base}${path}`;
 
 const iconMap: Record<string, any> = {
   home: Home,
   research: BookOpen,
+  publications: FileText,
   achievements: Trophy,
   team: Users,
   activities: Calendar,
+  news: Newspaper,
   join: UserPlus,
   search: Search,
 };
@@ -28,14 +32,14 @@ const getIcon = (key: string) => iconMap[key] || Sparkles;
     <div class="flex justify-between items-center h-16">
       <!-- Logo & Name -->
       <div class="flex items-center gap-3">
-        <a href="/" class="flex items-center gap-2 group">
+        <a href={`${base}/`} class="flex items-center gap-2 group">
           {LOGO_IMAGE.enable && SITE.logo && <img src={SITE.logo} alt="Logo" class="h-8 w-8 object-contain" />}
-          <div class="flex flex-col sm:flex-row sm:items-end sm:gap-2 leading-tight">
+          <div class="flex flex-col leading-tight">
             <span class="font-bold text-gray-900 text-lg leading-tight group-hover:text-blue-600 transition-colors">
               {SITE.labName}
             </span>
-            <span class="hidden sm:inline text-gray-500 text-sm font-light pb-0.5">
-              {SITE.university}
+            <span class="hidden sm:block text-xs text-gray-400 font-normal leading-tight mt-0.5">
+              <b class="font-semibold text-gray-500">NE</b>uroimaging <b class="font-semibold text-gray-500">R</b>esearch <b class="font-semibold text-gray-500">VE</b>rmont &middot; {SITE.university}
             </span>
           </div>
         </a>
@@ -47,7 +51,7 @@ const getIcon = (key: string) => iconMap[key] || Sparkles;
           if (item.key === 'search') {
             return (
               <a 
-                href={item.link} 
+                href={baseLink(item.link)}
                 class="p-2 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-full transition-colors"
                 aria-label={item.text}
               >
@@ -57,7 +61,7 @@ const getIcon = (key: string) => iconMap[key] || Sparkles;
           }
           return (
             <a 
-              href={item.link} 
+              href={baseLink(item.link)}
               class="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
               data-i18n-key={`nav.${item.key}`}
             >
@@ -69,7 +73,7 @@ const getIcon = (key: string) => iconMap[key] || Sparkles;
         <!-- Custom Pages -->
         {customPages && customPages.map(item => (
            <a 
-             href={item.link} 
+             href={baseLink(item.link)}
             class="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
              data-i18n-key={item.key} 
            >

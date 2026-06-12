@@ -20,8 +20,8 @@ export const prerender = true;
     </div>
   </div>
   
-  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-  <script src="/pagefind/pagefind-ui.js" is:inline></script>
+  <link href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/pagefind/pagefind-ui.css`} rel="stylesheet">
+  <script src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/pagefind/pagefind-ui.js`} is:inline></script>
   <script is:inline define:vars={{ lang }}>
     // Pagefind translations map
     const translations = {

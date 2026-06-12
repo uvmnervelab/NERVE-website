@@ -8,6 +8,7 @@ interface Props {
 
 const { member } = Astro.props;
 const { name, role, avatar, bio, email, website, linkedin, github, twitter, googleScholar } = member.data;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 // Color mapping for title badges
 const badgeColors = [
@@ -22,7 +23,7 @@ const badgeColors = [
 <div class="group flex flex-col items-center text-center">
   <!-- Avatar Container -->
   <div class="relative w-48 h-48 mb-4 rounded-xl overflow-hidden bg-gray-100 group-hover:shadow-lg transition-shadow">
-    <a href={`/team/${member.id.replace(/\.[^/.]+$/, "")}`} class="block w-full h-full">
+    <a href={`${base}/team/${member.id.replace(/\.[^/.]+$/, "")}`} class="block w-full h-full">
       <img 
         src={avatar.src} 
         alt={name} 
@@ -69,7 +70,7 @@ const badgeColors = [
   </div>
 
   <!-- Info -->
-  <a href={`/team/${member.id.replace(/\.[^/.]+$/, "")}`} class="hover:underline decoration-blue-600 underline-offset-2 mb-2">
+  <a href={`${base}/team/${member.id.replace(/\.[^/.]+$/, "")}`} class="hover:underline decoration-blue-600 underline-offset-2 mb-2">
     <h3 class="text-lg font-semibold text-gray-900">{name}</h3>
   </a>
   
