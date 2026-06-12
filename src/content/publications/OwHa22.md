@@ -15,5 +15,6 @@ venue: Experimental and Clinical Psychopharmacology
 type: paper
 pubman_managed: true
 featured: false
+month: 12
 figure: /assets/images/figures/OwHa22.jpg
 ---

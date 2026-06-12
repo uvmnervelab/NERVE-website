@@ -18,6 +18,7 @@ venue: Biological Psychiatry Global Open Science
 type: paper
 pubman_managed: true
 featured: false
+month: 3
 links:
   website: https://doi.org/10.1016/j.bpsgos.2023.100284
 figure: /assets/images/figures/GoMa24.jpg

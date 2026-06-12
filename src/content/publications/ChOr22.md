@@ -12,6 +12,7 @@ venue: JAMA Network Open
 type: paper
 pubman_managed: true
 featured: false
+month: 10
 links:
   website: https://doi.org/10.1001/jamanetworkopen.2022.35721
 figure: /assets/images/figures/ChOr22.jpg

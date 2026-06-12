@@ -15,6 +15,7 @@ venue: JAMA Network Open
 type: paper
 pubman_managed: true
 featured: false
+month: 12
 links:
   website: https://doi.org/10.1001/jamanetworkopen.2024.52027
 figure: /assets/images/figures/MiBa24.jpg

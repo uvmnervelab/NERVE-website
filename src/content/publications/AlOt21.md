@@ -45,6 +45,7 @@ venue: JAMA Psychiatry
 type: paper
 pubman_managed: true
 featured: false
+month: 9
 links:
   website: https://doi.org/10.1001/jamapsychiatry.2021.1258
 figure: /assets/images/figures/AlOt21.jpg

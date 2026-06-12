@@ -13,12 +13,13 @@ interface Props {
   citationCount?: number;
   teamAuthors?: TeamAuthor[];
   'data-year'?: number;
+  'data-month'?: number;
   'data-citations'?: number;
   'data-core'?: number;
   'data-groups'?: string;
 }
 
-const { entry, citationCount, teamAuthors, 'data-year': dataYear, 'data-citations': dataCitations, 'data-core': dataCore, 'data-groups': dataGroups } = Astro.props;
+const { entry, citationCount, teamAuthors, 'data-year': dataYear, 'data-month': dataMonth, 'data-citations': dataCitations, 'data-core': dataCore, 'data-groups': dataGroups } = Astro.props;
 const { title, authors, year, venue, links, figure, badges } = entry.data;
 
 const href = links?.website || links?.pdf || '';
@@ -53,7 +54,7 @@ const venueStr = [venue, year].filter(Boolean).join(', ');
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
-<li class="flex gap-4 py-4 border-b border-gray-100 last:border-0 group items-start" data-year={dataYear} data-citations={dataCitations} data-core={dataCore} data-groups={dataGroups}>
+<li class="flex gap-4 py-4 border-b border-gray-100 last:border-0 group items-start" data-year={dataYear} data-month={dataMonth} data-citations={dataCitations} data-core={dataCore} data-groups={dataGroups}>
   {figure && (
     <div class="shrink-0 hidden sm:block">
       <img

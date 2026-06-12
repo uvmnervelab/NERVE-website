@@ -18,6 +18,7 @@ venue: Developmental Cognitive Neuroscience
 type: paper
 pubman_managed: true
 featured: false
+month: 10
 links:
   website: https://doi.org/10.1016/j.dcn.2022.101144
 figure: /assets/images/figures/GaCh22.jpg

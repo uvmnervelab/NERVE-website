@@ -44,6 +44,7 @@ venue: Frontiers in Neuroimaging
 type: paper
 pubman_managed: true
 featured: false
+month: 12
 links:
   website: https://doi.org/10.3389/fnimg.2023.1138193
 figure: /assets/images/figures/CaMc23.jpg

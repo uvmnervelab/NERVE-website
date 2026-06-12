@@ -13,6 +13,7 @@ venue: Frontiers in Integrative Neuroscience
 type: paper
 pubman_managed: true
 featured: false
+month: 3
 links:
   website: https://doi.org/10.3389/fnint.2023.1084748
 figure: /assets/images/figures/LoCh23.jpg

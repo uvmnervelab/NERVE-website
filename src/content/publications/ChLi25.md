@@ -41,6 +41,7 @@ venue: Molecular Psychiatry
 type: paper
 pubman_managed: true
 featured: false
+month: 9
 links:
   website: https://doi.org/10.1038/s41380-025-03196-6
 figure: /assets/images/figures/ChLi25.jpg
