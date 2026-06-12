@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import PublicationItem from '../../components/PublicationItem.astro';
 import { getCollection, render } from 'astro:content';
 import { Mail, Globe, Twitter, GraduationCap, ArrowLeft, Linkedin, Github } from 'lucide-react';
 
@@ -13,25 +14,18 @@ export async function getStaticPaths() {
 
 const { member } = Astro.props;
 const { Content } = await render(member);
-const { name, role, title, avatar, email, website, linkedin, github, twitter, googleScholar } = member.data;
+const { name, role, title, avatar, email, website, linkedin, github, twitter, googleScholar, author_keys } = member.data;
 
-const roleToKey = {
-  'Principal Investigator': 'team.pi',
-  'Professor': 'team.professor',
-  'Teacher': 'team.teacher',
-  'Postdoctoral Researcher': 'team.postdoc_researcher',
-  'Postdoc': 'team.postdoc',
-  'PhD Student': 'team.phd',
-  'Master Student': 'team.master',
-  'Graduate Student': 'team.graduate',
-  'Undergraduate': 'team.undergrad',
-  'Former Member': 'team.former'
-};
+const memberPubs = author_keys && author_keys.length > 0
+  ? (await getCollection('publications'))
+      .filter(p => p.data.authors.some(a => author_keys.includes(a)))
+      .sort((a, b) => b.data.year - a.data.year)
+  : [];
 ---
 
 <Layout title={name}>
   <div class="max-w-4xl mx-auto px-4 py-12 sm:py-20">
-    <a href="/team" class="inline-flex items-center text-sm text-gray-500 hover:text-blue-600 mb-8 transition-colors">
+    <a href={`${import.meta.env.BASE_URL}team`} class="inline-flex items-center text-sm text-gray-500 hover:text-blue-600 mb-8 transition-colors">
       <ArrowLeft className="w-4 h-4 mr-1" /> Back to Team
     </a>
 
@@ -40,11 +34,11 @@ const roleToKey = {
         <div class="w-32 h-32 md:w-48 md:h-48 rounded-2xl overflow-hidden bg-gray-100 shrink-0 mx-auto md:mx-0">
           <img src={avatar.src} alt={name} class="w-full h-full object-cover" />
         </div>
-        
+
         <div class="flex-grow text-center md:text-left">
           <h1 class="text-3xl font-bold text-gray-900 mb-2">{name}</h1>
           <p class="text-xl text-blue-600 font-medium mb-6">{role}</p>
-          
+
           <div class="flex flex-wrap justify-center md:justify-start gap-3">
             {email && (
               <a href={`mailto:${email}`} class="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors text-sm">
@@ -97,8 +91,19 @@ const roleToKey = {
       </div>
     </div>
 
-    <div class="prose prose-lg prose-blue max-w-none text-gray-700">
+    <div class="prose prose-lg prose-blue max-w-none text-gray-700 mb-16">
       <Content />
     </div>
+
+    {memberPubs.length > 0 && (
+      <section>
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-100">Publications</h2>
+        <ol class="space-y-0">
+          {memberPubs.map(paper => (
+            <PublicationItem entry={paper} />
+          ))}
+        </ol>
+      </section>
+    )}
   </div>
 </Layout>

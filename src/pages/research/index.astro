@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import { ArrowRight } from 'lucide-react';
 
 const researchAreas = (await getCollection('research')).sort((a, b) => a.data.order - b.data.order);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <Layout title="Research">
@@ -19,11 +20,11 @@ const researchAreas = (await getCollection('research')).sort((a, b) => a.data.or
       {researchAreas.map(area => (
         <div class="group relative bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300">
           {area.data.cover && (
-            <div class="h-48 overflow-hidden bg-gray-100">
-              <img 
-                src={area.data.cover.src} 
-                alt={area.data.title} 
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            <div class="h-48 overflow-hidden bg-white border-b border-gray-100 flex items-center justify-center p-4">
+              <img
+                src={area.data.cover.src}
+                alt={area.data.title}
+                class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
               />
             </div>
           )}
@@ -35,8 +36,10 @@ const researchAreas = (await getCollection('research')).sort((a, b) => a.data.or
             <p class="text-gray-600 text-sm mb-4 line-clamp-3">
               {area.data.description}
             </p>
-            <a 
-              href={`/research/${area.id.replace(/\.[^/.]+$/, "")}`} 
+            <a
+              href={area.data.external_url ?? `${base}/research/${area.id.replace(/\.[^/.]+$/, "")}`}
+              target={area.data.external_url ? '_blank' : undefined}
+              rel={area.data.external_url ? 'noopener noreferrer' : undefined}
               class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700"
             >
               <span data-i18n-key="research.learnMore">Learn more</span> <ArrowRight className="ml-1 w-4 h-4" />

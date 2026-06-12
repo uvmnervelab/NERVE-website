@@ -23,14 +23,14 @@ const groups = [
     roles: ['Postdoc']
   },
   {
-    id: 'staff',
-    titleKey: 'team.support',
-    roles: ['Research Assistant']
-  },
-  {
     id: 'phd',
     titleKey: 'team.phd',
     roles: ['PhD Student']
+  },
+  {
+    id: 'staff',
+    titleKey: 'team.support',
+    roles: ['Research Assistant']
   },
   {
     id: 'master',
@@ -105,7 +105,7 @@ const groupedMembers = groups.reduce((acc, group) => {
             {group.id === 'pi' ? 'Principal Investigator' :
              group.id === 'faculty' ? 'Faculty' :
              group.id === 'postdoc' ? 'Postdoctoral Researchers' :
-             group.id === 'staff' ? 'Research Support' :
+             group.id === 'staff' ? 'Staff' :
              group.id === 'phd' ? 'PhD Students' :
              group.id === 'master' ? 'Master Students' :
              group.id === 'undergrad' ? 'Undergraduate Students' :
