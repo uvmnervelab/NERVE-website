@@ -1,50 +1,45 @@
-import heroImage from './assets/hero-real.jpg';
-
 export const SITE = {
-  website: 'https://scholar-lite-demo.netlify.app/', // Replace with your actual deployed URL
-  author: 'Scholar-Lite Team',
-  description: 'A lightweight, modern static website template for academic labs and scholars.',
-  title: 'Scholar-Lite',
+  website: 'https://nervelab.uvm.edu/', // Replace with your actual deployed URL
+  author: 'NERVE Lab',
+  description: 'Website for the Neuroimaging Research Vermont (NERVE) Lab at the University of Vermont.',
+  title: 'NERVE Lab',
   ogImage: 'astropaper-og.jpg',
   lightAndDarkMode: true,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
-  
-  // Lab Info
-  labName: 'Scholar-Lite Lab',
-  university: 'University Name',
-  logo: '/assets/logo-real.svg', // Logo path
-  avatar: '/assets/logo-real.svg', // Avatar for SEO/Schema
-  email: 'contact@lab.edu', // Contact email for Join Us page
 
-  // Hero Section (Home Page) - Main content does not need to be translated for 8 languages by default
+  // Lab Info
+  labName: 'NERVE Lab',
+  university: 'University of Vermont',
+  // logo: '/assets/logo-real.svg', // Logo path
+  // avatar: '/assets/logo-real.svg', // Avatar for SEO/Schema
+  email: 'nervelab@uvm.edu', // Contact email for Join Us page
+
+  // Hero Section (Home Page)
   hero: {
-    title: 'Advancing Computer Vision & Deep Learning Research.',
-    subtitle: 'We are the Scholar-Lite Lab.',
+    title: 'Studying the Relationships Between Brain Development and Behavior.',
+    subtitle: 'We are the NERVE Lab at the University of Vermont.',
     action: 'View Publications', // Optional call to action text
-    image: heroImage, // Hero image path
+    image: undefined, // Hero image path
   },
 
   // Navigation
   nav: [
     { text: 'Home', link: '/', key: 'home' },
     { text: 'Research', link: '/research', key: 'research' },
-    { text: 'Achievements', link: '/achievements', key: 'achievements' },
+    { text: 'Publications', link: '/publications', key: 'publications' },
     { text: 'Team', link: '/team', key: 'team' },
-    { text: 'Activities', link: '/activities', key: 'activities' },
-    { text: 'Join Us', link: '/join', key: 'join' },
+    { text: 'News', link: '/news', key: 'news' },
     { text: 'Search', link: '/search', key: 'search' },
   ],
 
   // Custom Pages (Appended after 'Join Us')
-  customPages: [
-    // Example: { text: 'Alumni', link: '/alumni', key: 'alumni' }
-  ],
-  
+  customPages: [],
+
   // i18n Config
   i18n: {
-    enabled: true,
-    defaultLocale: 'zh',
+    enabled: false,
+    defaultLocale: 'en',
   }
 };
 
@@ -68,4 +63,4 @@ export const SOCIALS = [
 ];
 
 // Default language configuration
-export const DEFAULT_LANG: 'zh' | 'en' | 'ja' | 'ko' | 'fr' | 'de' | 'es' | 'ru' = 'en'; 
+export const DEFAULT_LANG: 'zh' | 'en' | 'ja' | 'ko' | 'fr' | 'de' | 'es' | 'ru' = 'en';

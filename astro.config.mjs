@@ -6,6 +6,8 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://nervelab.w3.uvm.edu',
+	base: process.env.BASE_PATH || '/',
   compressHTML: true,
   build: {
     inlineStylesheets: 'always',
