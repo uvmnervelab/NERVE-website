@@ -3,7 +3,6 @@ title: "Pattern Recognition and Machine Learning"
 authors: ["Christopher M. Bishop"]
 year: 2006
 venue: "Springer"
-cover: "../../assets/book-prml.jpg"
 links:
   pdf: "https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/"
   code: ""

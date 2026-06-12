@@ -3,7 +3,6 @@ title: "Deep Learning"
 authors: ["Ian Goodfellow", "Yoshua Bengio", "Aaron Courville"]
 year: 2016
 venue: "MIT Press"
-cover: "../../assets/book-deep-learning.jpg"
 links:
   pdf: "http://www.deeplearningbook.org"
   code: ""

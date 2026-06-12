@@ -3,7 +3,6 @@ title: "Computer Vision: Algorithms and Applications"
 authors: ["Richard Szeliski"]
 year: 2010
 venue: "Springer"
-cover: "../../assets/book-cv.jpg"
 links:
   pdf: "http://szeliski.org/Book/"
   code: ""
