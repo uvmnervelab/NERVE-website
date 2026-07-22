@@ -2,13 +2,21 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Newspaper, Megaphone } from 'lucide-react';
 import { SITE } from '../config';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const papers = (await getCollection('publications'))
   .filter(p => p.data.type === 'paper')
-  .sort((a, b) => b.data.year - a.data.year)
+  .sort((a, b) => {
+    const yearDiff = b.data.year - a.data.year;
+    if (yearDiff !== 0) return yearDiff;
+    return (b.data.month ?? 0) - (a.data.month ?? 0);
+  })
+  .slice(0, 3);
+
+const recentNews = (await getCollection('news'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
 ---
 
@@ -118,6 +126,50 @@ const papers = (await getCollection('publications'))
           </a>
         )})}
       </div>
+    </div>
+  </section>
+
+  <!-- Recent News -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-end mb-8">
+        <h2 class="text-3xl font-bold text-gray-900">Recent News</h2>
+        <a href={`${base}/news`} class="text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1 group">
+          <span data-i18n-key="section.viewAll">View all</span> <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </a>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        {recentNews.map(item => {
+          const isMedia = item.data.type === 'media';
+          const link = isMedia && item.data.url ? item.data.url : `${base}/news`;
+          const isExternal = link.startsWith('http');
+          return (
+            <a
+              href={link}
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
+              class="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all hover:-translate-y-1 p-6 flex flex-col h-full group"
+            >
+              <div class="flex items-center gap-3 mb-3">
+                <span class={`inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full border ${isMedia ? 'bg-purple-100/90 text-purple-700 border-purple-200' : 'bg-blue-100/90 text-blue-700 border-blue-200'}`}>
+                  {isMedia ? <Newspaper size={12} /> : <Megaphone size={12} />}
+                  <span data-i18n-key={isMedia ? 'news.badge.media' : 'news.badge.lab'}>{isMedia ? 'Media Coverage' : 'Lab News'}</span>
+                </span>
+                <time class="text-sm text-gray-500">{item.data.date.toISOString().split('T')[0]}</time>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                {item.data.title}
+              </h3>
+              {item.data.summary && <p class="text-gray-600 text-sm line-clamp-2">{item.data.summary}</p>}
+            </a>
+          );
+        })}
+      </div>
+
+      {recentNews.length === 0 && (
+        <p class="text-gray-500 italic" data-i18n-key="news.noNews">No news yet.</p>
+      )}
     </div>
   </section>
 

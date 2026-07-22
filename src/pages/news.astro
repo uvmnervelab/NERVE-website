@@ -1,33 +1,86 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import { Newspaper, Megaphone, ExternalLink } from 'lucide-react';
 
 const allNews = (await getCollection('news')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
 <Layout title="News">
   <div class="max-w-4xl mx-auto px-4 py-12 sm:py-20">
-    <div class="mb-12">
+    <div class="mb-8">
       <h1 class="text-4xl font-bold text-gray-900 mb-4" data-i18n-key="news.title">News & Updates</h1>
     </div>
 
-    <div class="border-l-2 border-gray-100 pl-8 space-y-12">
-      {allNews.map(item => (
-        <div class="relative">
-          <span class="absolute -left-[37px] top-1.5 w-4 h-4 rounded-full bg-blue-100 border-2 border-white ring-1 ring-blue-600"></span>
-          <time class="block text-sm text-gray-500 mb-2">{item.data.date.toISOString().split('T')[0]}</time>
-          <h2 class="text-xl font-bold text-gray-900 mb-2">{item.data.title}</h2>
-          {item.data.summary && <p class="text-gray-600 mb-4">{item.data.summary}</p>}
-          <div class="prose prose-blue prose-sm text-gray-600">
-             <!-- We could render the full body here if needed, or just keep it as a list -->
-             {/* <item.Content /> */}
+    <div class="flex gap-2 items-center mb-10">
+      <button id="filter-all" class="filter-btn px-3 py-1 text-xs rounded-full border border-gray-300 bg-gray-900 text-white transition-colors" data-filter="all" data-i18n-key="news.filter.all">
+        All
+      </button>
+      <button id="filter-lab" class="filter-btn px-3 py-1 text-xs rounded-full border border-gray-300 text-gray-500 transition-colors" data-filter="lab" data-i18n-key="news.filter.lab">
+        Lab News
+      </button>
+      <button id="filter-media" class="filter-btn px-3 py-1 text-xs rounded-full border border-gray-300 text-gray-500 transition-colors" data-filter="media" data-i18n-key="news.filter.media">
+        Media Coverage
+      </button>
+    </div>
+
+    <div id="news-list" class="border-l-2 border-gray-100 pl-8 space-y-12">
+      {allNews.map(item => {
+        const isMedia = item.data.type === 'media';
+        return (
+          <div class="relative" data-type={item.data.type}>
+            <span class={`absolute -left-[37px] top-1.5 w-4 h-4 rounded-full border-2 border-white ring-1 ${isMedia ? 'bg-purple-100 ring-purple-600' : 'bg-blue-100 ring-blue-600'}`}></span>
+            <div class="flex items-center gap-3 mb-2">
+              <time class="text-sm text-gray-500">{item.data.date.toISOString().split('T')[0]}</time>
+              <span class={`inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full border ${isMedia ? 'bg-purple-100/90 text-purple-700 border-purple-200' : 'bg-blue-100/90 text-blue-700 border-blue-200'}`}>
+                {isMedia ? <Newspaper size={12} /> : <Megaphone size={12} />}
+                <span data-i18n-key={isMedia ? 'news.badge.media' : 'news.badge.lab'}>{isMedia ? 'Media Coverage' : 'Lab News'}</span>
+              </span>
+            </div>
+            <h2 class="text-xl font-bold text-gray-900 mb-2">{item.data.title}</h2>
+            {item.data.summary && <p class="text-gray-600 mb-2">{item.data.summary}</p>}
+            {isMedia && (item.data.outlet || item.data.url) && (
+              <p class="text-sm text-gray-500">
+                {item.data.outlet && <span>{item.data.outlet}</span>}
+                {item.data.url && (
+                  <a href={item.data.url} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 ml-2 text-purple-700 hover:underline">
+                    <span data-i18n-key="news.readOriginal">Read original</span>
+                    <ExternalLink size={12} />
+                  </a>
+                )}
+              </p>
+            )}
           </div>
-        </div>
-      ))}
-      
+        );
+      })}
+
       {allNews.length === 0 && (
         <p class="text-gray-500 italic" data-i18n-key="news.noNews">No news yet.</p>
       )}
     </div>
   </div>
 </Layout>
+
+<script>
+  const list = document.getElementById('news-list')!;
+  const filterBtns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+
+  function setActive(active: HTMLButtonElement) {
+    filterBtns.forEach(btn => {
+      const isActive = btn === active;
+      btn.classList.toggle('bg-gray-900', isActive);
+      btn.classList.toggle('text-white', isActive);
+      btn.classList.toggle('text-gray-500', !isActive);
+    });
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter as 'all' | 'lab' | 'media';
+      setActive(btn);
+      list.querySelectorAll<HTMLElement>(':scope > div[data-type]').forEach(item => {
+        item.style.display = filter === 'all' || item.dataset.type === filter ? '' : 'none';
+      });
+    });
+  });
+</script>

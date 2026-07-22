@@ -24,9 +24,9 @@ const badgeColors = [
   <!-- Avatar Container -->
   <div class="relative w-48 h-48 mb-4 rounded-xl overflow-hidden bg-gray-100 group-hover:shadow-lg transition-shadow">
     <a href={`${base}/team/${member.id.replace(/\.[^/.]+$/, "")}`} class="block w-full h-full">
-      <img 
-        src={avatar.src} 
-        alt={name} 
+      <img
+        src={`${base}${avatar}`}
+        alt={name}
         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
         loading="lazy"
       />

@@ -1,0 +1,223 @@
+# =============================================================================
+# TEAM — edit this file to add / remove / reorder lab members.
+# Save and the dev server (npm run dev) reloads automatically.
+#
+# Each entry needs a unique `id` (used as the profile URL: /team/<id>).
+# Required: id, name, role, avatar. Everything else is optional.
+#
+#   role:        one of Principal Investigator | Professor | Associate Professor |
+#                Assistant Professor | Postdoc | Research Assistant | PhD Student |
+#                Master Student | Undergraduate | Alumni
+#   title:       list of badge labels shown on the card, e.g. [Postdoc]
+#   avatar:      put the image in public/assets/people/ and point to it here
+#   weight:      sort order within a role group (lower = listed first)
+#   author_keys: exact author strings from publications, so this person's papers
+#                attach to their profile. List every name variant that appears.
+#   Optional links: website, linkedin, github, twitter, googleScholar, email, bio
+#
+#   ALUMNI (role: Alumni) are different: they render as a plain text list at the
+#   bottom of the Team page — no photo, no profile page, no links. Omit `avatar`
+#   and use `employment` for their current position. Example:
+#
+#     - id: alum-jane-doe
+#       name: Jane Doe
+#       role: Alumni
+#       employment: Data Scientist, Google
+#       weight: 60
+# =============================================================================
+
+- id: pi-hugh-garavan
+  name: Hugh Garavan
+  role: Professor
+  title: [Professor]
+  avatar: /assets/people/hugh.webp
+  website: https://www.uvm.edu/cas/psychology/profiles/hugh-garavan
+  weight: 1
+  author_keys: ["Garavan, Hugh", "Garavan, H.", "Garavan, Hugh P."]
+
+- id: pi-alexi-potter
+  name: Alexi Potter
+  role: Associate Professor
+  title: [Associate Professor]
+  avatar: /assets/people/alexi.jpg
+  website: https://www.uvm.edu/cas/psychology/profiles/alexandra-potter-behavior-therapy-and-psychotherapy
+  weight: 2
+  author_keys: ["Potter, Alexandra", "Potter, Alexandra S.", "Potter, Alexi", "Potter, A."]
+
+- id: asst-prof-matt-albaugh
+  name: Matt Albaugh
+  role: Associate Professor
+  title: [Associate Professor]
+  avatar: /assets/people/matt.jpg
+  linkedin: https://www.linkedin.com/in/matthew-albaugh-ph-d-32a1611b5/
+  weight: 10
+  author_keys: ["Albaugh, Matthew D.", "Albaugh, Matthew", "Albaugh, M. D."]
+
+- id: asst-prof-nick-allgaier
+  name: Nick Allgaier
+  role: Assistant Professor
+  title: [Assistant Professor]
+  avatar: /assets/people/nick.jpg
+  website: https://www.uvm.edu/~nallgaie/
+  weight: 11
+  author_keys: ["Allgaier, Nicholas", "Allgaier, N.", "Allegair, Nicholas"]
+
+- id: asst-prof-bader-chaarani
+  name: Bader Chaarani
+  role: Assistant Professor
+  title: [Assistant Professor]
+  avatar: /assets/people/bader.jpg
+  linkedin: https://www.linkedin.com/in/baderchaarani/
+  weight: 12
+  author_keys: ["Chaarani, Bader", "Chaarani, B."]
+
+- id: assoc-prof-leigh-anne-cioffredi
+  name: Leigh-Anne Cioffredi
+  role: Associate Professor
+  title: [Associate Professor]
+  avatar: /assets/people/leigh-anne.jpg
+  website: https://www.uvmhealth.org/providers/leigh-anne-cioffredi-md
+  weight: 13
+  author_keys: ["Cioffredi, Leigh-Anne", "Cioffredi, L. A."]
+
+- id: postdoc-anthony-juliano
+  name: Anthony Juliano
+  role: Postdoc
+  title: [Postdoc]
+  avatar: /assets/people/anthony.webp
+  weight: 20
+  author_keys: ["Juliano, Anthony", "Juliano, Anthony C.", "Juliano, Anthony C", "Juliano, A."]
+
+- id: postdoc-hannah-morgan
+  name: Hannah Morgan
+  role: Postdoc
+  title: [Postdoc]
+  avatar: /assets/people/hannah.jpg
+  linkedin: https://www.linkedin.com/in/hannah-morgan-ph-d-262683358/
+  weight: 21
+  author_keys: ["Morgan, Hannah"]
+
+- id: postdoc-mckinney-pitts
+  name: McKinney Pitts
+  role: Postdoc
+  title: [Postdoc]
+  avatar: /assets/people/mckinney.png
+  linkedin: https://www.linkedin.com/in/mckinney-pitts-341156250/
+  weight: 22
+  author_keys: ["Pitts, McKinney"]
+
+- id: phd-tony-barrows
+  name: Tony Barrows
+  role: PhD Student
+  title: [PhD Student]
+  avatar: /assets/people/tony.jpeg
+  linkedin: https://www.linkedin.com/in/ajbarrows/
+  weight: 30
+  author_keys: ["Barrows, Anthony", "Barrows, A."]
+
+- id: phd-michele-day
+  name: Michèle Day
+  role: PhD Student
+  title: [PhD Student]
+  avatar: /assets/people/michele.jpg
+  linkedin: https://www.linkedin.com/in/mich%C3%A8le-day-b735591bb/
+  weight: 31
+  author_keys: ["Day, Michèle", "Day, Michele"]
+
+- id: phd-annabel-diestel
+  name: Annabel Diestel
+  role: PhD Student
+  title: [PhD Student]
+  avatar: /assets/people/annabel.jpg
+  linkedin: https://www.linkedin.com/in/annabel-diestel/
+  weight: 32
+  author_keys: ["Diestel, Annabel"]
+
+- id: staff-dk-yuan
+  name: DK Yuan
+  role: Research Assistant
+  title: [Research Scientist]
+  avatar: /assets/people/dk.jpg
+  linkedin: https://www.linkedin.com/in/dekang-yuan-b09076b0/
+  weight: 40
+  author_keys: ["Yuan, D.K.", "Yuan, Dekang", "Yuan, DeKang"]
+
+- id: staff-devarshi-pancholi
+  name: Devarshi Pancholi
+  role: Research Assistant
+  title: [Data Specialist]
+  avatar: /assets/people/devarshi.jpg
+  linkedin: https://www.linkedin.com/in/devarshipancholi/
+  weight: 41
+  author_keys: ["Pancholi, Devarshi"]
+
+- id: ra-shannon-oconnor
+  name: Shannon O'Connor
+  role: Research Assistant
+  title: [Research Assistant]
+  avatar: /assets/people/shannon.jpg
+  linkedin: https://www.linkedin.com/in/shannon-delia-o-connor-/
+  weight: 50
+  author_keys: ["O'Connor, Shannon D.", "O'Connor, Shannon"]
+
+- id: ra-sahithi-arekatla
+  name: Sahithi Arekatla
+  role: Research Assistant
+  title: [Research Assistant]
+  avatar: /assets/people/sahithi.jpg
+  linkedin: https://www.linkedin.com/in/sahithi-arekatla/
+  weight: 51
+  author_keys: ["Arekatla, Sahithi"]
+
+
+
+- id: ra-yashita-saranam
+  name: Yashita Saranam
+  role: Research Assistant
+  title: [Research Assistant]
+  avatar: /assets/people/yashita.jpg
+  weight: 52
+  author_keys: ["Saranam, Yashita"]
+
+
+- id: alum-griffin-curtin
+  name: Griffin Curtin
+  role: Alumni
+  weight: 53
+- id: alum-sarah-nicknaum
+  name: Sarah Niknaum
+  role: Alumni
+- id: alum-emma-pearson
+  name: Emma Pearson
+  role: Alumni
+- id: alum-matt-mccabe
+  name: Matt McCabe
+  role: Alumni
+  employment: Data Scientist, DeepHealth
+- id: alum-renata-cupertino 
+  name: Renata Cupertino
+  role: Alumni
+- id: alum-zhipeng-cao 
+  name: Zhipeng Cao
+  role: Alumni
+- id: alum-sage-hahn 
+  name: Sage Hahn
+  employment: Senior Software Engineer, DeepHealth
+  role: Alumni
+- id: alum-phil-spechler 
+  name: Phil Spechler
+  role: Alumni
+  employment: Principal Statistician, Wave Neuroscience
+- id: alum-shana-adise
+  name: Shana Adise
+  role: Alumni
+  employment: Assistant Professor, University of Georgia
+- id: alum-jonatan-gonzalez
+  name: Jonatan Ottino González
+  now: Children's Hospital Los Angeles
+  role: Alumni
+- id: alum-max-owens 
+  name: Max Owens
+  role: Alumni
+  now: Biostatistician, Edwards Lifesciences
+  

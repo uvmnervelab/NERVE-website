@@ -17,9 +17,9 @@ export const SITE = {
 
   // Hero Section (Home Page)
   hero: {
-    title: 'Studying the Relationships Between Brain Development and Behavior.',
+    title: 'Studying Relationships Between Brain Development and Behavior.',
     subtitle: 'We are the NERVE Lab at the University of Vermont.',
-    action: 'View Publications', // Optional call to action text
+    action: 'Publications', // Optional call to action text
     image: undefined, // Hero image path
   },
 

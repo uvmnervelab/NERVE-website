@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import PublicationItem from '../components/PublicationItem.astro';
 import { getCollection } from 'astro:content';
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 const allPapers = (await getCollection('publications')).sort((a, b) => {
   const yearDiff = b.data.year - a.data.year;
   if (yearDiff !== 0) return yearDiff;
@@ -135,7 +137,7 @@ if (validEntries.length > 0) {
             teamAuthors={teamAuthors.map(m => ({
               name: m.data.name,
               slug: m.id.replace(/\.[^/.]+$/, ""),
-              avatarSrc: m.data.avatar.src,
+              avatarSrc: `${base}${m.data.avatar}`,
             }))}
             data-year={paper.data.year}
             data-month={paper.data.month}

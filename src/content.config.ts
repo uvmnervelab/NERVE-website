@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { glob, file } from 'astro/loaders';
 
 const publications = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/publications" }),
@@ -59,23 +59,24 @@ const books = defineCollection({
 });
 
 const team = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/team" }),
-  schema: ({ image }) => z.object({
+  loader: file("src/content/team.yaml"),
+  schema: z.object({
     name: z.string(),
     role: z.enum([
-      'Principal Investigator', 
-      'Professor', 
+      'Principal Investigator',
+      'Professor',
       'Associate Professor',
       'Assistant Professor',
-      'Postdoc', 
+      'Postdoc',
       'Research Assistant',
-      'PhD Student', 
-      'Master Student', 
-      'Undergraduate', 
+      'PhD Student',
+      'Master Student',
+      'Undergraduate',
       'Alumni'
     ]),
     title: z.array(z.string()).optional(), // For specific academic titles like "Academician", "Changjiang Scholar"
-    avatar: image(),
+    avatar: z.string().optional(), // public path, e.g. /assets/people/tony.jpg (omit for Alumni)
+    employment: z.string().optional(), // current job, shown on the alumni list, e.g. "Data Scientist, Google"
     bio: z.string().optional(), // Short bio for card
     email: z.string().optional(),
     website: z.string().optional(),
@@ -89,11 +90,14 @@ const team = defineCollection({
 });
 
 const news = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/news" }),
+  loader: file("src/content/news.yaml"),
   schema: z.object({
     title: z.string(),
-    date: z.date(),
+    date: z.coerce.date(),
     summary: z.string().optional(),
+    type: z.enum(['lab', 'media']).default('lab'),
+    outlet: z.string().optional(), // publication name for media coverage, e.g. "Seven Days"
+    url: z.string().url().optional(), // link to the original article, for media coverage
   }),
 });
 

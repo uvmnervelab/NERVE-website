@@ -92,9 +92,6 @@ const groupedMembers = groups.reduce((acc, group) => {
   <div class="max-w-7xl mx-auto px-4 py-12 sm:py-20">
     <div class="max-w-3xl mx-auto text-center mb-16">
       <h1 class="text-4xl font-bold text-gray-900 mb-4" data-i18n-key="team.title">Our Team</h1>
-      <p class="text-lg text-gray-600" data-i18n-key="team.subtitle">
-        Meet the researchers and students behind our innovations.
-      </p>
     </div>
 
     <div class="space-y-20">
@@ -111,11 +108,24 @@ const groupedMembers = groups.reduce((acc, group) => {
              group.id === 'undergrad' ? 'Undergraduate Students' :
              group.id === 'alumni' ? 'Alumni' : ''}
           </h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
-            {group.members.map(member => (
-              <TeamCard member={member} />
-            ))}
-          </div>
+          {group.id === 'alumni' ? (
+            <ul class="divide-y divide-gray-100 border-t border-gray-100">
+              {group.members.map(member => (
+                <li class="py-3 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                  <span class="font-medium text-gray-900">{member.data.name}</span>
+                  {member.data.employment && (
+                    <span class="text-sm text-gray-500">{member.data.employment}</span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+              {group.members.map(member => (
+                <TeamCard member={member} />
+              ))}
+            </div>
+          )}
         </section>
       ))}
 

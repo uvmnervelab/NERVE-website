@@ -41,14 +41,16 @@ Nine collections defined in `src/content.config.ts` with Zod schemas:
 | Collection | Location | Key fields |
 |---|---|---|
 | `publications` | `src/content/publications/` | title, authors[], year, venue, type, links, cover, featured, badges[], groups[] |
-| `team` | `src/content/team/` | name, role, avatar, author_keys[], weight (sort order) |
-| `news` | `src/content/news/` | title, date, summary |
+| `team` | `src/content/team.yaml` | id, name, role, avatar, author_keys[], weight (sort order) |
+| `news` | `src/content/news.yaml` | id, title, date, summary |
 | `research` | `src/content/research/` | title, description, cover, order |
 | `books` | `src/content/books/` | — |
 | `patents` | `src/content/patents/` | status (Granted/Pending/Filed) |
 | `softwares` | `src/content/softwares/` | — |
 | `honors` | `src/content/honors/` | — |
 | `activities` | `src/content/activities/` | — |
+
+**Team & News editing**: Unlike publications, `team` and `news` are hand-authored — each is a single YAML manifest (`src/content/team.yaml`, `src/content/news.yaml`) read via Astro's `file()` loader (see `src/content.config.ts`). Edit the YAML directly; `npm run dev` hot-reloads. Every entry needs a unique `id` (the team `id` is also the profile URL slug, `/team/<id>`). Team avatars are plain public paths (`/assets/people/<file>`) served from `public/assets/people/` — no Astro `image()` optimization, no relative paths.
 
 **Team → Publication linking**: Each team member has an `author_keys` array (e.g., `["Barrows, Anthony", "Barrows, A."]`) that matches against publication author strings. This drives the author avatar display on publication cards.
 
