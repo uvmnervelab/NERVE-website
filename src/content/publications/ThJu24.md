@@ -23,5 +23,7 @@ venue: 'Psychiatry Research: Neuroimaging'
 type: paper
 pubman_managed: true
 featured: false
+links:
+  website: https://doi.org/10.1016/j.pscychresns.2024.111877
 figure: /assets/images/figures/ElAn24.jpg
 ---

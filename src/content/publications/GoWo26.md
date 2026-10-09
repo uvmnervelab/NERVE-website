@@ -17,6 +17,8 @@ venue: 'Biological Psychiatry: Global Open Science'
 type: paper
 pubman_managed: true
 featured: false
+links:
+  website: https://doi.org/10.1016/j.bpsgos.2025.100624
 figure: /assets/images/figures/GoWo25.jpg
 groups:
 - span

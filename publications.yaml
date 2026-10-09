@@ -38,7 +38,7 @@
   journal: Developmental Cognitive Neuroscience
   volume: '80'
   pages: '101740'
-  doi: https://doi.org/10.1016/j.dcn.2026.101740
+  doi: 10.1016/j.dcn.2026.101740
 - key: OLo26
   type: article
   category: peer-reviewed
@@ -70,7 +70,7 @@
   - span
   volume: '123'
   number: '21'
-  doi: https://doi.org/10.1073/pnas.2605729123
+  doi: 10.1073/pnas.2605729123
   abstract: "Delayed age-related cortical thinning has been proposed as a biomarker of attention-related psychopathology and\
     \ attention-deficit/hyperactivity disorder (ADHD), but these findings have not been adequately replicated in large, longitudinal\
     \ samples with sufficient power to account for potential confounds such as co-occurring psychopathology and sex differences\
@@ -194,7 +194,7 @@
   journal: Pediatrics
   volume: '157'
   number: '6'
-  doi: https://doi.org/10.1542/peds.2025-074604
+  doi: 10.1542/peds.2025-074604
   abstract: "OBJECTIVE\n                    To estimate associations of more than minimal prenatal nicotine, alcohol, cannabis,\
     \ and opioid exposures with gestational age, birth weight, and birth weight for gestational age.\n                  \n\
     \                  \n                    METHODS\n                    Data were drawn from the HEALthy Brain and Child\
@@ -293,6 +293,7 @@
   journal: 'Biological Psychiatry: Global Open Science'
   groups:
   - span
+  doi: 10.1016/j.bpsgos.2025.100624
 - key: BaKl25
   type: article
   category: peer-reviewed
@@ -316,6 +317,7 @@
   image: /assets/images/figures/BaKl25.png
   journal: BMJ Public Health
   volume: 3
+  doi: 10.1136/bmjph-2024-001605
 - key: UdGa25
   type: article
   category: peer-reviewed
@@ -574,6 +576,7 @@
   journal: Addiction
   volume: 119
   number: 1
+  doi: 10.1111/add.16330
 - key: ThJu24
   type: article
   category: peer-reviewed
@@ -617,6 +620,7 @@
   image: /assets/images/figures/ElAn24.jpg
   journal: 'Psychiatry Research: Neuroimaging'
   volume: 344
+  doi: 10.1016/j.pscychresns.2024.111877
 - key: CaZh24
   type: article
   category: peer-reviewed
@@ -1232,6 +1236,7 @@
   journal: Experimental and Clinical Psychopharmacology
   volume: 30
   number: 6
+  doi: 10.1037/pha0000532
 - key: OwAl22
   type: article
   category: peer-reviewed
@@ -1716,6 +1721,7 @@
   image: /assets/images/figures/MaJa23.jpg
   journal: 'Psychiatry Research: Neuroimaging'
   volume: 330
+  doi: 10.1016/j.pscychresns.2023.111614
 - key: ZhMa23
   type: article
   category: peer-reviewed

@@ -17,7 +17,7 @@ pubman_managed: true
 featured: true
 month: 5
 links:
-  website: https://doi.org/https://doi.org/10.1073/pnas.2605729123
+  website: https://doi.org/10.1073/pnas.2605729123
 figure: /assets/images/figures/OLo26.jpg
 groups:
 - span

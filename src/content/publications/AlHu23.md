@@ -35,5 +35,7 @@ venue: 'Psychiatry Research: Neuroimaging'
 type: paper
 pubman_managed: true
 featured: false
+links:
+  website: https://doi.org/10.1016/j.pscychresns.2023.111614
 figure: /assets/images/figures/MaJa23.jpg
 ---
