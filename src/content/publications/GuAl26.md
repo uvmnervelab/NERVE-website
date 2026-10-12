@@ -12,5 +12,7 @@ venue: Developmental Cognitive Neuroscience
 type: paper
 pubman_managed: true
 featured: false
+links:
+  website: https://doi.org/10.1016/j.dcn.2026.101689
 figure: /assets/images/figures/GuAl26.jpg
 ---

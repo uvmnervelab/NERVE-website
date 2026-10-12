@@ -10,5 +10,7 @@ venue: Addiction
 type: paper
 pubman_managed: true
 featured: false
+links:
+  website: https://doi.org/10.1111/add.15772
 figure: /assets/images/figures/OtGa22.jpg
 ---

@@ -13,5 +13,7 @@ venue: Human Brain Mapping
 type: paper
 pubman_managed: true
 featured: false
+links:
+  website: https://doi.org/10.1002/hbm.26172
 figure: /assets/images/figures/YuHa23.jpg
 ---

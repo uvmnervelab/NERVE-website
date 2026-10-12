@@ -32,11 +32,11 @@ function getTeamAuthors(authors: string[]) {
 // Load research groups for the group filter
 const researchGroups = (await getCollection('research')).sort((a, b) => a.data.order - b.data.order);
 
-// Fetch citation counts from Semantic Scholar in one batch call.
+// Fetch citation counts from OpenAlex (batched DOI filter).
 // Non-critical: silently skip on failure so the page always builds.
 function extractDoi(url: string): string | null {
   const m = url.match(/(?:doi\.org|dx\.doi\.org)\/(.+)$/);
-  return m ? m[1] : null;
+  return m ? m[1].trim().toLowerCase() : null;
 }
 
 const doiByKey: Record<string, string> = {};
@@ -49,23 +49,27 @@ for (const p of allPapers) {
 const citationsByKey: Record<string, number> = {};
 const validEntries = Object.entries(doiByKey);
 
-if (validEntries.length > 0) {
+// OpenAlex caps OR-filters at 50 values per request
+for (let i = 0; i < validEntries.length; i += 50) {
+  const batch = validEntries.slice(i, i + 50);
   try {
-    const res = await fetch(
-      'https://api.semanticscholar.org/graph/v1/paper/batch?fields=citationCount',
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ids: validEntries.map(([, doi]) => `DOI:${doi}`) }),
-      }
-    );
+    const params = new URLSearchParams({
+      filter: `doi:${batch.map(([, doi]) => doi).join('|')}`,
+      select: 'doi,cited_by_count',
+      per_page: '50',
+    });
+    const res = await fetch(`https://api.openalex.org/works?${params}`);
     if (res.ok) {
-      const data: ({ citationCount?: number } | null)[] = await res.json();
-      data.forEach((item, i) => {
-        if (item?.citationCount != null) {
-          citationsByKey[validEntries[i][0]] = item.citationCount;
-        }
-      });
+      const data: { results: { doi: string | null; cited_by_count: number }[] } = await res.json();
+      const countsByDoi = new Map<string, number>();
+      for (const r of data.results) {
+        const doi = r.doi && extractDoi(r.doi);
+        if (doi) countsByDoi.set(doi, r.cited_by_count);
+      }
+      for (const [key, doi] of batch) {
+        const count = countsByDoi.get(doi);
+        if (count != null) citationsByKey[key] = count;
+      }
     }
   } catch {
     // citation counts are non-critical

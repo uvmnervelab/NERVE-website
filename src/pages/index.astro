@@ -101,7 +101,7 @@ const recentNews = (await getCollection('news'))
                  <Image 
                    src={paper.data.cover} 
                    alt={paper.data.title}
-                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                   class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                    quality={60}
                    format="webp"
                    widths={[320, 480]}

@@ -29,12 +29,6 @@ const iconMap: Record<string, any> = {
   code: Github,
 };
 
-// Abbreviate author list: show first 6, then "et al."
-const MAX_AUTHORS = 6;
-const authorList = authors.length > MAX_AUTHORS
-  ? [...authors.slice(0, MAX_AUTHORS), 'et al.']
-  : authors;
-
 // Format as "Last F" style
 function abbrevAuthor(a: string): string {
   const parts = a.split(',');
@@ -48,7 +42,15 @@ function abbrevAuthor(a: string): string {
   return `${words[words.length - 1]} ${words[0][0]}`;
 }
 
-const authorsAbbrev = authorList.map(a => a === 'et al.' ? 'et al.' : abbrevAuthor(a)).join(', ');
+// Long author lists keep the first and last authors and elide the middle.
+const MAX_AUTHORS = 8;
+const HEAD_AUTHORS = 3;
+const TAIL_AUTHORS = 2;
+const shownAuthors = authors.map(abbrevAuthor);
+const authorsAbbrev = (shownAuthors.length > MAX_AUTHORS
+  ? [...shownAuthors.slice(0, HEAD_AUTHORS), '…', ...shownAuthors.slice(-TAIL_AUTHORS)]
+  : shownAuthors
+).join(', ');
 
 const venueStr = [venue, year].filter(Boolean).join(', ');
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -60,7 +62,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <img
         src={figure}
         alt={title}
-        class="w-20 h-20 object-cover rounded-lg border border-gray-100"
+        class="w-20 h-20 object-contain bg-white rounded-lg border border-gray-100"
         loading="lazy"
       />
     </div>

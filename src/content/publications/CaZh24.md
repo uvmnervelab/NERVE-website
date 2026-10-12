@@ -18,5 +18,7 @@ venue: NeuroImage
 type: paper
 pubman_managed: true
 featured: false
+links:
+  website: https://doi.org/10.1016/j.neuroimage.2024.120622
 figure: /assets/images/figures/ZhGu24.jpg
 ---

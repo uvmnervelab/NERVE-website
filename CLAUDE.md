@@ -32,7 +32,9 @@ The `import-bibtex.js` script is the authoritative source of publication content
 
 ### Publication Management (pubman)
 
-`pubman.toml` at the repo root configures the **pubman** CLI (see `~/Documents/open_source/pubman`). Running `pubman --doi <DOI>` adds a new entry to `publications.yaml` (the manifest) and regenerates BibTeX and Astro Markdown output. The `import-bibtex` script and pubman's `astro_md` generator are parallel paths for the same end result.
+`pubman.toml` at the repo root configures the **pubman** CLI (see `~/06_projects/open_source/pubman`). Running `pubman --doi <DOI>` adds a new entry to `publications.yaml` (the manifest) and regenerates BibTeX and Astro Markdown output. The `import-bibtex` script and pubman's `astro_md` generator are parallel paths for the same end result.
+
+pubman is installed in its own venv (`~/06_projects/open_source/pubman/.venv`, editable install) and exposed on PATH via a symlink at `~/.local/bin/pubman`. If `pubman` is not found, recreate the venv: `python3 -m venv .venv && .venv/bin/pip install --upgrade pip && .venv/bin/pip install -e .` from the pubman repo, then re-link.
 
 ### Content Collections
 

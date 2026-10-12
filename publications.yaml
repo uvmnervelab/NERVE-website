@@ -1,3 +1,37 @@
+- key: ArBa26
+  type: article
+  category: peer-reviewed
+  title: 'Longitudinal associations between screen time activities and working memory neural signatures in adolescents: Sex
+    differences and contextual moderation'
+  authors:
+  - first: Sahithi
+    last: Arekatla
+  - first: Anthony
+    last: Barrows
+  - first: Leigh-Anne
+    last: Cioffredi
+  - first: Matthew D.
+    last: Albaugh
+  - first: Nicholas
+    last: Allgaier
+  - first: Mckay
+    last: Allred
+  - first: David
+    last: Baranger
+  - first: Alexandra
+    last: Potter
+  - first: Hugh P.
+    last: Garavan
+  - first: Bader
+    last: Chaarani
+  year: 2026
+  featured: true
+  image: /assets/images/figures/ArBa26.jpg
+  month: 12
+  journal: Developmental Cognitive Neuroscience
+  volume: '82'
+  pages: '101836'
+  doi: 10.1016/j.dcn.2026.101836
 - key: deTu26
   type: article
   category: peer-reviewed
@@ -236,6 +270,7 @@
   image: /assets/images/figures/GuAl26.jpg
   journal: Developmental Cognitive Neuroscience
   volume: 79
+  doi: 10.1016/j.dcn.2026.101689
 - key: BaWe26
   type: article
   category: peer-reviewed
@@ -331,6 +366,7 @@
   featured: false
   image: /assets/images/figures/LuHu25.jpg
   journal: Biological Psychiatry
+  doi: 10.1016/j.biopsych.2025.09.012
 - key: CuMe25
   type: article
   category: peer-reviewed
@@ -409,6 +445,7 @@
   journal: Addiction
   volume: 120
   number: 5
+  doi: 10.1111/add.16750
 - key: ChLi25
   type: article
   category: peer-reviewed
@@ -654,6 +691,7 @@
   featured: false
   image: /assets/images/figures/ZhGu24.jpg
   journal: NeuroImage
+  doi: 10.1016/j.neuroimage.2024.120622
 - key: SaZa24
   type: article
   category: peer-reviewed
@@ -999,6 +1037,7 @@
   image: /assets/images/figures/ZhJo21.jpg
   journal: Developmental Cognitive Neuroscience
   volume: 52
+  doi: 10.1016/j.dcn.2021.101042
 - key: AlOt21
   type: article
   category: peer-reviewed
@@ -1109,6 +1148,7 @@
   journal: Addiction
   volume: 117
   number: 5
+  doi: 10.1111/add.15772
 - key: OtUh22
   type: article
   category: peer-reviewed
@@ -1182,6 +1222,7 @@
   image: /assets/images/figures/JoAn22.jpg
   journal: Drug and Alcohol Dependence
   volume: 230
+  doi: 10.1016/j.drugalcdep.2021.109185
 - key: CiAn22
   type: article
   category: peer-reviewed
@@ -1206,6 +1247,7 @@
   image: /assets/images/figures/LeHi22.jpg
   journal: Neurotoxicology and Teratology
   volume: 91
+  doi: 10.1016/j.ntt.2022.107089
 - key: OwHa22
   type: article
   category: peer-reviewed
@@ -1628,6 +1670,7 @@
   journal: Human Brain Mapping
   volume: 44
   number: 4
+  doi: 10.1002/hbm.26172
 - key: LoCh23
   type: article
   category: peer-reviewed
@@ -1748,6 +1791,7 @@
   image: /assets/images/figures/WeCa23.jpg
   journal: NeuroImage
   volume: 270
+  doi: 10.1016/j.neuroimage.2023.119946
 - key: LoDu23
   type: article
   category: peer-reviewed
@@ -1774,6 +1818,7 @@
   journal: Journal of Adolescent Health
   volume: 72
   number: 6
+  doi: 10.1016/j.jadohealth.2023.02.008
 - key: GeGo23
   type: article
   category: peer-reviewed
