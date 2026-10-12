@@ -119,8 +119,6 @@ npm run preview      # preview the built site
 ./scripts/deploy.sh    # builds, then rsyncs dist/ to w3_nervelab:www-root/
 ```
 
-`.gitlab-ci.yml` also builds GitLab Pages on pushes to `main`.
-
 ---
 
 ## Layout
