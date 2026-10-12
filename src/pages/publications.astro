@@ -1,0 +1,225 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PublicationItem from '../components/PublicationItem.astro';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const allPapers = (await getCollection('publications')).sort((a, b) => {
+  const yearDiff = b.data.year - a.data.year;
+  if (yearDiff !== 0) return yearDiff;
+  return (b.data.month ?? 0) - (a.data.month ?? 0);
+});
+
+// Build author-key → team member lookup
+const teamMembers = await getCollection('team');
+const authorKeyMap = new Map<string, typeof teamMembers[0]>();
+for (const member of teamMembers) {
+  for (const key of (member.data.author_keys ?? [])) {
+    authorKeyMap.set(key, member);
+  }
+}
+
+// For each paper, find the team member authors (deduplicated)
+function getTeamAuthors(authors: string[]) {
+  const seen = new Set<string>();
+  return authors
+    .map(a => authorKeyMap.get(a))
+    .filter((m): m is typeof teamMembers[0] => m !== undefined)
+    .filter(m => seen.has(m.id) ? false : seen.add(m.id) || true);
+}
+
+// Load research groups for the group filter
+const researchGroups = (await getCollection('research')).sort((a, b) => a.data.order - b.data.order);
+
+// Fetch citation counts from OpenAlex (batched DOI filter).
+// Non-critical: silently skip on failure so the page always builds.
+function extractDoi(url: string): string | null {
+  const m = url.match(/(?:doi\.org|dx\.doi\.org)\/(.+)$/);
+  return m ? m[1].trim().toLowerCase() : null;
+}
+
+const doiByKey: Record<string, string> = {};
+for (const p of allPapers) {
+  const url = p.data.links?.website ?? '';
+  const doi = extractDoi(url);
+  if (doi) doiByKey[p.id] = doi;
+}
+
+const citationsByKey: Record<string, number> = {};
+const validEntries = Object.entries(doiByKey);
+
+// OpenAlex caps OR-filters at 50 values per request
+for (let i = 0; i < validEntries.length; i += 50) {
+  const batch = validEntries.slice(i, i + 50);
+  try {
+    const params = new URLSearchParams({
+      filter: `doi:${batch.map(([, doi]) => doi).join('|')}`,
+      select: 'doi,cited_by_count',
+      per_page: '50',
+    });
+    const res = await fetch(`https://api.openalex.org/works?${params}`);
+    if (res.ok) {
+      const data: { results: { doi: string | null; cited_by_count: number }[] } = await res.json();
+      const countsByDoi = new Map<string, number>();
+      for (const r of data.results) {
+        const doi = r.doi && extractDoi(r.doi);
+        if (doi) countsByDoi.set(doi, r.cited_by_count);
+      }
+      for (const [key, doi] of batch) {
+        const count = countsByDoi.get(doi);
+        if (count != null) citationsByKey[key] = count;
+      }
+    }
+  } catch {
+    // citation counts are non-critical
+  }
+}
+---
+
+<Layout title="Publications">
+  <div class="max-w-4xl mx-auto px-4 py-12 sm:py-20">
+    <div class="mb-8">
+      <h1 class="text-4xl font-bold text-gray-900 mb-2">Publications</h1>
+      <p class="text-base text-gray-500">
+        Peer-reviewed articles from the NERVE Lab.
+      </p>
+    </div>
+
+    <!-- Filter + Sort controls -->
+    <div class="flex flex-wrap gap-x-6 gap-y-3 items-center mb-6">
+      <!-- Core filter -->
+      <div class="flex gap-2 items-center">
+        <span class="text-xs text-gray-400 mr-1">Show</span>
+        <button id="filter-all" class="filter-btn px-3 py-1 text-xs rounded-full border border-gray-300 bg-gray-900 text-white transition-colors" data-filter="all">
+          All
+        </button>
+        <button id="filter-core" class="filter-btn px-3 py-1 text-xs rounded-full border border-gray-300 text-gray-500 transition-colors" data-filter="core">
+          Core
+        </button>
+      </div>
+
+      <!-- Group filter -->
+      {researchGroups.length > 0 && (
+        <div class="flex gap-2 items-center flex-wrap">
+          <span class="text-xs text-gray-400 mr-1">Group</span>
+          <button class="group-btn px-3 py-1 text-xs rounded-full border border-gray-300 bg-gray-900 text-white transition-colors" data-group="all">
+            All
+          </button>
+          {researchGroups.map(g => (
+            <button
+              class="group-btn px-3 py-1 text-xs rounded-full border border-gray-300 text-gray-500 transition-colors"
+              data-group={g.id.replace(/\.[^/.]+$/, "")}
+            >
+              {g.data.title}
+            </button>
+          ))}
+        </div>
+      )}
+
+      <!-- Sort -->
+      <div class="flex gap-2 items-center">
+        <span class="text-xs text-gray-400 mr-1">Sort by</span>
+        <button id="sort-date" class="sort-btn px-3 py-1 text-xs rounded-full border border-gray-300 bg-gray-900 text-white transition-colors" data-sort="date">
+          Date
+        </button>
+        <button id="sort-citations" class="sort-btn px-3 py-1 text-xs rounded-full border border-gray-300 text-gray-500 transition-colors" data-sort="citations">
+          Citations
+        </button>
+      </div>
+    </div>
+
+    <ol id="papers-list" class="space-y-0">
+      {allPapers.map(paper => {
+        const teamAuthors = getTeamAuthors(paper.data.authors);
+        const isCore = teamAuthors.length >= 2 ? 1 : 0;
+        const groups = (paper.data.groups ?? []).join(' ');
+        return (
+          <PublicationItem
+            entry={paper}
+            citationCount={citationsByKey[paper.id]}
+            teamAuthors={teamAuthors.map(m => ({
+              name: m.data.name,
+              slug: m.id.replace(/\.[^/.]+$/, ""),
+              avatarSrc: `${base}${m.data.avatar}`,
+            }))}
+            data-year={paper.data.year}
+            data-month={paper.data.month}
+            data-citations={citationsByKey[paper.id] ?? -1}
+            data-core={isCore}
+            data-groups={groups}
+          />
+        );
+      })}
+    </ol>
+  </div>
+</Layout>
+
+<script>
+  const list = document.getElementById('papers-list')!;
+  const sortBtns = document.querySelectorAll<HTMLButtonElement>('.sort-btn');
+  const filterBtns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const groupBtns = document.querySelectorAll<HTMLButtonElement>('.group-btn');
+
+  let currentFilter: 'all' | 'core' = 'all';
+  let currentGroup = 'all';
+
+  function setActive(btns: NodeListOf<HTMLButtonElement>, active: HTMLButtonElement) {
+    btns.forEach(btn => {
+      const isActive = btn === active;
+      btn.classList.toggle('bg-gray-900', isActive);
+      btn.classList.toggle('text-white', isActive);
+      btn.classList.toggle('text-gray-500', !isActive);
+    });
+  }
+
+  function applyFilters() {
+    list.querySelectorAll<HTMLElement>('li').forEach(item => {
+      const isCore = item.dataset.core === '1';
+      const groups = (item.dataset.groups ?? '').split(' ').filter(Boolean);
+
+      const passesCore = currentFilter !== 'core' || isCore;
+      const passesGroup = currentGroup === 'all' || groups.includes(currentGroup);
+
+      item.style.display = passesCore && passesGroup ? '' : 'none';
+    });
+  }
+
+  function sortList(key: 'date' | 'citations') {
+    const items = Array.from(list.querySelectorAll<HTMLElement>('li'));
+    items.sort((a, b) => {
+      if (key === 'date') {
+        const yearDiff = Number(b.dataset.year) - Number(a.dataset.year);
+        if (yearDiff !== 0) return yearDiff;
+        const am = Number(a.dataset.month) || 0;
+        const bm = Number(b.dataset.month) || 0;
+        return bm - am;
+      }
+      return Number(b.dataset.citations) - Number(a.dataset.citations);
+    });
+    items.forEach(item => list.appendChild(item));
+  }
+
+  sortBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      sortList(btn.dataset.sort as 'date' | 'citations');
+      setActive(sortBtns, btn);
+    });
+  });
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentFilter = btn.dataset.filter as 'all' | 'core';
+      setActive(filterBtns, btn);
+      applyFilters();
+    });
+  });
+
+  groupBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentGroup = btn.dataset.group!;
+      setActive(groupBtns, btn);
+      applyFilters();
+    });
+  });
+</script>

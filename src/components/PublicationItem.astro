@@ -1,0 +1,130 @@
+---
+import { Github, FileText, ExternalLink } from 'lucide-react';
+import type { CollectionEntry } from 'astro:content';
+
+interface TeamAuthor {
+  name: string;
+  slug: string;
+  avatarSrc: string;
+}
+
+interface Props {
+  entry: CollectionEntry<'publications'>;
+  citationCount?: number;
+  teamAuthors?: TeamAuthor[];
+  'data-year'?: number;
+  'data-month'?: number;
+  'data-citations'?: number;
+  'data-core'?: number;
+  'data-groups'?: string;
+}
+
+const { entry, citationCount, teamAuthors, 'data-year': dataYear, 'data-month': dataMonth, 'data-citations': dataCitations, 'data-core': dataCore, 'data-groups': dataGroups } = Astro.props;
+const { title, authors, year, venue, links, figure, badges } = entry.data;
+
+const href = links?.website || links?.pdf || '';
+
+const iconMap: Record<string, any> = {
+  pdf: FileText,
+  code: Github,
+};
+
+// Format as "Last F" style
+function abbrevAuthor(a: string): string {
+  const parts = a.split(',');
+  if (parts.length === 2) {
+    const last = parts[0].trim();
+    const firstInitial = parts[1].trim()[0] ?? '';
+    return `${last} ${firstInitial}`.trim();
+  }
+  const words = a.trim().split(/\s+/);
+  if (words.length === 1) return words[0];
+  return `${words[words.length - 1]} ${words[0][0]}`;
+}
+
+// Long author lists keep the first and last authors and elide the middle.
+const MAX_AUTHORS = 8;
+const HEAD_AUTHORS = 3;
+const TAIL_AUTHORS = 2;
+const shownAuthors = authors.map(abbrevAuthor);
+const authorsAbbrev = (shownAuthors.length > MAX_AUTHORS
+  ? [...shownAuthors.slice(0, HEAD_AUTHORS), '…', ...shownAuthors.slice(-TAIL_AUTHORS)]
+  : shownAuthors
+).join(', ');
+
+const venueStr = [venue, year].filter(Boolean).join(', ');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<li class="flex gap-4 py-4 border-b border-gray-100 last:border-0 group items-start" data-year={dataYear} data-month={dataMonth} data-citations={dataCitations} data-core={dataCore} data-groups={dataGroups}>
+  {figure && (
+    <div class="shrink-0 hidden sm:block">
+      <img
+        src={figure}
+        alt={title}
+        class="w-20 h-20 object-contain bg-white rounded-lg border border-gray-100"
+        loading="lazy"
+      />
+    </div>
+  )}
+  {!figure && (
+    <div class="shrink-0 hidden sm:block w-20 h-20 rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-300">
+      <FileText className="w-6 h-6" />
+    </div>
+  )}
+
+  <div class="flex-grow min-w-0 space-y-0.5">
+    <h3 class="text-sm font-semibold text-gray-900 leading-snug group-hover:text-blue-600 transition-colors">
+      {href
+        ? <a href={href} target="_blank" rel="noopener">{title}</a>
+        : title}
+    </h3>
+
+    <p class="text-xs text-gray-500 leading-relaxed">{authorsAbbrev}</p>
+
+    <p class="text-xs italic text-gray-500">{venueStr}</p>
+
+    <div class="flex items-center gap-3 pt-0.5 flex-wrap">
+      {citationCount != null && (
+        <span class="text-xs text-gray-400">
+          {citationCount} {citationCount === 1 ? 'citation' : 'citations'}
+        </span>
+      )}
+
+      {teamAuthors && teamAuthors.length > 0 && (
+        <div class="flex items-center gap-1">
+          {teamAuthors.map(member => (
+            <a href={`${base}/team/${member.slug}`} title={member.name}>
+              <img
+                src={member.avatarSrc}
+                alt={member.name}
+                class="w-5 h-5 rounded-full object-cover border border-gray-200 hover:border-blue-400 transition-colors"
+              />
+            </a>
+          ))}
+        </div>
+      )}
+
+      {links && Object.entries(links).map(([key, url]) => {
+        if (!url || url === '#' || key === 'website') return null;
+        const Icon = iconMap[key] || ExternalLink;
+        const label = key === 'pdf' ? 'PDF' : key.charAt(0).toUpperCase() + key.slice(1);
+        return (
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center gap-1 text-xs text-gray-400 hover:text-blue-600 transition-colors"
+          >
+            <Icon className="w-3 h-3" />
+            {label}
+          </a>
+        );
+      })}
+
+      {badges && badges.map(badge => (
+        <span class="text-xs text-gray-400 border border-gray-200 rounded-full px-2 py-0.5">{badge.text}</span>
+      ))}
+    </div>
+  </div>
+</li>

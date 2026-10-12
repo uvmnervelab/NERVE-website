@@ -1,35 +1,59 @@
 {
-  "name": "minimal-mistakes",
-  "private": true,
-  "version": "4.24.0",
-  "description": "Minimal Mistakes 2 column Jekyll theme.",
+  "name": "nerve-website",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A lightweight, modern static website template for academic labs and scholars, featuring zero-config BibTeX import and multilingual support.",
+  "license": "MIT",
+  "author": "Scholar-Lite Team",
+  "homepage": "https://github.com/fjd2004711/scholar-lite",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mmistakes/minimal-mistakes.git"
+    "url": "https://github.com/fjd2004711/scholar-lite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fjd2004711/scholar-lite/issues"
   },
   "keywords": [
-    "jekyll",
-    "theme",
-    "minimal"
+    "academic",
+    "scholar",
+    "website-template",
+    "astro",
+    "bibtex",
+    "research-lab",
+    "publication-list",
+    "tailwindcss"
   ],
-  "author": "Michael Rose",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
-  },
-  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
   "engines": {
-    "node": ">= 0.10.0"
-  },
-  "devDependencies": {
-    "npm-run-all": "^4.1.5",
-    "onchange": "^7.1.0",
-    "uglify-js": "^3.13.6"
+    "node": ">=22.12.0"
   },
   "scripts": {
-    "uglify": "uglifyjs assets/js/vendor/jquery/jquery-3.6.0.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.ba-throttle-debounce.js assets/js/plugins/smooth-scroll.js assets/js/plugins/gumshoe.js assets/js/_main.js -c -m -o assets/js/main.min.js",
-    "add-banner": "node banner.js",
-    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify && npm run add-banner"
+    "dev": "astro dev",
+    "build": "npm run import-bibtex && astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "astro": "astro",
+    "import-bibtex": "node scripts/import-bibtex.js",
+    "enrich-months": "python3 scripts/enrich-months.py",
+    "lint": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.6",
+    "@astrojs/react": "^4.4.2",
+    "@resvg/resvg-js": "^2.6.2",
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^5.16.2",
+    "bibtex-parse-js": "^0.0.24",
+    "lucide-react": "^0.555.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "satori": "^0.18.3",
+    "sharp": "^0.34.5",
+    "slugify": "^1.6.6",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "pagefind": "^1.4.0"
   }
 }
