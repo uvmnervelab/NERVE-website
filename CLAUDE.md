@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 npm install              # Install dependencies
-npm run dev              # Start dev server (http://localhost:4321/mockup)
+npm run dev              # Start dev server (http://localhost:4321/)
 npm run build            # Import BibTeX → build site → run Pagefind indexing
 npm run preview          # Preview production build
 npm run import-bibtex    # Parse citations.bib into src/content/publications/*.md only
@@ -24,7 +24,7 @@ No test runner is configured.
 ```
 citations.bib
     → scripts/import-bibtex.js  (parses BibTeX, writes to src/content/publications/)
-    → Astro build               (static HTML generation, Semantic Scholar API for citation counts)
+    → Astro build               (static HTML generation, OpenAlex API for citation counts)
     → pagefind --site dist      (search index)
 ```
 
@@ -59,7 +59,7 @@ Nine collections defined in `src/content.config.ts` with Zod schemas:
 ### Key Configuration
 
 - **`src/config.ts`** — Central site config: lab name, university, nav items, hero text, i18n toggle, social links. Start here for branding or nav changes.
-- **`astro.config.mjs`** — Base path `/mockup`, React + Tailwind integrations, compressed HTML, inline stylesheets, 10KB asset inlining.
+- **`astro.config.mjs`** — `site` is `https://nervelab.w3.uvm.edu`, base path `/` (override with `BASE_PATH`), React + Tailwind integrations, compressed HTML, inline stylesheets, 10KB asset inlining.
 
 ### Styling
 
@@ -71,4 +71,4 @@ Tailwind CSS v4 via `@tailwindcss/vite`. Component-level Tailwind classes in `.a
 
 ### Deployment
 
-Deployed to GitHub Pages. Base path is `/mockup` (configured in `astro.config.mjs`).
+`scripts/deploy.sh` builds the site and rsyncs `dist/` to the UVM web server (`w3_nervelab:www-root/`), served at https://nervelab.w3.uvm.edu.
