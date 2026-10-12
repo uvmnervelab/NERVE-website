@@ -714,6 +714,7 @@ export function getLangFromUrl(url: URL) {
 
 export function useTranslations(lang: keyof typeof ui) {
   return function t(key: keyof typeof ui[typeof defaultLang]) {
-    return ui[lang][key] || ui[defaultLang][key];
+    // Not every language defines every key; fall back to the default language.
+    return (ui[lang] as Partial<Record<typeof key, string>>)[key] || ui[defaultLang][key];
   }
 }

@@ -61,7 +61,7 @@ const ogImage = new URL(`/og/${finalOgSlug}.png`, Astro.url);
           "@type": "Person",
           "name": SITE.author,
           "url": SITE.website,
-          "image": new URL(SITE.avatar || SITE.logo, SITE.website).href,
+          "image": new URL(SITE.avatar ?? SITE.logo ?? '/assets/logo-real.svg', SITE.website).href,
           "jobTitle": "Principal Investigator",
           "worksFor": {
             "@type": "Organization",

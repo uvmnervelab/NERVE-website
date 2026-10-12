@@ -11,8 +11,8 @@ export const SITE = {
   // Lab Info
   labName: 'NERVE Lab',
   university: 'University of Vermont',
-  // logo: '/assets/logo-real.svg', // Logo path
-  // avatar: '/assets/logo-real.svg', // Avatar for SEO/Schema
+  logo: undefined as string | undefined, // Logo path, e.g. '/assets/logo-real.svg' (unset = no header logo)
+  avatar: undefined as string | undefined, // Avatar for SEO/Schema (falls back to logo)
   email: 'nervelab@uvm.edu', // Contact email for Join Us page
 
   // Hero Section (Home Page)
@@ -34,7 +34,7 @@ export const SITE = {
   ],
 
   // Custom Pages (Appended after 'Join Us')
-  customPages: [],
+  customPages: [] as { text: string; link: string; key: string }[],
 
   // i18n Config
   i18n: {
