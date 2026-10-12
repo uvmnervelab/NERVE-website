@@ -1,0 +1,1933 @@
+- key: ArBa26
+  type: article
+  category: peer-reviewed
+  title: 'Longitudinal associations between screen time activities and working memory neural signatures in adolescents: Sex
+    differences and contextual moderation'
+  authors:
+  - first: Sahithi
+    last: Arekatla
+  - first: Anthony
+    last: Barrows
+  - first: Leigh-Anne
+    last: Cioffredi
+  - first: Matthew D.
+    last: Albaugh
+  - first: Nicholas
+    last: Allgaier
+  - first: Mckay
+    last: Allred
+  - first: David
+    last: Baranger
+  - first: Alexandra
+    last: Potter
+  - first: Hugh P.
+    last: Garavan
+  - first: Bader
+    last: Chaarani
+  year: 2026
+  featured: true
+  image: /assets/images/figures/ArBa26.jpg
+  month: 12
+  journal: Developmental Cognitive Neuroscience
+  volume: '82'
+  pages: '101836'
+  doi: 10.1016/j.dcn.2026.101836
+- key: deTu26
+  type: article
+  category: peer-reviewed
+  title: 'Understanding adverse childhood experiences within the first decade of the ABCD study: A systematic review'
+  authors:
+  - first: Abigail
+    last: de Arellano
+  - first: Aren
+    last: Tucker
+  - first: Andrew
+    last: de Arellano
+  - first: Yvette
+    last: Rother
+  - first: Catharine
+    last: Mann
+  - first: Lauren
+    last: Butler
+  - first: Matthew
+    last: Albaugh
+  - first: Nicholas
+    last: Allgaier
+  - first: Hugh
+    last: Garavan
+  - first: Alexandra
+    last: Potter
+  - first: Micah
+    last: Johnson
+  - first: Ethan
+    last: Hunt
+  - first: Priscila
+    last: Gonçalves
+  - first: Kate
+    last: Flory
+  year: 2026
+  featured: true
+  image: /assets/images/figures/deTu26.jpg
+  month: 8
+  journal: Developmental Cognitive Neuroscience
+  volume: '80'
+  pages: '101740'
+  doi: 10.1016/j.dcn.2026.101740
+- key: OLo26
+  type: article
+  category: peer-reviewed
+  title: 'Attention problems and cortical maturation in a large longitudinal sample of youths: The importance of accounting
+    for sex differences'
+  authors:
+  - first: Shannon D.
+    last: O’Connor
+  - first: Robert
+    last: Loughnan
+  - first: Jonathan
+    last: Ahern
+  - first: Chun Chieh
+    last: Fan
+  - first: Robert R.
+    last: Althoff
+  - first: Hugh
+    last: Garavan
+  - first: Alexandra
+    last: Potter
+  - first: Matthew D.
+    last: Albaugh
+  year: 2026
+  featured: true
+  image: /assets/images/figures/OLo26.jpg
+  month: 5
+  journal: Proceedings of the National Academy of Sciences
+  groups:
+  - span
+  volume: '123'
+  number: '21'
+  doi: 10.1073/pnas.2605729123
+  abstract: "Delayed age-related cortical thinning has been proposed as a biomarker of attention-related psychopathology and\
+    \ attention-deficit/hyperactivity disorder (ADHD), but these findings have not been adequately replicated in large, longitudinal\
+    \ samples with sufficient power to account for potential confounds such as co-occurring psychopathology and sex differences\
+    \ in neurodevelopment. Here, we examined whether previously reported associations between attention problems and delayed\
+    \ cortical thickness development could be replicated in a large, longitudinal cohort of youths. Leveraging data from the\
+    \ Adolescent Brain Cognitive Development Study, linear mixed-effects models were used to assess the association between\
+    \ parent-reported attention problems (AP) on the Child Behavior Checklist and age-related cortical thickness change (N\
+    \ = 26,496 MRI scans from 11,025 unique participants). Secondary analyses examined the association between a polygenic\
+    \ risk score for ADHD and cortical thickness development. In initial sex-pooled analyses, we observed associations between\
+    \ AP and reduced rates of cortical thinning (β = 00594 to 0.0145, FDR-adjusted\n                    P\n              \
+    \      &lt; 0.05). However, when an age × sex interaction term was included in the model, these associations were no longer\
+    \ evident (all FDR-adjusted\n                    P\n                    &gt; 0.05 across ROIs). Follow-up sex-stratified\
+    \ analyses revealed no significant age × AP interactions on cortical thickness in males or females. Further, there was\
+    \ no evidence of genetic liability for ADHD being associated with reduced age-related cortical thinning. Taken together,\
+    \ these findings suggest that previously reported associations between AP and delayed cortical thinning likely reflect\
+    \ unaccounted-for sex differences in neurodevelopment rather than AP-specific maturational delays, questioning the utility\
+    \ of cortical maturation patterns as diagnostic biomarkers for ADHD-related behavior."
+- key: BaPs26
+  type: article
+  category: peer-reviewed
+  title: 'Prenatal Substance Exposure and Birth Weight: Findings From the HEALthy Brain and Child Development Study'
+  authors:
+  - first: Gretchen
+    last: Bandoli
+  - first: Catherine
+    last: Psaras
+  - first: Ludmila N.
+    last: Bakhireva
+  - first: Heather H.
+    last: Burris
+  - first: Lucia
+    last: Ciciolla
+  - first: Claire D.
+    last: Coles
+  - first: Sara B.
+    last: DeMauro
+  - first: Sarah S.
+    last: Osmundson
+  - first: Stephanie L.
+    last: Merhar
+  - first: Lynne
+    last: Smith
+  - first: Ashley
+    last: Acheson
+  - first: Ryan
+    last: Bogdan
+  - first: Julie M.
+    last: Croff
+  - first: Laurie E.
+    last: Cutting
+  - first: Kevin P.
+    last: Conway
+  - first: M. Daniele
+    last: Fallin
+  - first: Wei
+    last: Gao
+  - first: Hugh
+    last: Garavan
+  - first: Kim
+    last: Gregory
+  - first: Kelly K.
+    last: Gurka
+  - first: Matthew J.
+    last: Gurka
+  - first: Holly L.
+    last: Horan
+  - first: Katia D.
+    last: Howlett
+  - first: Brittany R.
+    last: Howell
+  - first: Hao
+    last: Huang
+  - first: Julie A.
+    last: Kable
+  - first: Kimberly H.
+    last: LeBlanc
+  - first: Janosch
+    last: Linkersdörfer
+  - first: Carla B.
+    last: Marienfeld
+  - first: Lorraine M.
+    last: McKelvey
+  - first: Amanda S.
+    last: Morris
+  - first: Xiawei
+    last: Ou
+  - first: Myriam
+    last: Peralta-Carcelen
+  - first: Nicolò
+    last: Pini
+  - first: Alexandra S.
+    last: Potter
+  - first: Cynthia E.
+    last: Rogers
+  - first: Elinor L.
+    last: Sullivan
+  - first: Sophie
+    last: Sun
+  - first: Wesley K.
+    last: Thompson
+  - first: Moriah E.
+    last: Thomason
+  - first: Heather E.
+    last: Volk
+  - first: Sylia
+    last: Wilson
+  - first: Aleksandra E.
+    last: Zgierska
+  - first: Jennifer
+    last: Zink
+  - first: Christopher D.
+    last: Smyser
+  - first: Charles A.
+    last: Nelson
+  - first: Christina D.
+    last: Chambers
+  year: 2026
+  featured: true
+  image: /assets/images/figures/BaPs26.jpg
+  month: 5
+  journal: Pediatrics
+  volume: '157'
+  number: '6'
+  doi: 10.1542/peds.2025-074604
+  abstract: "OBJECTIVE\n                    To estimate associations of more than minimal prenatal nicotine, alcohol, cannabis,\
+    \ and opioid exposures with gestational age, birth weight, and birth weight for gestational age.\n                  \n\
+    \                  \n                    METHODS\n                    Data were drawn from the HEALthy Brain and Child\
+    \ Development (HBCD) Study, a multisite, longitudinal study in the United States. Predefined recruitment thresholds for\
+    \ each substance were assessed using maternal self-report, maternal toxicology results, and newborn substance exposure-related\
+    \ diagnoses. Birth outcomes included gestational age at delivery (weeks), birth weight (grams), and birth weight for gestational\
+    \ age (centiles). Mean differences and risk ratios for the associations between substance exposure and birth outcomes\
+    \ were estimated using multilevel mixed-effect linear regression or multilevel mixed-effect Poisson regression.\n    \
+    \              \n                  \n                    RESULTS\n                    Among 660 mother-infant dyads, 17%\
+    \ (n = 115) of participants met recruitment thresholds for prenatal cannabis, 15% for nicotine (n = 102), 13% for alcohol\
+    \ (n = 86), and 5% for opioids (n = 32). In adjusted models, prenatal cannabis and opioid exposures were each associated\
+    \ with lower birth weight (cannabis: −272.2 [95% CI −444.6 to −99.8] g; opioids: −295.4 [95% CI −574.9 to −15.9] g) and\
+    \ birth weight centiles (cannabis: −8.2 [95% CI −15.3 to −1.1] centiles; opioids: −14.4 [95% CI −25.5, −3.4] centiles),\
+    \ although the results were sensitive to model specifications. Prenatal nicotine and alcohol estimates were in similar\
+    \ directions but not statistically significant. No significant associations between exposures and gestational age at delivery\
+    \ were detected.\n                  \n                  \n                    CONCLUSIONS\n                    In this\
+    \ initial HBCD Study data release, more than minimal exposure to cannabis and opioids was associated with smaller birth\
+    \ size, adding evidence to an inconsistent literature. Future studies from HBCD can more deeply interrogate timing and\
+    \ dose of each substance and expand to childhood outcomes."
+- key: GuAl26
+  type: article
+  category: peer-reviewed
+  title: Connectome-based predictive modeling of concurrent and longitudinal substance use vulnerability in adolescence
+  authors:
+  - first: J. F.
+    last: Guassi Moreira
+  - first: N.
+    last: Allgaier
+  - first: M. E.
+    last: Johnson
+  - first: A.
+    last: Potter
+  - first: H.
+    last: Garavan
+  - first: D. A.
+    last: Fair
+  year: 2026
+  featured: false
+  image: /assets/images/figures/GuAl26.jpg
+  journal: Developmental Cognitive Neuroscience
+  volume: 79
+  doi: 10.1016/j.dcn.2026.101689
+- key: BaWe26
+  type: article
+  category: peer-reviewed
+  title: Cognitive Process Models Reveal Meaningful Brain–Behavior Associations in the Adolescent Brain Cognitive Development
+    Study Stop-signal Task
+  authors:
+  - first: Anthony
+    last: Barrows
+  - first: Alexander
+    last: Weigard
+  - first: Matthew
+    last: McCabe
+  - first: Alexandra
+    last: Potter
+  - first: Hugh
+    last: Garavan
+  - first: Nicholas
+    last: Allgaier
+  year: 2026
+  featured: false
+  image: /assets/images/figures/BaWe26.png
+  month: 2
+  journal: Journal of Cognitive Neuroscience
+  doi: 10.1162/JOCN.a.2487
+- key: GoWo26
+  type: article
+  category: peer-reviewed
+  title: 'Investigating links between prenatal cannabis exposure and brain development using MRI techniques: a narrative review'
+  authors:
+  - first: P. D.
+    last: Gonçalves
+  - first: J. O.
+    last: Woodruff
+  - first: M. O.
+    last: Pozzolo Pedro
+  - first: M.
+    last: Van Dijk
+  - first: E.
+    last: Bruzelius
+  - first: S. S.
+    last: Martins
+  - first: G.
+    last: Bandoli
+  - first: A.
+    last: Potter
+  - first: L. A.
+    last: Cioffredi
+  - first: A.
+    last: Talati
+  - first: M. D.
+    last: Albaugh
+  year: 2026
+  featured: false
+  image: /assets/images/figures/GoWo25.jpg
+  journal: 'Biological Psychiatry: Global Open Science'
+  groups:
+  - span
+  doi: 10.1016/j.bpsgos.2025.100624
+- key: BaKl25
+  type: article
+  category: peer-reviewed
+  title: 'Smoking reduction trajectories and their association with smoking cessation: a secondary analysis of longitudinal
+    clinical trial data'
+  authors:
+  - first: A.
+    last: Barrows
+  - first: E.
+    last: Klemperer
+  - first: H.
+    last: Garavan
+  - first: N.
+    last: Allgaier
+  - first: N.
+    last: Lindson
+  - first: G.
+    last: Taylor
+  year: 2025
+  featured: false
+  image: /assets/images/figures/BaKl25.png
+  journal: BMJ Public Health
+  volume: 3
+  doi: 10.1136/bmjph-2024-001605
+- key: UdGa25
+  type: article
+  category: peer-reviewed
+  title: Task and resting state fMRI modelling of brain-behavior relationships in developmental cohorts
+  authors:
+  - first: Lucina Q.
+    last: Uddin
+  - first: Hugh
+    last: Garavan
+  year: 2025
+  featured: false
+  image: /assets/images/figures/LuHu25.jpg
+  journal: Biological Psychiatry
+  doi: 10.1016/j.biopsych.2025.09.012
+- key: CuMe25
+  type: article
+  category: peer-reviewed
+  title: Impulsivity behaviors and white matter mediate the relationship between genetic risk for cannabis use disorder and
+    early cannabis use in adolescents
+  authors:
+  - first: Renata Basso
+    last: Cupertino
+  - first: Sarah Elizabeth
+    last: Medland
+  - first: Jonatan
+    last: Ottino-Gonzalez
+  - first: Zhipeng
+    last: Cao
+  - first: Anthony
+    last: Juliano
+  - first: Devarshi
+    last: Pancholi
+  - first: Tobias
+    last: Banaschewski
+  - first: Arun L. W.
+    last: Bokde
+  - first: Sylvane
+    last: Desrivières
+  - first: Herta
+    last: Flor
+  - first: Antoine
+    last: Grigis
+  - first: Penny
+    last: Gowland
+  - first: Andreas
+    last: Heinz
+  - first: Rüdiger
+    last: Brühl
+  - first: Jean-Luc
+    last: Martinot
+  - first: Marie-Laure Paillère
+    last: Martinot
+  - first: Eric
+    last: Artiges
+  - first: Frauke
+    last: Nees
+  - first: Dimitri Papadopoulos
+    last: Orfanos
+  - first: Herve
+    last: Lemaitre
+  - first: Tomášsta
+    last: Paus
+  - first: Luise
+    last: Poustka
+  - first: Sarah
+    last: Hohmann
+  - first: Juliane H.
+    last: Fröhner
+  - first: Michael N.
+    last: Smolka
+  - first: Henrik
+    last: Walter
+  - first: Robert
+    last: Whelan
+  - first: Gunter
+    last: Schumann
+  - first: Patricia
+    last: Conrod
+  - first: Peter
+    last: Callas
+  - first: Hugh
+    last: Garavan
+  - first: Scott
+    last: Mackey
+  - first: IMAGEN
+    last: Consortium
+  year: 2025
+  featured: false
+  image: /assets/images/figures/CuMe25.jpg
+  journal: Addiction
+  volume: 120
+  number: 5
+  doi: 10.1111/add.16750
+- key: ChLi25
+  type: article
+  category: peer-reviewed
+  title: Impulsivity and neuroticism share distinct functional connectivity signatures with alcohol-use risk in youth
+  authors:
+  - first: Annie
+    last: Cheng
+  - first: Sarah
+    last: Lichenstein
+  - first: Bader
+    last: Chaarani
+  - first: Qinghao
+    last: Liang
+  - first: Marzieh
+    last: Babaeianjelodar
+  - first: Steven J.
+    last: Riley
+  - first: Wenjing
+    last: Luo
+  - first: Corey
+    last: Horien
+  - first: Abigail S.
+    last: Greene
+  - first: Tobias
+    last: Banaschewski
+  - first: Arun L. W.
+    last: Bokde
+  - first: Sylvane
+    last: Desrivières
+  - first: Herta
+    last: Flor
+  - first: Antoine
+    last: Grigis
+  - first: Penny
+    last: Gowland
+  - first: Andreas
+    last: Heinz
+  - first: Rüdiger
+    last: Brühl
+  - first: Jean-Luc
+    last: Martinot
+  - first: Marie-Laure Paillère
+    last: Martinot
+  - first: Eric
+    last: Artiges
+  - first: Frauke
+    last: Nees
+  - first: Dimitri
+    last: Papadopoulos Orfanos
+  - first: Luise
+    last: Poustka
+  - first: Sarah
+    last: Hohmann
+  - first: Nathalie
+    last: Holz
+  - first: Christian
+    last: Baeuchl
+  - first: Michael N.
+    last: Smolka
+  - first: Nilakshi
+    last: Vaidya
+  - first: Henrik
+    last: Walter
+  - first: Robert
+    last: Whelan
+  - first: Gunter
+    last: Schumann
+  - first: R. Todd
+    last: Constable
+  - first: Godfrey
+    last: Pearlson
+  - first: Hugh
+    last: Garavan
+  - first: Sarah W.
+    last: Yip
+  year: 2025
+  featured: false
+  image: /assets/images/figures/ChLi25.jpg
+  month: September
+  journal: Molecular Psychiatry
+  doi: 10.1038/s41380-025-03196-6
+- key: MiBa24
+  type: article
+  category: peer-reviewed
+  title: Neuroanatomical Variability and Substance Use Initiation in Late Childhood and Early Adolescence
+  authors:
+  - first: Alex P.
+    last: Miller
+  - first: David A. A.
+    last: Baranger
+  - first: Sarah E.
+    last: Paul
+  - first: Hugh
+    last: Garavan
+  - first: Scott
+    last: Mackey
+  - first: Susan F.
+    last: Tapert
+  - first: Kimberly H.
+    last: LeBlanc
+  - first: Arpana
+    last: Agrawal
+  - first: Ryan
+    last: Bogdan
+  year: 2024
+  featured: false
+  image: /assets/images/figures/MiBa24.jpg
+  month: 12
+  journal: JAMA Network Open
+  volume: 7
+  number: 12
+  doi: 10.1001/jamanetworkopen.2024.52027
+- key: OtCu24
+  type: article
+  category: peer-reviewed
+  title: Brain structural covariance network features are robust markers of early heavy alcohol use
+  authors:
+  - first: Jonatan
+    last: Ottino-González
+  - first: Renata B.
+    last: Cupertino
+  - first: Zhipeng
+    last: Cao
+  - first: Sage
+    last: Hahn
+  - first: Devarshi
+    last: Pancholi
+  - first: Matthew D.
+    last: Albaugh
+  - first: Ty
+    last: Brumback
+  - first: Fiona C.
+    last: Baker
+  - first: Sandra A.
+    last: Brown
+  - first: Duncan B.
+    last: Clark
+  - first: Massimiliano
+    last: de Zambotti
+  - first: David B.
+    last: Goldston
+  - first: Beatriz
+    last: Luna
+  - first: Bonnie J.
+    last: Nagel
+  - first: Kate B.
+    last: Nooner
+  - first: Kilian M.
+    last: Pohl
+  - first: Susan F.
+    last: Tapert
+  - first: Wesley K.
+    last: Thompson
+  - first: Terry L.
+    last: Jernigan
+  - first: Patricia
+    last: Conrod
+  - first: Scott
+    last: Mackey
+  - first: Hugh
+    last: Garavan
+  year: 2024
+  featured: false
+  image: /assets/images/figures/OtCu24.jpg
+  journal: Addiction
+  volume: 119
+  number: 1
+  doi: 10.1111/add.16330
+- key: ThJu24
+  type: article
+  category: peer-reviewed
+  title: Amygdala connectivity is associated with withdrawn/depressed behavior in a large sample of children from the Adolescent
+    Brain Cognitive Development (ABCD) Study®
+  authors:
+  - first: Elina
+    last: Thomas
+  - first: Anthony
+    last: Juliano
+  - first: Max
+    last: Owens
+  - first: Renata B.
+    last: Cupertino
+  - first: Scott
+    last: Mackey
+  - first: Robert
+    last: Hermosillo
+  - first: Oscar
+    last: Miranda-Dominguez
+  - first: Greg
+    last: Conan
+  - first: Moosa
+    last: Ahmed
+  - first: Damien A.
+    last: Fair
+  - first: Alice M.
+    last: Graham
+  - first: Nicholas J.
+    last: Goode
+  - first: Uapingena P.
+    last: Kandjoze
+  - first: Alexi
+    last: Potter
+  - first: Hugh
+    last: Garavan
+  - first: Matthew D.
+    last: Albaugh
+  year: 2024
+  featured: false
+  image: /assets/images/figures/ElAn24.jpg
+  journal: 'Psychiatry Research: Neuroimaging'
+  volume: 344
+  doi: 10.1016/j.pscychresns.2024.111877
+- key: CaZh24
+  type: article
+  category: peer-reviewed
+  title: 'Unraveling the molecular relevance of brain phenotypes: A comparative analysis of null models and test statistics'
+  authors:
+  - first: Zhipeng
+    last: Cao
+  - first: Guilai
+    last: Zhan
+  - first: Jinmei
+    last: Qin
+  - first: Renata B.
+    last: Cupertino
+  - first: Jonatan
+    last: Ottino-Gonzalez
+  - first: Alistair
+    last: Murphy
+  - first: Devarshi
+    last: Pancholi
+  - first: Sage
+    last: Hahn
+  - first: Dekang
+    last: Yuan
+  - first: Peter
+    last: Callas
+  - first: Scott
+    last: Mackey
+  - first: Hugh
+    last: Garavan
+  year: 2024
+  featured: false
+  image: /assets/images/figures/ZhGu24.jpg
+  journal: NeuroImage
+  doi: 10.1016/j.neuroimage.2024.120622
+- key: SaZa24
+  type: article
+  category: peer-reviewed
+  title: 'Parameter Space and Potential for Biomarker Development in 25 Years of fMRI Drug Cue Reactivity: A Systematic Review'
+  authors:
+  - first: Arshiya
+    last: Sangchooli
+  - first: Mehran
+    last: Zare-Bidoky
+  - first: Ali
+    last: Fathi Jouzdani
+  - first: Joseph
+    last: Schacht
+  - first: James M.
+    last: Bjork
+  - first: Eric D.
+    last: Claus
+  - first: James J.
+    last: Prisciandaro
+  - first: Stephen J.
+    last: Wilson
+  - first: Torsten
+    last: Wüstenberg
+  - first: Stéphane
+    last: Potvin
+  - first: Pooria
+    last: Ahmadi
+  - first: Patrick
+    last: Bach
+  - first: Alex
+    last: Baldacchino
+  - first: Anne
+    last: Beck
+  - first: Kathleen T.
+    last: Brady
+  - first: Judson A.
+    last: Brewer
+  - first: Anna Rose
+    last: Childress
+  - first: Kelly E.
+    last: Courtney
+  - first: Mohsen
+    last: Ebrahimi
+  - first: Francesca M.
+    last: Filbey
+  - first: Hugh
+    last: Garavan
+  - first: Dara G.
+    last: Ghahremani
+  - first: Rita Z.
+    last: Goldstein
+  - first: Anneke E.
+    last: Goudriaan
+  - first: Erica N.
+    last: Grodin
+  - first: Colleen A.
+    last: Hanlon
+  - first: Amelie
+    last: Haugg
+  - first: Markus
+    last: Heilig
+  - first: Andreas
+    last: Heinz
+  - first: Adrienn
+    last: Holczer
+  - first: Ruth J.
+    last: Van Holst
+  - first: Jane E.
+    last: Joseph
+  - first: Anthony C.
+    last: Juliano
+  - first: Marc J.
+    last: Kaufman
+  - first: Falk
+    last: Kiefer
+  - first: Arash
+    last: Khojasteh Zonoozi
+  - first: Rayus T.
+    last: Kuplicki
+  - first: Marco
+    last: Leyton
+  - first: Edythe D.
+    last: London
+  - first: Scott
+    last: Mackey
+  - first: F. Joseph
+    last: McClernon
+  - first: William H.
+    last: Mellick
+  - first: Kirsten
+    last: Morley
+  - first: Hamid R.
+    last: Noori
+  - first: Mohammad Ali
+    last: Oghabian
+  - first: Jason A.
+    last: Oliver
+  - first: Max
+    last: Owens
+  - first: Martin P.
+    last: Paulus
+  - first: Irene
+    last: Perini
+  - first: Parnian
+    last: Rafei
+  - first: Lara A.
+    last: Ray
+  - first: Rajita
+    last: Sinha
+  - first: Michael N.
+    last: Smolka
+  - first: Ghazaleh
+    last: Soleimani
+  - first: Rainer
+    last: Spanagel
+  - first: Vaughn R.
+    last: Steele
+  - first: Susan F.
+    last: Tapert
+  - first: Sabine
+    last: Vollstädt-Klein
+  - first: Reagan R.
+    last: Wetherill
+  - first: Katie
+    last: Witkiewitz
+  - first: Kai
+    last: Yuan
+  - first: Xiaochu
+    last: Zhang
+  - first: Antonio
+    last: Verdejo-Garcia
+  - first: Marc N.
+    last: Potenza
+  - first: Amy C.
+    last: Janes
+  - first: Hedy
+    last: Kober
+  - first: Anna
+    last: Zilverstand
+  - first: Hamed
+    last: Ekhtiari
+  year: 2024
+  featured: false
+  image: /assets/images/figures/SaZa24.jpg
+  month: February
+  journal: JAMA Psychiatry
+  doi: 10.1001/jamapsychiatry.2023.5483
+- key: GoMa24
+  type: article
+  category: peer-reviewed
+  title: 'Associations Between Family History of Alcohol and/or Substance Use Problems and Frontal Cortical Development From
+    9 to 13 Years of Age: A Longitudinal Analysis of the ABCD Study'
+  authors:
+  - first: Priscila Dib
+    last: Gonçalves
+  - first: Silvia S.
+    last: Martins
+  - first: Nioud Mulugeta
+    last: Gebru
+  - first: Stacy R.
+    last: Ryan-Pettes
+  - first: Nicholas
+    last: Allgaier
+  - first: Alexandra
+    last: Potter
+  - first: Wesley K.
+    last: Thompson
+  - first: Micah E.
+    last: Johnson
+  - first: Hugh
+    last: Garavan
+  - first: Ardesheer
+    last: Talati
+  - first: Matthew D.
+    last: Albaugh
+  year: 2024
+  featured: false
+  image: /assets/images/figures/GoMa24.jpg
+  month: March
+  journal: Biological Psychiatry Global Open Science
+  volume: 4
+  number: 2
+  doi: 10.1016/j.bpsgos.2023.100284
+- key: CaMc23
+  type: article
+  category: peer-reviewed
+  title: Recalibrating single-study effect sizes using hierarchical Bayesian models
+  authors:
+  - first: Zhipeng
+    last: Cao
+  - first: Matthew
+    last: McCabe
+  - first: Peter
+    last: Callas
+  - first: Renata B.
+    last: Cupertino
+  - first: Jonatan
+    last: Ottino-González
+  - first: Alistair
+    last: Murphy
+  - first: Devarshi
+    last: Pancholi
+  - first: Nathan
+    last: Schwab
+  - first: Orr
+    last: Catherine
+  - first: Kent
+    last: Hutchison
+  - first: Janna
+    last: Cousijn
+  - first: Alain
+    last: Dagher
+  - first: John J.
+    last: Foxe
+  - first: Anna E.
+    last: Goudriaan
+  - first: Robert
+    last: Hester
+  - first: Chiang-Shan R.
+    last: Li
+  - first: Wesley K.
+    last: Thompson
+  - first: Angelica M.
+    last: Morales
+  - first: Edythe D.
+    last: London
+  - first: Valentina
+    last: Lorenzetti
+  - first: Maartje
+    last: Luijten
+  - first: Rocio
+    last: Martin-Santos
+  - first: Reza
+    last: Momenan
+  - first: Martin P.
+    last: Paulus
+  - first: Lianne
+    last: Schmaal
+  - first: Rajita
+    last: Sinha
+  - first: Nadia
+    last: Solowij
+  - first: Dan J.
+    last: Stein
+  - first: Elliot A.
+    last: Stein
+  - first: Anne
+    last: Uhlmann
+  - first: Ruth J.
+    last: van Holst
+  - first: Dick J.
+    last: Veltman
+  - first: Reinout W.
+    last: Wiers
+  - first: Murat
+    last: Yücel
+  - first: Sheng
+    last: Zhang
+  - first: Patricia
+    last: Conrod
+  - first: Scott
+    last: Mackey
+  - first: Hugh
+    last: Garavan
+  year: 2023
+  featured: false
+  image: /assets/images/figures/CaMc23.jpg
+  month: December
+  journal: Frontiers in Neuroimaging
+  volume: 2
+  doi: 10.3389/fnimg.2023.1138193
+- key: CaOt21
+  type: article
+  category: peer-reviewed
+  title: Characterizing reward system neural trajectories from adolescence to young adulthood
+  authors:
+  - first: Zhipeng
+    last: Cao
+  - first: Jonatan
+    last: Ottino-Gonzalez
+  - first: Renata B.
+    last: Cupertino
+  - first: Anthony
+    last: Juliano
+  - first: Bader
+    last: Chaarani
+  - first: Tobias
+    last: Banaschewski
+  - first: Arun L.W.
+    last: Bokde
+  - first: Erin Burke
+    last: Quinlan
+  - first: Sylvane
+    last: Desrivières
+  - first: Herta
+    last: Flor
+  - first: Antoine
+    last: Grigis
+  - first: Penny
+    last: Gowland
+  - first: Andreas
+    last: Heinz
+  - first: Rüdiger
+    last: Brühl
+  - first: Jean-Luc
+    last: Martinot
+  - first: Marie-Laure Paillère
+    last: Martinot
+  - first: Eric
+    last: Artiges
+  - first: Frauke
+    last: Nees
+  - first: Dimitri Papadopoulos
+    last: Orfanos
+  - first: Tomáš
+    last: Paus
+  - first: Luise
+    last: Poustka
+  - first: Sarah
+    last: Hohmann
+  - first: Sabina
+    last: Millenet
+  - first: Juliane H.
+    last: Fröhner
+  - first: Lauren
+    last: Robinson
+  - first: Michael N.
+    last: Smolka
+  - first: Henrik
+    last: Walter
+  - first: Jeanne
+    last: Winterer
+  - first: Gunter
+    last: Schumann
+  - first: Robert
+    last: Whelan
+  - first: Scott
+    last: Mackey
+  - first: Hugh
+    last: Garavan
+  year: 2021
+  featured: false
+  image: /assets/images/figures/ZhJo21.jpg
+  journal: Developmental Cognitive Neuroscience
+  volume: 52
+  doi: 10.1016/j.dcn.2021.101042
+- key: AlOt21
+  type: article
+  category: peer-reviewed
+  title: Association of Cannabis Use During Adolescence With Neurodevelopment
+  authors:
+  - first: Matthew D.
+    last: Albaugh
+  - first: Jonatan
+    last: Ottino-Gonzalez
+  - first: Amanda
+    last: Sidwell
+  - first: Claude
+    last: Lepage
+  - first: Anthony
+    last: Juliano
+  - first: Max M.
+    last: Owens
+  - first: Bader
+    last: Chaarani
+  - first: Philip
+    last: Spechler
+  - first: Nicholas
+    last: Fontaine
+  - first: Pierre
+    last: Rioux
+  - first: Lindsay
+    last: Lewis
+  - first: Seun
+    last: Jeon
+  - first: Alan
+    last: Evans
+  - first: Deepak
+    last: D’Souza
+  - first: Rajiv
+    last: Radhakrishnan
+  - first: Tobias
+    last: Banaschewski
+  - first: Arun L. W.
+    last: Bokde
+  - first: Erin Burke
+    last: Quinlan
+  - first: Patricia
+    last: Conrod
+  - first: Sylvane
+    last: Desrivières
+  - first: Herta
+    last: Flor
+  - first: Antoine
+    last: Grigis
+  - first: Penny
+    last: Gowland
+  - first: Andreas
+    last: Heinz
+  - first: Bernd
+    last: Ittermann
+  - first: Jean-Luc
+    last: Martinot
+  - first: Marie-Laure
+    last: Paillère Martinot
+  - first: Frauke
+    last: Nees
+  - first: Dimitri
+    last: Papadopoulos Orfanos
+  - first: Tomáš
+    last: Paus
+  - first: Luise
+    last: Poustka
+  - first: Sabina
+    last: Millenet
+  - first: Juliane H.
+    last: Fröhner
+  - first: Michael N.
+    last: Smolka
+  - first: Henrik
+    last: Walter
+  - first: Robert
+    last: Whelan
+  - first: Gunter
+    last: Schumann
+  - first: Alexandra
+    last: Potter
+  - first: Hugh
+    last: Garavan
+  year: 2021
+  featured: false
+  image: /assets/images/figures/AlOt21.jpg
+  month: September
+  journal: JAMA Psychiatry
+  volume: 78
+  number: 9
+  doi: 10.1001/jamapsychiatry.2021.1258
+- key: OtGa22
+  type: article
+  category: peer-reviewed
+  title: Brain structural covariance network differences in adults with alcohol dependence and heavy-drinking adolescents
+  authors:
+  - first: Jonatan
+    last: Ottino-González
+  - first: Hugh
+    last: Garavan
+  - first: The
+    last: ENIGMA-Addiction
+  - first: IMAGEN
+    last: consortiums
+  year: 2022
+  featured: false
+  image: /assets/images/figures/OtGa22.jpg
+  journal: Addiction
+  volume: 117
+  number: 5
+  doi: 10.1111/add.15772
+- key: OtUh22
+  type: article
+  category: peer-reviewed
+  title: 'White matter microstructure differences in individuals with dependence on cocaine, methamphetamine, and nicotine:
+    Findings from the ENIGMA-Addiction working group'
+  authors:
+  - first: Jonatan
+    last: Ottino-González
+  - first: Anne
+    last: Uhlmann
+  - first: Sage
+    last: Hahn
+  - first: Zhipeng
+    last: Cao
+  - first: Renata B.
+    last: Cupertino
+  - first: Nathan
+    last: Schwab
+  - first: Nicholas
+    last: Allgaier
+  - first: Nelly
+    last: Alia-Klein
+  - first: Hamed
+    last: Ekhtiari
+  - first: Jean-Paul
+    last: Fouche
+  - first: Rita Z.
+    last: Goldstein
+  - first: Chiang-Shan R.
+    last: Li
+  - first: Christine
+    last: Lochner
+  - first: Edythe D.
+    last: London
+  - first: Maartje
+    last: Luijten
+  - first: Sadegh
+    last: Masjoodi
+  - first: Reza
+    last: Momenan
+  - first: Mohammad Ali
+    last: Oghabian
+  - first: Annerine
+    last: Roos
+  - first: Dan J.
+    last: Stein
+  - first: Elliot A.
+    last: Stein
+  - first: Dick J.
+    last: Veltman
+  - first: Antonio
+    last: Verdejo-García
+  - first: Sheng
+    last: Zhang
+  - first: Min
+    last: Zhao
+  - first: Na
+    last: Zhong
+  - first: Neda
+    last: Jahanshad
+  - first: Paul M.
+    last: Thompson
+  - first: Patricia
+    last: Conrod
+  - first: Scott
+    last: Mackey
+  - first: Hugh
+    last: Garavan
+  year: 2022
+  featured: false
+  image: /assets/images/figures/JoAn22.jpg
+  journal: Drug and Alcohol Dependence
+  volume: 230
+  doi: 10.1016/j.drugalcdep.2021.109185
+- key: CiAn22
+  type: article
+  category: peer-reviewed
+  title: Prenatal cannabis exposure predicts attention problems, without changes on fMRI in adolescents
+  authors:
+  - first: Leigh-Anne
+    last: Cioffredi
+  - first: Hillary
+    last: Anderson
+  - first: Hannah
+    last: Loso
+  - first: James
+    last: East
+  - first: Philip
+    last: Nguyen
+  - first: Hugh
+    last: Garavan
+  - first: Alexandra
+    last: Potter
+  year: 2022
+  featured: false
+  image: /assets/images/figures/LeHi22.jpg
+  journal: Neurotoxicology and Teratology
+  volume: 91
+  doi: 10.1016/j.ntt.2022.107089
+- key: OwHa22
+  type: article
+  category: peer-reviewed
+  title: One-Year Predictions of Delayed Reward Discounting in the Adolescent Brain Cognitive Development Study.
+  authors:
+  - first: Max M.
+    last: Owens
+  - first: Sage
+    last: Hahn
+  - first: Nicholas
+    last: Allgaier
+  - first: James
+    last: MacKillop
+  - first: Matthew
+    last: Albaugh
+  - first: Dekang
+    last: Yuan
+  - first: Anthony
+    last: Juliano
+  - first: Alexandra
+    last: Potter
+  - first: Hugh
+    last: Garavan
+  year: 2022
+  featured: false
+  image: /assets/images/figures/OwHa22.jpg
+  month: December
+  journal: Experimental and Clinical Psychopharmacology
+  volume: 30
+  number: 6
+  doi: 10.1037/pha0000532
+- key: OwAl22
+  type: article
+  category: peer-reviewed
+  title: Bayesian causal network modeling suggests adolescent cannabis use accelerates prefrontal cortical thinning
+  authors:
+  - first: Max M.
+    last: Owens
+  - first: Matthew D.
+    last: Albaugh
+  - first: Nicholas
+    last: Allgaier
+  - first: Dekang
+    last: Yuan
+  - first: Gabriel
+    last: Robert
+  - first: Renata B.
+    last: Cupertino
+  - first: Philip A.
+    last: Spechler
+  - first: Anthony
+    last: Juliano
+  - first: Sage
+    last: Hahn
+  - first: Tobias
+    last: Banaschewski
+  - first: Arun L. W.
+    last: Bokde
+  - first: Sylvane
+    last: Desrivières
+  - first: Herta
+    last: Flor
+  - first: Antoine
+    last: Grigis
+  - first: Penny
+    last: Gowland
+  - first: Andreas
+    last: Heinz
+  - first: Rüdiger
+    last: Brühl
+  - first: Jean-Luc
+    last: Martinot
+  - first: Marie-Laure Paillère
+    last: Martinot
+  - first: Eric
+    last: Artiges
+  - first: Frauke
+    last: Nees
+  - first: Dimitri Papadopoulos
+    last: Orfanos
+  - first: Herve
+    last: Lemaitre
+  - first: Tomáš
+    last: Paus
+  - first: Luise
+    last: Poustka
+  - first: Sabina
+    last: Millenet
+  - first: Juliane H.
+    last: Fröhner
+  - first: Michael N.
+    last: Smolka
+  - first: Henrik
+    last: Walter
+  - first: Robert
+    last: Whelan
+  - first: Scott
+    last: Mackey
+  - first: Gunter
+    last: Schumann
+  - first: Hugh
+    last: Garavan
+  - first: Tobias
+    last: Banaschewski
+  - first: Gareth J.
+    last: Barker
+  - first: Arun L. W.
+    last: Bokde
+  - first: Sylvane
+    last: Desrivières
+  - first: Herta
+    last: Flor
+  - first: Antoine
+    last: Grigis
+  - first: Hugh
+    last: Garavan
+  - first: Penny
+    last: Gowland
+  - first: Andreas
+    last: Heinz
+  - first: Rüdiger
+    last: Brühl
+  - first: Jean-Luc
+    last: Martinot
+  - first: Marie-Laure Paillère
+    last: Martinot
+  - first: Eric
+    last: Artiges
+  - first: Frauke
+    last: Nees
+  - first: Dimitri Papadopoulos
+    last: Orfanos
+  - first: Herve
+    last: Lemaitre
+  - first: Tomáš
+    last: Paus
+  - first: Luise
+    last: Poustka
+  - first: Sarah
+    last: Hohmann
+  - first: Sabina
+    last: Millenet
+  - first: Juliane H.
+    last: Fröhner
+  - first: Michael N.
+    last: Smolka
+  - first: Henrik
+    last: Walter
+  - first: Robert
+    last: Whelan
+  - first: Gunter
+    last: Schumann
+  year: 2022
+  featured: false
+  image: /assets/images/figures/OwAl22.jpg
+  month: May
+  journal: Translational Psychiatry
+  volume: 12
+  number: 1
+  doi: 10.1038/s41398-022-01956-4
+- key: GaCh22
+  type: article
+  category: peer-reviewed
+  title: 'The ABCD stop signal data: Response to Bissett et al.'
+  authors:
+  - first: H.
+    last: Garavan
+  - first: B.
+    last: Chaarani
+  - first: S.
+    last: Hahn
+  - first: N.
+    last: Allgaier
+  - first: A.
+    last: Juliano
+  - first: D.K.
+    last: Yuan
+  - first: C.
+    last: Orr
+  - first: R.
+    last: Watts
+  - first: T.D.
+    last: Wager
+  - first: O.
+    last: Ruiz de Leon
+  - first: D.J.
+    last: Hagler
+  - first: A.
+    last: Potter
+  year: 2022
+  featured: false
+  image: /assets/images/figures/GaCh22.jpg
+  month: October
+  journal: Developmental Cognitive Neuroscience
+  volume: 57
+  doi: 10.1016/j.dcn.2022.101144
+- key: ChOr22
+  type: article
+  category: peer-reviewed
+  title: Association of Video Gaming With Cognitive Performance Among Children
+  authors:
+  - first: Bader
+    last: Chaarani
+  - first: Joseph
+    last: Ortigara
+  - first: DeKang
+    last: Yuan
+  - first: Hannah
+    last: Loso
+  - first: Alexandra
+    last: Potter
+  - first: Hugh P.
+    last: Garavan
+  year: 2022
+  featured: false
+  image: /assets/images/figures/ChOr22.jpg
+  month: October
+  journal: JAMA Network Open
+  volume: 5
+  number: 10
+  doi: 10.1001/jamanetworkopen.2022.35721
+- key: HaOw22
+  type: article
+  category: peer-reviewed
+  title: 'Performance scaling for structural MRI surface parcellations: a machine learning analysis in the ABCD Study'
+  authors:
+  - first: Sage
+    last: Hahn
+  - first: Max M
+    last: Owens
+  - first: DeKang
+    last: Yuan
+  - first: Anthony C
+    last: Juliano
+  - first: Alexandra
+    last: Potter
+  - first: Hugh
+    last: Garavan
+  - first: Nicholas
+    last: Allgaier
+  year: 2022
+  featured: false
+  image: /assets/images/figures/HaOw22.jpg
+  month: 3
+  journal: Cerebral Cortex
+  volume: 33
+  number: 1
+  doi: 10.1093/cercor/bhac060
+- key: MaRo22
+  type: article
+  category: peer-reviewed
+  title: 'Association Between Brain Structure and Alcohol Use Behaviors in Adults: A Mendelian Randomization and Multiomics
+    Study'
+  authors:
+  - first: Lucas A.
+    last: Mavromatis
+  - first: Daniel B.
+    last: Rosoff
+  - first: Renata B.
+    last: Cupertino
+  - first: Hugh
+    last: Garavan
+  - first: Scott
+    last: Mackey
+  - first: Falk W.
+    last: Lohoff
+  year: 2022
+  featured: false
+  image: /assets/images/figures/MaRo22.jpg
+  month: September
+  journal: JAMA Psychiatry
+  volume: 79
+  number: 9
+  doi: 10.1001/jamapsychiatry.2022.2196
+- key: CaCu22
+  type: article
+  category: peer-reviewed
+  title: Cortical profiles of numerous psychiatric disorders and normal development share a common pattern
+  authors:
+  - first: Zhipeng
+    last: Cao
+  - first: Renata B.
+    last: Cupertino
+  - first: Jonatan
+    last: Ottino-Gonzalez
+  - first: Alistair
+    last: Murphy
+  - first: Devarshi
+    last: Pancholi
+  - first: Anthony
+    last: Juliano
+  - first: Bader
+    last: Chaarani
+  - first: Matthew
+    last: Albaugh
+  - first: Dekang
+    last: Yuan
+  - first: Nathan
+    last: Schwab
+  - first: James
+    last: Stafford
+  - first: Anna E.
+    last: Goudriaan
+  - first: Kent
+    last: Hutchison
+  - first: Chiang-Shan R.
+    last: Li
+  - first: Maartje
+    last: Luijten
+  - first: Martine
+    last: Groefsema
+  - first: Reza
+    last: Momenan
+  - first: Lianne
+    last: Schmaal
+  - first: Rajita
+    last: Sinha
+  - first: Ruth J.
+    last: van Holst
+  - first: Dick J.
+    last: Veltman
+  - first: Reinout W.
+    last: Wiers
+  - first: Bernice
+    last: Porjesz
+  - first: Tristram
+    last: Lett
+  - first: Tobias
+    last: Banaschewski
+  - first: Arun L. W.
+    last: Bokde
+  - first: Sylvane
+    last: Desrivières
+  - first: Herta
+    last: Flor
+  - first: Antoine
+    last: Grigis
+  - first: Penny
+    last: Gowland
+  - first: Andreas
+    last: Heinz
+  - first: Rüdiger
+    last: Brühl
+  - first: Jean-Luc
+    last: Martinot
+  - first: Marie-Laure Paillère
+    last: Martinot
+  - first: Eric
+    last: Artiges
+  - first: Frauke
+    last: Nees
+  - first: Dimitri Papadopoulos
+    last: Orfanos
+  - first: Tomáš
+    last: Paus
+  - first: Luise
+    last: Poustka
+  - first: Sarah
+    last: Hohmann
+  - first: Sabina
+    last: Millenet
+  - first: Juliane H.
+    last: Fröhner
+  - first: Lauren
+    last: Robinson
+  - first: Michael N.
+    last: Smolka
+  - first: Henrik
+    last: Walter
+  - first: Jeanne
+    last: Winterer
+  - first: Gunter
+    last: Schumann
+  - first: Robert
+    last: Whelan
+  - first: Ravi R.
+    last: Bhatt
+  - first: Alyssa
+    last: Zhu
+  - first: Patricia
+    last: Conrod
+  - first: Neda
+    last: Jahanshad
+  - first: Paul M.
+    last: Thompson
+  - first: Scott
+    last: Mackey
+  - first: Hugh
+    last: Garavan
+  year: 2022
+  featured: false
+  image: /assets/images/figures/CaCu22.jpg
+  month: November
+  journal: Molecular Psychiatry
+  volume: 28
+  number: 2
+  doi: 10.1038/s41380-022-01855-6
+- key: YuHa23
+  type: article
+  category: peer-reviewed
+  title: Machine learning approaches linking brain function to behavior in the ABCD STOP task
+  authors:
+  - first: Dekang
+    last: Yuan
+  - first: Sage
+    last: Hahn
+  - first: Nicholas
+    last: Allgaier
+  - first: Max M.
+    last: Owens
+  - first: Bader
+    last: Chaarani
+  - first: Alexandra
+    last: Potter
+  - first: Hugh
+    last: Garavan
+  year: 2023
+  featured: false
+  image: /assets/images/figures/YuHa23.jpg
+  journal: Human Brain Mapping
+  volume: 44
+  number: 4
+  doi: 10.1002/hbm.26172
+- key: LoCh23
+  type: article
+  category: peer-reviewed
+  title: Gender diversity associated with patterns of brain activation seen in populations that experience childhood stress
+  authors:
+  - first: Hannah
+    last: Loso
+  - first: Bader
+    last: Chaarani
+  - first: Sarahjane Locke
+    last: Dube
+  - first: Matthew D.
+    last: Albaugh
+  - first: Aya
+    last: Cheaito
+  - first: Hugh
+    last: Garavan
+  - first: Alexandra
+    last: Potter
+  year: 2023
+  featured: false
+  image: /assets/images/figures/LoCh23.jpg
+  month: March
+  journal: Frontiers in Integrative Neuroscience
+  volume: 17
+  doi: 10.3389/fnint.2023.1084748
+- key: AlHu23
+  type: article
+  category: peer-reviewed
+  title: Conduct problems are associated with accelerated thinning of emotion-related cortical regions in a community-based
+    sample of adolescents
+  authors:
+  - first: Matthew D.
+    last: Albaugh
+  - first: James. J.
+    last: Hudziak
+  - first: Philip A.
+    last: Spechler
+  - first: Bader
+    last: Chaarani
+  - first: Claude
+    last: Lepage
+  - first: Seun
+    last: Jeon
+  - first: Pierre
+    last: Rioux
+  - first: Alan C.
+    last: Evans
+  - first: Tobias
+    last: Banaschewski
+  - first: Arun L.W.
+    last: Bokde
+  - first: Sylvane
+    last: Desrivières
+  - first: Herta
+    last: Flor
+  - first: Penny
+    last: Gowland
+  - first: Andreas
+    last: Heinz
+  - first: Bernd
+    last: Ittermann
+  - first: Jean-Luc
+    last: Martinot
+  - first: Marie-Laure Paillère
+    last: Martinot
+  - first: Frauke
+    last: Nees
+  - first: Dimitri Papadopoulos
+    last: Orfanos
+  - first: Luise
+    last: Poustka
+  - first: Sabina
+    last: Millenet
+  - first: Juliane H.
+    last: Fröhner
+  - first: Michael N.
+    last: Smolka
+  - first: Henrik
+    last: Walter
+  - first: Robert
+    last: Whelan
+  - first: Gunter
+    last: Schumann
+  - first: Alexandra S.
+    last: Potter
+  - first: Hugh
+    last: Garavan
+  year: 2023
+  featured: false
+  image: /assets/images/figures/MaJa23.jpg
+  journal: 'Psychiatry Research: Neuroimaging'
+  volume: 330
+  doi: 10.1016/j.pscychresns.2023.111614
+- key: ZhMa23
+  type: article
+  category: peer-reviewed
+  title: Task fMRI paradigms may capture more behaviorally relevant information than resting-state functional connectivity
+  authors:
+  - first: Weiqi
+    last: Zhao
+  - first: Carolina
+    last: Makowski
+  - first: Donald J.
+    last: Hagler
+  - first: Hugh P.
+    last: Garavan
+  - first: Wesley K.
+    last: Thompson
+  - first: Deanna J.
+    last: Greene
+  - first: Terry L.
+    last: Jernigan
+  - first: Anders M.
+    last: Dale
+  year: 2023
+  featured: false
+  image: /assets/images/figures/WeCa23.jpg
+  journal: NeuroImage
+  volume: 270
+  doi: 10.1016/j.neuroimage.2023.119946
+- key: LoDu23
+  type: article
+  category: peer-reviewed
+  title: Associations Between Gender Nonconformity, School Environments, Family Conflict, and Emotional and Behavioral Health
+    Among Children Ages 10–11
+  authors:
+  - first: Hannah M.
+    last: Loso
+  - first: Sarahjane Locke
+    last: Dube
+  - first: Bader
+    last: Chaarani
+  - first: Masha
+    last: Ivanova
+  - first: Hugh
+    last: Garavan
+  - first: Michelle M.
+    last: Johns
+  - first: Alexandra S.
+    last: Potter
+  year: 2023
+  featured: false
+  image: /assets/images/figures/HaSa23.jpg
+  journal: Journal of Adolescent Health
+  volume: 72
+  number: 6
+  doi: 10.1016/j.jadohealth.2023.02.008
+- key: GeGo23
+  type: article
+  category: peer-reviewed
+  title: 'Effects of parental mental health and family environment on impulsivity in preadolescents: a longitudinal ABCD studyÂ®'
+  authors:
+  - first: Nioud Mulugeta
+    last: Gebru
+  - first: Priscila Dib
+    last: Goncalves
+  - first: Rick A.
+    last: Cruz
+  - first: Wesley K.
+    last: Thompson
+  - first: Nicholas
+    last: Allegair
+  - first: Alexandra
+    last: Potter
+  - first: Hugh
+    last: Garavan
+  - first: Julie
+    last: Dumas
+  - first: Robert F.
+    last: Leeman
+  - first: Micah
+    last: Johnson
+  year: 2023
+  featured: false
+  image: /assets/images/figures/GeGo23.jpg
+  month: October
+  journal: Frontiers in Behavioral Neuroscience
+  volume: 17
+  doi: 10.3389/fnbeh.2023.1213894
+- key: AlOw23
+  type: article
+  category: peer-reviewed
+  title: Differential associations of adolescent versus young adult cannabis initiation with longitudinal brain change and
+    behavior
+  authors:
+  - first: Matthew D.
+    last: Albaugh
+  - first: Max M.
+    last: Owens
+  - first: Anthony
+    last: Juliano
+  - first: Jonatan
+    last: Ottino-Gonzalez
+  - first: Renata
+    last: Cupertino
+  - first: Zhipeng
+    last: Cao
+  - first: Scott
+    last: Mackey
+  - first: Claude
+    last: Lepage
+  - first: Pierre
+    last: Rioux
+  - first: Alan
+    last: Evans
+  - first: Tobias
+    last: Banaschewski
+  - first: Arun L. W.
+    last: Bokde
+  - first: Patricia
+    last: Conrod
+  - first: Sylvane
+    last: Desrivières
+  - first: Herta
+    last: Flor
+  - first: Antoine
+    last: Grigis
+  - first: Penny
+    last: Gowland
+  - first: Andreas
+    last: Heinz
+  - first: Bernd
+    last: Ittermann
+  - first: Jean-Luc
+    last: Martinot
+  - first: Marie-Laure Paillère
+    last: Martinot
+  - first: Eric
+    last: Artiges
+  - first: Frauke
+    last: Nees
+  - first: Dimitri Papadopoulos
+    last: Orfanos
+  - first: Tomáš
+    last: Paus
+  - first: Luise
+    last: Poustka
+  - first: Sabina
+    last: Millenet
+  - first: Juliane H.
+    last: Fröhner
+  - first: Michael N.
+    last: Smolka
+  - first: Henrik
+    last: Walter
+  - first: Robert
+    last: Whelan
+  - first: Gunter
+    last: Schumann
+  - first: Alexandra
+    last: Potter
+  - first: Hugh
+    last: Garavan
+  year: 2023
+  featured: false
+  image: /assets/images/figures/AlOw23.jpg
+  month: June
+  journal: Molecular Psychiatry
+  doi: 10.1038/s41380-023-02148-2

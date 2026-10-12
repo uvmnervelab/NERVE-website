@@ -1,0 +1,131 @@
+# =============================================================================
+# NEWS — edit this file to add lab news / updates.
+# Save and the dev server (npm run dev) reloads automatically.
+# Items are shown newest-first (sorted by `date`), so order here doesn't matter.
+#
+# Each entry needs a unique `id` (used internally, e.g. for share images).
+# Required: id, title, date.  `summary` is the text shown under the headline.
+#   date: YYYY-MM-DD
+#   type: lab (default) for our own announcements — grants, hires, awards, talks.
+#         media for third-party coverage of our research — press, podcasts, features.
+#   outlet: (media only) name of the outlet/publication that ran the piece.
+#   url: (media only) link to the original article.
+# =============================================================================
+
+- id: 2026-05-oconnor-medicalxpress
+  title: "Case of mistaken patterns: Slow brain development linked to ADHD for years might just be sex differences"
+  date: 2026-05-26
+  summary: "by Sanjukta Mondal"
+  url: https://medicalxpress.com/news/2026-05-case-mistaken-patterns-brain-linked.html#google_vignette
+  type: media
+  outlet: Medical Xpress
+
+- id: 2026-07-barrows-cns
+  title: "Computational Models Reveal Brain-Behavior Relationships in Adolescents"
+  date: 2026-07-08
+  summary: "by Lisa M.P. Munoz"
+  url: "https://www.cogneurosociety.org/computational-models-reveal-brain-behavior-relationships-in-adolescents/"
+  type: media
+  outlet: Cognitive Neuroscience Society
+
+- id: 2024-02-chaarani-nih-grant
+  title: "Bader Chaarani Receives $2M NIH Grant"
+  date: 2024-02-13
+  summary: "Bader Chaarani receives a $2M NIH grant to investigate the impacts of screen time on adolescent brain development."
+  type: lab
+
+- id: 2023-12-albaugh-bbrf
+  title: "Matt Albaugh Featured in BBRF 2023 Leading Research Achievements"
+  date: 2023-12-28
+  summary: "Matt Albaugh featured in 2023 Leading Research Achievements by the Brain & Behavior Research Foundation."
+  type: media
+  url: "https://bbrfoundation.org/content/cannabis-use-adolescence-may-alter-development-cerebral-cortex"
+  outlet: "Brain & Behavior Research Foundation"
+
+- id: 2025-10-screen-time-across-the-fence
+  title: "Are Cellphone Bans for Kids Effective?"
+  date: 2025-10-01
+  summary: "By Amy Finley, University of Vermont Extension — Across the Fence."
+  type: media
+  outlet: "University of Vermont Extension — Across the Fence"
+  url: "https://www.youtube.com/watch?v=fl2Os9B6wdw"
+
+- id: 2024-02-screen-time-wcax
+  title: "UVM researchers probe the effects of screen time on kids"
+  date: 2024-02-01
+  summary: "By Cat Viglienzoni, WCAX Channel 3."
+  type: media
+  outlet: "WCAX Channel 3"
+  url: "https://www.wcax.com/2024/02/02/uvm-researchers-probe-effects-screen-time-kids/"
+
+- id: 2023-11-cannabis-new-scientist
+  title: "Cannabis can harm young brains but may improve learning in older age"
+  date: 2023-11-01
+  summary: "By Joanna Thompson, New Scientist."
+  type: media
+  outlet: "New Scientist"
+  url: "https://www.newscientist.com/article/2402391-cannabis-can-harm-young-brains-but-may-improve-learning-in-older-age/"
+
+- id: 2023-08-cannabis-science
+  title: "Smoke Alarm: As states relax their laws on cannabis, neuroscientist Yasmin Hurd is warning about the drug’s dangers for the developing brain"
+  date: 2023-08-01
+  summary: "By Ingrid Wickelgren, Science."
+  type: media
+  outlet: "Science"
+  url: "https://www.science.org/content/article/cannabis-laws-relax-neuroscientist-warns-its-dangers-developing-brain"
+
+- id: 2023-01-cannabis-washington-post
+  title: "Ask a doctor: How does marijuana use affect the developing brain?"
+  date: 2023-01-01
+  summary: "By Richard A. Friedman, The Washington Post."
+  type: media
+  outlet: "The Washington Post"
+  url: "https://www.washingtonpost.com/wellness/2023/01/30/marijuana-adolescent-brain-development/"
+
+- id: 2021-07-cannabis-our-time-press
+  title: "Cannabis May Alter a Teen's Developing Brain"
+  date: 2021-07-01
+  summary: "By Silke Schmidt, Our Time Press."
+  type: media
+  outlet: "Our Time Press"
+  url: "https://ourtimepress.com/cannabis-may-alter-a-teens-developing-brain/"
+
+- id: 2021-07-cannabis-psychology-today
+  title: "How Cannabis Can Alter Brain Development in Adolescents"
+  date: 2021-07-01
+  summary: "By Chris Gilbert, Psychology Today."
+  type: media
+  outlet: "Psychology Today"
+  url: "https://www.psychologytoday.com/us/blog/heal-the-mind-heal-the-body/202107/how-cannabis-can-alter-brain-development-in-adolescents"
+
+- id: 2021-06-cannabis-healthday
+  title: "Pot Use May Change the Teenage Brain, MRIs Show"
+  date: 2021-06-01
+  summary: "By Dennis Thompson, Health Day."
+  type: media
+  outlet: "Health Day"
+  url: "https://www.healthday.com/health-news/child-health/6-17-pot-use-may-change-the-teenaged-brain-mris-show-2653383567.html"
+
+- id: 2022-10-video-games-npr
+  title: "Playing video games could boost brain function in children, suggests new study"
+  date: 2022-10-01
+  summary: "By Vincent Acovino, Patrick Jarenwattanon, and Juana Summers, NPR — All Things Considered."
+  type: media
+  outlet: "NPR — All Things Considered"
+  url: "https://www.npr.org/2022/10/27/1132042038/playing-video-games-could-boost-brain-function-in-children-suggests-new-study"
+
+- id: 2022-10-video-games-cnn
+  title: "Video gaming may have some cognitive benefits for kids, study finds"
+  date: 2022-10-01
+  summary: "By Nadia Kounang, CNN Health."
+  type: media
+  outlet: "CNN Health"
+  url: "https://www.cnn.com/2022/10/24/health/kids-video-games-cognition-memory/index.html"
+
+- id: 2022-10-video-games-nida
+  title: "Video gaming may be associated with better cognitive performance in children"
+  date: 2022-10-01
+  summary: "By the National Institute on Drug Abuse (NIDA), NIDA Press Office."
+  type: media
+  outlet: "NIDA Press Office"
+  url: "https://www.nih.gov/news-events/news-releases/video-gaming-may-be-associated-better-cognitive-performance-children"

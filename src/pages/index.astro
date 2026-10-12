@@ -1,0 +1,176 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import { ArrowRight, Newspaper, Megaphone } from 'lucide-react';
+import { SITE } from '../config';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const papers = (await getCollection('publications'))
+  .filter(p => p.data.type === 'paper')
+  .sort((a, b) => {
+    const yearDiff = b.data.year - a.data.year;
+    if (yearDiff !== 0) return yearDiff;
+    return (b.data.month ?? 0) - (a.data.month ?? 0);
+  })
+  .slice(0, 3);
+
+const recentNews = (await getCollection('news'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+---
+
+<Layout title="Home">
+  <!-- Hero Section -->
+  <section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      {SITE.hero.image ? (
+        <Image 
+          class="w-full h-full object-cover" 
+          src={SITE.hero.image} 
+          alt={SITE.hero.title}
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
+          quality={60}
+          format="webp"
+          widths={[640, 1024, 1920]}
+          sizes="100vw"
+        />
+      ) : (
+        <div class="w-full h-full bg-gradient-to-br from-gray-900 to-gray-800"></div>
+      )}
+      <!-- Dark Gradient Overlay for Readability -->
+      <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
+      <!-- Subtle Texture (CSS only) -->
+      <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 32px 32px;"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="max-w-3xl">
+        <h1 class="text-5xl font-extrabold text-white sm:text-6xl md:text-7xl mb-6 drop-shadow-lg leading-tight">
+          <span class="block xl:inline">{SITE.hero.title}</span>
+        </h1>
+        <p class="mt-4 text-xl text-gray-300 sm:max-w-2xl md:text-2xl drop-shadow-md">
+          {SITE.hero.subtitle}
+        </p>
+        <div class="mt-10 flex gap-4">
+          <a href={`${base}/publications`} class="flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-black bg-white hover:bg-gray-100 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]" data-i18n-key="hero.viewPubs">
+            View Publications
+          </a>
+          <a href={`${base}/team`} class="flex items-center justify-center px-8 py-4 border-2 border-white/30 text-lg font-medium rounded-full text-white hover:bg-white/10 transition-all duration-300 backdrop-blur-sm" data-i18n-key="hero.meetTeam">
+            Meet the Team
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-white/50">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Selected Publications -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-end mb-8">
+        <h2 class="text-3xl font-bold text-gray-900">Recent Publications</h2>
+        <a href={`${base}/publications`} class="text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1 group">
+          <span data-i18n-key="section.viewAll">View all</span> <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </a>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        {papers.map(paper => {
+          const link = paper.data.links?.website || paper.data.links?.pdf || `${base}/publications`;
+          const isExternal = link.startsWith('http');
+          return (
+          <a 
+            href={link}
+            target={isExternal ? "_blank" : undefined}
+            rel={isExternal ? "noopener noreferrer" : undefined} 
+            class="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all hover:-translate-y-1 overflow-hidden flex flex-col h-full group"
+          >
+             {paper.data.cover && (
+               <div class="h-48 overflow-hidden border-b border-gray-100 bg-gray-50">
+                 <Image 
+                   src={paper.data.cover} 
+                   alt={paper.data.title}
+                   class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                   quality={60}
+                   format="webp"
+                   widths={[320, 480]}
+                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                 />
+               </div>
+             )}
+             <div class="p-6 flex flex-col flex-grow">
+               <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                 {paper.data.title}
+               </h3>
+               <p class="text-gray-600 mb-4 text-sm line-clamp-2 flex-grow" title={paper.data.authors.join(', ')}>
+                 {paper.data.authors.length > 3 
+                   ? `${paper.data.authors.slice(0, 3).join(', ')}, et al.` 
+                   : paper.data.authors.join(', ')}
+               </p>
+               <div class="flex items-center justify-between text-sm mt-auto gap-4">
+                  <span class="font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded truncate text-left block max-w-full" title={paper.data.venue}>{paper.data.venue}</span>
+                  <span class="text-gray-500 shrink-0">{paper.data.year}</span>
+               </div>
+             </div>
+          </a>
+        )})}
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent News -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-end mb-8">
+        <h2 class="text-3xl font-bold text-gray-900">Recent News</h2>
+        <a href={`${base}/news`} class="text-blue-600 hover:text-blue-700 font-medium flex items-center gap-1 group">
+          <span data-i18n-key="section.viewAll">View all</span> <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </a>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        {recentNews.map(item => {
+          const isMedia = item.data.type === 'media';
+          const link = isMedia && item.data.url ? item.data.url : `${base}/news`;
+          const isExternal = link.startsWith('http');
+          return (
+            <a
+              href={link}
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
+              class="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all hover:-translate-y-1 p-6 flex flex-col h-full group"
+            >
+              <div class="flex items-center gap-3 mb-3">
+                <span class={`inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full border ${isMedia ? 'bg-purple-100/90 text-purple-700 border-purple-200' : 'bg-blue-100/90 text-blue-700 border-blue-200'}`}>
+                  {isMedia ? <Newspaper size={12} /> : <Megaphone size={12} />}
+                  <span data-i18n-key={isMedia ? 'news.badge.media' : 'news.badge.lab'}>{isMedia ? 'Media Coverage' : 'Lab News'}</span>
+                </span>
+                <time class="text-sm text-gray-500">{item.data.date.toISOString().split('T')[0]}</time>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                {item.data.title}
+              </h3>
+              {item.data.summary && <p class="text-gray-600 text-sm line-clamp-2">{item.data.summary}</p>}
+            </a>
+          );
+        })}
+      </div>
+
+      {recentNews.length === 0 && (
+        <p class="text-gray-500 italic" data-i18n-key="news.noNews">No news yet.</p>
+      )}
+    </div>
+  </section>
+
+</Layout>

@@ -1,0 +1,12 @@
+[manifest]
+path = "publications.yaml"
+
+[[generators]]
+name = "astro"
+module = "pubman.generators.astro_md"
+# output is a log file inside the content directory; the generator writes .md
+# files alongside it.  Run `pubman --regenerate` from this directory to rebuild.
+output = "src/content/publications/.pubman-sync.log"
+# Only peer-reviewed articles appear on the lab website.
+# Add "conference" to include abstracts/posters.
+categories = ["peer-reviewed"]
