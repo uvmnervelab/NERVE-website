@@ -106,13 +106,13 @@
   weight: 22
   author_keys: ["Pitts, McKinney"]
 
-- id: phd-tony-barrows
+- id: postdoc-tony-barrows
   name: Tony Barrows
-  role: PhD Student
-  title: [PhD Student]
+  role: Postdoc
+  title: [Postdoc]
   avatar: /assets/people/tony.jpeg
   linkedin: https://www.linkedin.com/in/ajbarrows/
-  weight: 30
+  weight: 23
   author_keys: ["Barrows, Anthony", "Barrows, A."]
 
 - id: phd-michele-day
@@ -133,6 +133,15 @@
   weight: 32
   author_keys: ["Diestel, Annabel"]
 
+- id: phd-shannon-oconnor
+  name: Shannon O'Connor
+  role: PhD Student
+  title: [PhD Student]
+  avatar: /assets/people/shannon.jpg
+  linkedin: https://www.linkedin.com/in/shannon-delia-o-connor-/
+  weight: 33
+  author_keys: ["O'Connor, Shannon D.", "O'Connor, Shannon"]
+
 - id: staff-dk-yuan
   name: DK Yuan
   role: Research Assistant
@@ -150,15 +159,6 @@
   linkedin: https://www.linkedin.com/in/devarshipancholi/
   weight: 41
   author_keys: ["Pancholi, Devarshi"]
-
-- id: ra-shannon-oconnor
-  name: Shannon O'Connor
-  role: Research Assistant
-  title: [Research Assistant]
-  avatar: /assets/people/shannon.jpg
-  linkedin: https://www.linkedin.com/in/shannon-delia-o-connor-/
-  weight: 50
-  author_keys: ["O'Connor, Shannon D.", "O'Connor, Shannon"]
 
 - id: ra-sahithi-arekatla
   name: Sahithi Arekatla
