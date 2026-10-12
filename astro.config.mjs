@@ -11,12 +11,12 @@ export default defineConfig({
   compressHTML: true,
   build: {
     inlineStylesheets: 'always',
-    assetsInlineLimit: 10240, // 10KB to inline achievements.css (7.5KB)
   },
   vite: {
+    // @ts-expect-error -- @tailwindcss/vite is typed against Vite 7; Astro 5 uses Vite 6. Works at runtime.
     plugins: [tailwindcss()],
     build: {
-      assetsInlineLimit: 10240,
+      assetsInlineLimit: 10240, // 10KB to inline achievements.css (7.5KB)
     }
   },
 
